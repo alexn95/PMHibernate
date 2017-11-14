@@ -6,7 +6,6 @@
 package ru.sfedu.projectmanager;
 
 import org.apache.log4j.Logger;
-import ru.sfedu.projectmanager.model.IDataProvider;
 
 
 /**

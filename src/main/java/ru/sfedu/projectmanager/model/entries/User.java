@@ -1,4 +1,4 @@
-package ru.sfedu.projectmanager.model.enrities;
+package ru.sfedu.projectmanager.model.entries;
 import java.io.Serializable;
 import com.opencsv.bean.*;
 import org.simpleframework.xml.Attribute;
@@ -14,15 +14,12 @@ public class User implements WithId, Serializable {
     @CsvBindByPosition(position = 0)
     private Long id;
 
-    @Element
     @CsvBindByPosition(position = 1)
     private String login;
 
-    @Element
     @CsvBindByPosition(position = 2)
     private String email;
 
-    @Element
     @CsvBindByPosition(position = 3)
     private String password;
   
@@ -67,6 +64,7 @@ public class User implements WithId, Serializable {
    * Set the value of login
    * @param newVar the new value of login
    */
+  @Element
   public void setLogin (String newVar) {
     login = newVar;
   }
@@ -75,6 +73,7 @@ public class User implements WithId, Serializable {
    * Get the value of login
    * @return the value of login
    */
+  @Element
   public String getLogin () {
     return login;
   }
@@ -83,6 +82,7 @@ public class User implements WithId, Serializable {
    * Set the value of email
    * @param newVar the new value of email
    */
+  @Element
   public void setEmail (String newVar) {
     email = newVar;
   }
@@ -91,6 +91,7 @@ public class User implements WithId, Serializable {
    * Get the value of email
    * @return the value of email
    */
+  @Element
   public String getEmail () {
     return email;
   }
@@ -99,6 +100,7 @@ public class User implements WithId, Serializable {
    * Set the value of password
    * @param newVar the new value of password
    */
+  @Element
   public void setPassword (String newVar) {
     password = newVar;
   }
@@ -107,6 +109,7 @@ public class User implements WithId, Serializable {
    * Get the value of password
    * @return the value of password
    */
+  @Element
   public String getPassword () {
     return password;
   }

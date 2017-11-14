@@ -1,4 +1,4 @@
-package ru.sfedu.projectmanager.model.enrities;
+package ru.sfedu.projectmanager.model.entries;
 
 public interface WithId {
 

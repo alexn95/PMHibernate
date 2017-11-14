@@ -17,5 +17,7 @@ public class Constants {
     public static final String XML_PATH_USERS = "dp.xml_path_users";
     public static final String XML_PATH_PROJECTS = "dp.xml_path_projects";
     public static final String XML_PATH_TASKS = "dp.xml_path_tasks";
+
+    public static final String XML_PATH = "db.xml_path";
     
 }

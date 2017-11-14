@@ -1,5 +1,34 @@
-<user id="1">
-   <login>lehaLogin</login>
-   <email>mr.alexn95@mail.com</email>
-   <password>mycastpass</password>
-</user>
+<XMLBeanList>
+   <beans class="java.util.ArrayList">
+      <object class="ru.sfedu.projectmanager.model.entries.User" id="3">
+         <password>mycastpass</password>
+         <email>mr.alexn95@mail.com</email>
+         <login>lehaLogin</login>
+      </object>
+      <object class="ru.sfedu.projectmanager.model.entries.User" id="4">
+         <password>mycastpass</password>
+         <email>mr.alexn95@mail.com</email>
+         <login>lehaLogin</login>
+      </object>
+      <object class="ru.sfedu.projectmanager.model.entries.User" id="2">
+         <password>mycastpass</password>
+         <email>mr.alexn95@mail.com</email>
+         <login>lehaLogin</login>
+      </object>
+      <object class="ru.sfedu.projectmanager.model.entries.User" id="1">
+         <password>mycastpass</password>
+         <email>mr.alexn95@mail.com</email>
+         <login>lehaLogin</login>
+      </object>
+      <object class="ru.sfedu.projectmanager.model.entries.User" id="6">
+         <password>mycastpass</password>
+         <email>mr.alexn95@mail.com</email>
+         <login>lehaLogin</login>
+      </object>
+      <object class="ru.sfedu.projectmanager.model.entries.User" id="7">
+         <password>mycastpass</password>
+         <email>mr.alexn95@mail.com</email>
+         <login>lehaLogin</login>
+      </object>
+   </beans>
+</XMLBeanList>

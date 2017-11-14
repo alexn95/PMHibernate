@@ -1,31 +1,22 @@
-package ru.sfedu.projectmanager.model;
+package ru.sfedu.projectmanager.model.providers;
 
-import com.sun.org.apache.bcel.internal.generic.SWITCH;
-import ru.sfedu.projectmanager.model.enrities.Project;
-import ru.sfedu.projectmanager.model.enrities.Task;
-import ru.sfedu.projectmanager.model.enrities.User;
-import ru.sfedu.projectmanager.model.enrities.WithId;
+import ru.sfedu.projectmanager.model.entries.Project;
+import ru.sfedu.projectmanager.model.entries.Task;
+import ru.sfedu.projectmanager.model.entries.User;
+import ru.sfedu.projectmanager.model.entries.WithId;
 import java.io.*;
-import java.lang.reflect.ParameterizedType;
-import java.rmi.server.ExportException;
-import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Objects;
 
-import com.opencsv.CSVReader;
-import com.opencsv.CSVWriter;
 import com.opencsv.bean.CsvToBean;
 import com.opencsv.bean.CsvToBeanBuilder;
 import com.opencsv.bean.StatefulBeanToCsv;
 import com.opencsv.bean.StatefulBeanToCsvBuilder;
-import com.opencsv.exceptions.CsvDataTypeMismatchException;
 import com.opencsv.exceptions.CsvException;
-import com.opencsv.exceptions.CsvRequiredFieldEmptyException;
-import java.util.Arrays;
 import org.apache.log4j.Logger;
 import ru.sfedu.projectmanager.Constants;
-import ru.sfedu.projectmanager.model.entityType.EntityType;
+import ru.sfedu.projectmanager.model.enums.EntityType;
+import ru.sfedu.projectmanager.model.enums.ResultType;
 import ru.sfedu.projectmanager.utils.ConfigurationUtil;
 
 public class DataProviderCsv<T extends WithId> implements IDataProvider<T> {
@@ -43,79 +34,73 @@ public class DataProviderCsv<T extends WithId> implements IDataProvider<T> {
 
 
     @Override
-    public void saveRecord(List<T> beans, EntityType type) {
+    public DataProviderResult saveRecord(T insertedBean, EntityType type) {
         try {
             initCsvToBean(type);
             initBeanToScv(type, true);
-//            TODO
-//            Arrays.stream();
-            for (T bean : beans) {
-                if (getRecordById(bean.getId(), type) == null) {
-                    try {
-                        beanToCsv.write(bean);
-                    } catch (CsvException e) {
-                        logger.info(e.getMessage());
-                    }
-                }
+            List<T> beans = csvToBean.parse();
+            if (beans.stream().filter(bean -> Objects.equals(insertedBean.getId(), bean.getId())).findFirst().orElse(null) == null){
+                beanToCsv.write(insertedBean);
+                writer.close();
+                return new DataProviderResult(ResultType.SUCCESSFUL);
+            } else {
+                writer.close();
+                return new DataProviderResult(ResultType.ID_ALREADY_EXIST);
             }
-            writer.close();
         } catch (Exception e){
-            logger.info(e);
+            logger.error(e);
         }
+        return new DataProviderResult(ResultType.SOME_ERROR);
     }
 
     @Override
-    public void deleteRecord(T bean, EntityType type){
+    public DataProviderResult deleteRecord(T bean, EntityType type){
         try {
             initCsvToBean(type);
-            List<T> entities = csvToBean.parse();
-            T deletableEntity = null;
-            for (T entity: entities) {
-                if (Objects.equals(entity.getId(), bean.getId())) {
-                    deletableEntity = entity;
-                }
-            }
-            if (deletableEntity == null) return;
-            entities.remove(deletableEntity);
-            try {
+            List<T> beans = csvToBean.parse();
+            T deletedBean = beans.stream().filter(currentBean -> Objects.equals(bean.getId(), currentBean.getId())).findFirst().orElse(null);
+            if (deletedBean != null){
+                beans.remove(deletedBean);
                 initBeanToScv(type, false);
-                beanToCsv.write(entities);
-            } catch (CsvException e) {
-                logger.info(e.getMessage());
+                beanToCsv.write(beans);
+                writer.close();
+                return new DataProviderResult(ResultType.SUCCESSFUL);
+            } else {
+                return new DataProviderResult(ResultType.ID_NOT_EXIST);
             }
-            writer.close();
         } catch (Exception e){
-            logger.info(e.getMessage());
+            logger.error(e);
         }
-
+        return new DataProviderResult(ResultType.SOME_ERROR);
     }
 
     @Override
-    public T getRecordById(long id, EntityType type){
+    public DataProviderResult getRecordById(long id, EntityType type){
         try {
             initCsvToBean(type);
-            List<T> entities = csvToBean.parse();
-            for (T entity: entities) {
-                if (entity.getId() == id) {
-                    return entity;
-                }
+            List<T> beans = csvToBean.parse();
+            T searchedBean = beans.stream().filter(bean -> id == bean.getId()).findFirst().orElse(null);
+            if (searchedBean != null){
+                return new DataProviderResult<T>(ResultType.SUCCESSFUL, searchedBean);
+            } else {
+                return new DataProviderResult(ResultType.ID_NOT_EXIST);
             }
-            return null;
         } catch (Exception e){
-            logger.info(e.getMessage());
+            logger.error(e);
         }
-        return null;
+        return new DataProviderResult(ResultType.SOME_ERROR);
     }
 
     @Override
-    public void initDataSource() {
+    public DataProviderResult initDataSource() {
         try {
             users_path = ConfigurationUtil.getConfigurationEntry(Constants.CSV_PATH_USERS);
             projects_path = ConfigurationUtil.getConfigurationEntry(Constants.CSV_PATH_PROJECTS);
             tasks_path = ConfigurationUtil.getConfigurationEntry(Constants.CSV_PATH_TASKS);
         } catch (IOException e){
-            logger.info(e.getMessage());
+            logger.error(e);
         }
+        return new DataProviderResult(ResultType.SUCCESSFUL);
     }
 
     private void initCsvToBean(EntityType type) throws Exception{
@@ -138,7 +123,7 @@ public class DataProviderCsv<T extends WithId> implements IDataProvider<T> {
                     throw new Exception("Wrong entity type");
             }
         } catch (FileNotFoundException e) {
-            logger.info(e.getMessage());
+            logger.error(e);
         }
     }
 
@@ -162,7 +147,7 @@ public class DataProviderCsv<T extends WithId> implements IDataProvider<T> {
                     throw new Exception("Wrong entity type");
             }
         } catch (FileNotFoundException e) {
-            logger.info(e.getMessage());
+            logger.error(e);
             throw new Exception("Wrong entity type");
         }
     }
