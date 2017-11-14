@@ -16,19 +16,15 @@ public class Project implements WithId, Serializable {
     @CsvBindByPosition(position = 0)
     private Long id;
 
-    @Element
     @CsvBindByPosition(position = 1)
     private String title;
 
-    @Element
     @CsvBindByPosition(position = 2)
     private String description;
 
-    @Element
     @CsvBindByPosition(position = 3)
     private Long state;
 
-    @Element
     @CsvBindByPosition(position = 4)
     private String createDate;
   
@@ -45,14 +41,6 @@ public class Project implements WithId, Serializable {
     this.createDate = createDate;
   }
 
-  //
-  // Methods
-  //
-
-
-  //
-  // Accessor methods
-  //
 
   /**
    * Set the value of id
@@ -74,6 +62,7 @@ public class Project implements WithId, Serializable {
    * Set the value of title
    * @param newVar the new value of title
    */
+  @Element
   public void setTitle (String newVar) {
     title = newVar;
   }
@@ -82,6 +71,7 @@ public class Project implements WithId, Serializable {
    * Get the value of title
    * @return the value of title
    */
+  @Element
   public String getTitle () {
     return title;
   }
@@ -90,6 +80,7 @@ public class Project implements WithId, Serializable {
    * Set the value of description
    * @param newVar the new value of description
    */
+  @Element
   public void setDescription (String newVar) {
     description = newVar;
   }
@@ -98,6 +89,7 @@ public class Project implements WithId, Serializable {
    * Get the value of description
    * @return the value of description
    */
+  @Element
   public String getDescription () {
     return description;
   }
@@ -106,6 +98,7 @@ public class Project implements WithId, Serializable {
    * Set the value of state
    * @param newVar the new value of state
    */
+  @Element
   public void setState(Long newVar) {
     state = newVar;
   }
@@ -114,6 +107,7 @@ public class Project implements WithId, Serializable {
    * Get the value of state
    * @return the value of state
    */
+  @Element
   public Long getState() {
     return state;
   }
@@ -122,6 +116,7 @@ public class Project implements WithId, Serializable {
    * Set the value of createDate
    * @param newVar the new value of createDate
    */
+  @Element
   public void setCreateDate (String newVar) {
     createDate = newVar;
   }
@@ -130,6 +125,7 @@ public class Project implements WithId, Serializable {
    * Get the value of createDate
    * @return the value of createDate
    */
+  @Element
   public String getCreateDate () {
     return createDate;
   }

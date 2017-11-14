@@ -32,21 +32,14 @@ public class DataProviderXML<T extends WithId> implements IDataProvider<T> {
     public DataProviderResult saveRecord(T insertedBean, EntityType type) {
         try {
             initFile(type);
-            try {
-                XMLBeanList list = serializer.read(XMLBeanList.class, file);
-                List<T> beans = list.getBeans();
-                if (beans.stream().filter(bean -> Objects.equals(insertedBean.getId(), bean.getId())).findFirst().orElse(null) == null){
-                    beans.add(insertedBean);
-                    serializer.write(new XMLBeanList<>(beans), file);
-                    return new DataProviderResult(ResultType.SUCCESSFUL);
-                } else {
-                    return new DataProviderResult(ResultType.ID_ALREADY_EXIST);
-                }
-            } catch (XMLStreamException e) {
-                List<T> returnList = new ArrayList<>();
-                returnList.add(insertedBean);
-                serializer.write(new XMLBeanList<>(returnList), file);
+            XMLBeanList list = serializer.read(XMLBeanList.class, file);
+            List<T> beans = list.getBeans();
+            if (beans.stream().filter(bean -> Objects.equals(insertedBean.getId(), bean.getId())).findFirst().orElse(null) == null){
+                beans.add(insertedBean);
+                serializer.write(new XMLBeanList<>(beans), file);
                 return new DataProviderResult(ResultType.SUCCESSFUL);
+            } else {
+               return new DataProviderResult(ResultType.ID_ALREADY_EXIST);
             }
         } catch (Exception e){
             logger.error(e);

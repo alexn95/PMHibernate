@@ -17,27 +17,21 @@ public class Task implements WithId, Serializable {
     @CsvBindByPosition(position = 0)
     private Long id;
 
-    @Element
     @CsvBindByPosition(position = 1)
     private String title;
 
-    @Element
     @CsvBindByPosition(position = 2)
     private String description;
 
-    @Element
     @CsvBindByPosition(position = 3)
     private Long projectId;
 
-    @Attribute
     @CsvBindByPosition(position = 4)
     private Long state;
 
-    @Element
     @CsvBindByPosition(position = 5)
     private Long type;
 
-    @Element
     @CsvBindByPosition(position = 6)
     private String createDate;
   
@@ -85,6 +79,7 @@ public class Task implements WithId, Serializable {
    * Set the value of title
    * @param newVar the new value of title
    */
+  @Element
   public void setTitle (String newVar) {
     title = newVar;
   }
@@ -93,6 +88,7 @@ public class Task implements WithId, Serializable {
    * Get the value of title
    * @return the value of title
    */
+  @Element
   public String getTitle () {
     return title;
   }
@@ -101,6 +97,7 @@ public class Task implements WithId, Serializable {
    * Set the value of description
    * @param newVar the new value of description
    */
+  @Element
   public void setDescription (String newVar) {
     description = newVar;
   }
@@ -109,6 +106,7 @@ public class Task implements WithId, Serializable {
    * Get the value of description
    * @return the value of description
    */
+  @Element
   public String getDescription () {
     return description;
   }
@@ -117,6 +115,7 @@ public class Task implements WithId, Serializable {
    * Set the value of projectId
    * @param newVar the new value of projectId
    */
+  @Element
   public void setProjectId (Long newVar) {
     projectId = newVar;
   }
@@ -125,6 +124,7 @@ public class Task implements WithId, Serializable {
    * Get the value of projectId
    * @return the value of projectId
    */
+  @Element
   public Long getProjectId () {
     return projectId;
   }
@@ -133,6 +133,7 @@ public class Task implements WithId, Serializable {
    * Set the value of state
    * @param newVar the new value of state
    */
+  @Element
   public void setState(Long newVar) {
     state = newVar;
   }
@@ -141,6 +142,7 @@ public class Task implements WithId, Serializable {
    * Get the value of state
    * @return the value of state
    */
+  @Element
   public Long getState() {
     return state;
   }
@@ -149,6 +151,7 @@ public class Task implements WithId, Serializable {
    * Set the value of type
    * @param newVar the new value of type
    */
+  @Element
   public void setType(Long newVar) {
     type = newVar;
   }
@@ -157,6 +160,7 @@ public class Task implements WithId, Serializable {
    * Get the value of type
    * @return the value of type
    */
+  @Element
   public Long getType() {
     return type;
   }
@@ -165,6 +169,7 @@ public class Task implements WithId, Serializable {
    * Set the value of createDate
    * @param newVar the new value of createDate
    */
+  @Element
   public void setCreateDate (String newVar) {
     createDate = newVar;
   }
@@ -173,10 +178,9 @@ public class Task implements WithId, Serializable {
    * Get the value of createDate
    * @return the value of createDate
    */
+  @Element
   public String getCreateDate () {
     return createDate;
   }
-
-
 
 }

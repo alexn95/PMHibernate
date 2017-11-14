@@ -26,38 +26,38 @@ public class DataProviderXMLTest {
     }
 
     public void saveRecord() throws Exception {
-        User user = new User(10L,"lehaLogin","mr.alexn95@mail.com","mycastpass");
+        User user = new User(1L,"lehaLogin","mr.alexn95@mail.com","mycastpass");
         Assert.assertEquals(dataProvider.saveRecord(user, EntityType.USER).getResult(), ResultType.SUCCESSFUL);
 
-        Task task = new Task(10L, "title", "description", 1L, 1L, 1L, "date");
+        Task task = new Task(1L, "title", "description", 1L, 1L, 1L, "date");
         Assert.assertEquals(dataProvider.saveRecord(task, EntityType.TASK).getResult(), ResultType.SUCCESSFUL);
 
-        Project project = new Project(10L, "title", "description", 1L, "date");
+        Project project = new Project(1L, "title", "description", 1L, "date");
         Assert.assertEquals(dataProvider.saveRecord(project, EntityType.PROJECT).getResult(), ResultType.SUCCESSFUL);
     }
 
     public void getRecordById() throws Exception {
-        DataProviderResult result = dataProvider.getRecordById(10L,EntityType.USER);
+        DataProviderResult result = dataProvider.getRecordById(1L,EntityType.USER);
         Assert.assertEquals(result.getResult(), ResultType.SUCCESSFUL);
-        Assert.assertEquals((long)result.getData().getId(), 10L);
+        Assert.assertEquals((long)result.getData().getId(), 1L);
 
-        DataProviderResult result2 = dataProvider.getRecordById(10L, EntityType.TASK);
+        DataProviderResult result2 = dataProvider.getRecordById(1L, EntityType.TASK);
         Assert.assertEquals(result2.getResult(), ResultType.SUCCESSFUL);
-        Assert.assertEquals((long)result2.getData().getId(), 10L);
+        Assert.assertEquals((long)result2.getData().getId(), 1L);
 
-        DataProviderResult result3 = dataProvider.getRecordById(10L, EntityType.PROJECT);
+        DataProviderResult result3 = dataProvider.getRecordById(1L, EntityType.PROJECT);
         Assert.assertEquals(result3.getResult(), ResultType.SUCCESSFUL);
-        Assert.assertEquals((long)result3.getData().getId(), 10L);
+        Assert.assertEquals((long)result3.getData().getId(), 1L);
     }
 
     public void deleteRecord() throws Exception {
-        User user = new User(10L,"lehaLogin","mr.alexn95@mail.com","mycastpass");
+        User user = new User(1L,"lehaLogin","mr.alexn95@mail.com","mycastpass");
         Assert.assertEquals(dataProvider.deleteRecord(user, EntityType.USER).getResult(), ResultType.SUCCESSFUL);
 
-        Task task = new Task(10L, "title", "description", 1L, 1L, 1L, "date");
+        Task task = new Task(1L, "title", "description", 1L, 1L, 1L, "date");
         Assert.assertEquals(dataProvider.deleteRecord(task, EntityType.TASK).getResult(), ResultType.SUCCESSFUL);
 
-        Project project = new Project(10L, "title", "description", 1L, "date");
+        Project project = new Project(1L, "title", "description", 1L, "date");
         Assert.assertEquals(dataProvider.deleteRecord(project, EntityType.PROJECT).getResult(), ResultType.SUCCESSFUL);
     }
 
