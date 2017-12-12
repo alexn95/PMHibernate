@@ -1,5 +1,7 @@
 package ru.sfedu.projectmanager.model.entries;
 import java.io.Serializable;
+import java.util.Random;
+
 import com.opencsv.bean.*;
 import org.simpleframework.xml.Attribute;
 import org.simpleframework.xml.Element;
@@ -22,6 +24,11 @@ public class User implements WithId, Serializable {
 
     @CsvBindByPosition(position = 3)
     private String password;
+
+    @CsvBindByPosition(position = 4)
+    private Long projectId;
+
+    private Random random = new Random();
   
   //
   // Constructors
@@ -33,6 +40,22 @@ public class User implements WithId, Serializable {
     this.login = login;
     this.email = email;
     this.password = password;
+  }
+
+  public User(Long id, String login, String email, String password, Long projectId) {
+    this.id = id;
+    this.login = login;
+    this.email = email;
+    this.password = password;
+    this.projectId = projectId;
+  }
+
+  public User( String login, String email, String password, Long projectId) {
+    this.id = random.nextLong();
+    this.login = login;
+    this.email = email;
+    this.password = password;
+    this.projectId = projectId;
   }
 
 //
@@ -118,8 +141,18 @@ public class User implements WithId, Serializable {
   // Other methods
   //
 
+  @Element(required=false)
+  public Long getProjectId() {
+    return projectId;
+  }
+
+  @Element(required=false)
+  public void setProjectId(Long projectId) {
+    this.projectId = projectId;
+  }
+
   @Override
   public String toString() {
-    return id.toString() + login.toString() + email.toString() + password.toString();
+    return "'" + login + "', '" +  email + "', '" + password+ "', " + projectId;
   }
 }

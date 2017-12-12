@@ -2,18 +2,20 @@ package ru.sfedu.projectmanager.model.providers;
 
 import com.opencsv.exceptions.CsvDataTypeMismatchException;
 import com.opencsv.exceptions.CsvRequiredFieldEmptyException;
-import ru.sfedu.projectmanager.model.enums.EntityType;
-import ru.sfedu.projectmanager.model.enums.ResultType;
-
-import java.util.List;
+import ru.sfedu.projectmanager.model.enums.EntryType;
+import ru.sfedu.projectmanager.model.enums.MethodsResult;
 
 public abstract interface IDataProvider<T> {
 
-    public DataProviderResult saveRecord(T bean, EntityType type) throws CsvDataTypeMismatchException, CsvRequiredFieldEmptyException;
+    public MethodsResult saveRecord(T bean, EntryType type);
 
-    public DataProviderResult deleteRecord(T bean, EntityType type);
+    public MethodsResult deleteRecord(long id, EntryType type);
 
-    public DataProviderResult getRecordById(long id, EntityType type);
+    public MethodsResult getRecordById(long id, EntryType type);
 
-    public DataProviderResult initDataSource();
+    public MethodsResult updateRecord(T bean, EntryType type);
+
+    public MethodsResult initDataSource();
+
+    public MethodsResult getUserByLogin(String login);
 }

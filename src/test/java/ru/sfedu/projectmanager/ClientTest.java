@@ -6,6 +6,10 @@
 package ru.sfedu.projectmanager;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
+
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -43,7 +47,8 @@ public class ClientTest {
     public void testSomeMethod() throws IOException{
 //        Client client = new Client();
 //        client.logBasicSystemInfo();
-        System.out.println("dp.CSV_path - " + ConfigurationUtil.getConfigurationEntry(Constants.CSV_PATH_USERS));
+       // System.out.println("dp.CSV_path - " + ConfigurationUtil.getConfigurationEntry(Constants.CSV_PATH_USERS));
+
     }
     
 }

@@ -1,24 +1,24 @@
-package ru.sfedu.projectmanager.model.providers;
+package ru.sfedu.projectmanager.model.enums;
 
 import ru.sfedu.projectmanager.model.entries.WithId;
 import ru.sfedu.projectmanager.model.enums.ResultType;
 
-public class DataProviderResult<T extends WithId> {
+public class MethodsResult<T extends WithId> {
 
     private ResultType result;
 
     private T data = null;
 
-    public DataProviderResult(ResultType result, T data) {
+    public MethodsResult(ResultType result, T data) {
         this.data = data;
         this.result = result;
     }
 
-    public DataProviderResult(ResultType result) {
+    public MethodsResult(ResultType result) {
         this.result = result;
     }
 
-    public DataProviderResult() {
+    public MethodsResult() {
     }
 
     public ResultType getResult() {

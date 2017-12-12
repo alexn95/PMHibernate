@@ -1,6 +1,6 @@
 package ru.sfedu.projectmanager.model.enums;
 
-public enum EntityType {
+public enum EntryType {
     USER,
     PROJECT,
     TASK

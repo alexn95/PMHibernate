@@ -6,6 +6,8 @@ import org.simpleframework.xml.Attribute;
 import org.simpleframework.xml.Element;
 
 import java.io.Serializable;
+import java.sql.Date;
+import java.util.Random;
 
 /**
  * Class Project
@@ -23,18 +25,28 @@ public class Project implements WithId, Serializable {
     private String description;
 
     @CsvBindByPosition(position = 3)
-    private Long state;
+    private String state;
 
     @CsvBindByPosition(position = 4)
-    private String createDate;
+    private Date createDate;
+
+    private Random random = new Random();
   
   //
   // Constructors
   //
   public Project () { };
 
-  public Project(Long id, String title, String description, Long state, String createDate) {
+  public Project(Long id, String title, String description, String state, Date createDate) {
     this.id = id;
+    this.title = title;
+    this.description = description;
+    this.state = state;
+    this.createDate = createDate;
+  }
+
+  public Project(String title, String description, String state, Date createDate) {
+    this.id = random.nextLong();
     this.title = title;
     this.description = description;
     this.state = state;
@@ -99,7 +111,7 @@ public class Project implements WithId, Serializable {
    * @param newVar the new value of state
    */
   @Element
-  public void setState(Long newVar) {
+  public void setState(String newVar) {
     state = newVar;
   }
 
@@ -108,17 +120,14 @@ public class Project implements WithId, Serializable {
    * @return the value of state
    */
   @Element
-  public Long getState() {
+  public String getState() {
     return state;
   }
 
-  /**
-   * Set the value of createDate
-   * @param newVar the new value of createDate
-   */
+
   @Element
-  public void setCreateDate (String newVar) {
-    createDate = newVar;
+  public void setCreateDate (Date date) {
+    createDate = date;
   }
 
   /**
@@ -126,8 +135,14 @@ public class Project implements WithId, Serializable {
    * @return the value of createDate
    */
   @Element
-  public String getCreateDate () {
+  public Date getCreateDate () {
     return createDate;
+  }
+
+
+  @Override
+  public String toString(){
+    return "'" + title + "', '" + description + "', '" + state + "', '" + createDate + "'";
   }
 
 

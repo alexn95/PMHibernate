@@ -53,6 +53,13 @@
             <version>1.3</version>
             <scope>test</scope>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/mysql/mysql-connec.. -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.8-dmr</version>
+        </dependency>
     </dependencies>
     
     
