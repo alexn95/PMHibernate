@@ -240,8 +240,8 @@ public class Task implements WithId, Serializable {
     @Override
     public String toString(){
         SimpleDateFormat format = new SimpleDateFormat();
-        return "'" + title + "', '" + description + "', " + projectId + ", '" + state + "', '"
-                + type + "', '" + format.format(new Date(createDate)) + "', " + userId;
+        return title + ", " + description + ", " + projectId + ", " + state + ", "
+                + type + ", " + format.format(new Date(createDate)) + ", " + userId;
     }
 
     @Override

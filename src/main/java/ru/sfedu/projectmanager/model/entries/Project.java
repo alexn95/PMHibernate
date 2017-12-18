@@ -157,7 +157,7 @@ public class Project implements WithId, Serializable {
     @Override
     public String toString(){
       SimpleDateFormat format = new SimpleDateFormat();
-      return "'" + title + "', '" + description + "', '" + state + "', '" + format.format(new Date(createDate)) + "'";
+      return title + ", " + description + ", " + state + ", " + format.format(new Date(createDate));
     }
 
     @Override

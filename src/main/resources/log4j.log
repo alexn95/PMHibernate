@@ -674,3 +674,4 @@ Message: XML document structures must start and end within the same entity.
 12.18:18.33.43 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:68 - java.lang.RuntimeException: Error parsing CSV line: 1, values: null
 12.18:18.33.43 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:68 - java.lang.RuntimeException: Error parsing CSV line: 1, values: null
 12.18:18.35.15  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXMLTest:124 - 'projectTitle_722621478', 'description_1834716070', 'state_1294076315', '18.12.17 18:35'
+12.18:18.50.22  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXMLTest:124 - 'projectTitle_220535140', 'description_752935726', 'state_220600925', '18.12.17 18:50'
