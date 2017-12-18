@@ -1,5 +1,6 @@
 package ru.sfedu.projectmanager.model.providers;
 
+import ru.sfedu.projectmanager.exceptions.*;
 import ru.sfedu.projectmanager.model.entries.Project;
 import ru.sfedu.projectmanager.model.entries.Task;
 import ru.sfedu.projectmanager.model.entries.User;
@@ -7,6 +8,7 @@ import ru.sfedu.projectmanager.model.entries.WithId;
 import java.io.*;
 import java.util.List;
 import java.util.Objects;
+import java.util.stream.Collectors;
 
 import com.opencsv.bean.CsvToBean;
 import com.opencsv.bean.CsvToBeanBuilder;
@@ -39,18 +41,33 @@ public class DataProviderCSV<T extends WithId> implements IDataProvider<T> {
             initCsvToBean(type);
             initBeanToScv(type, true);
             List<T> beans = csvToBean.parse();
-            if (beans.stream().filter(bean -> Objects.equals(insertedBean.getId(), bean.getId())).findFirst().orElse(null) == null){
-                beanToCsv.write(insertedBean);
-                writer.close();
-                return new MethodsResult(ResultType.SUCCESSFUL);
-            } else {
-                writer.close();
+            if (beans.stream().filter(tempBean -> Objects.equals(tempBean.getId(), insertedBean.getId()))
+                    .findFirst().orElse(null) != null) {
                 return new MethodsResult(ResultType.ID_ALREADY_EXIST);
             }
+            entryConstrainVerification(beans, insertedBean, type);
+            beanToCsv.write(insertedBean);
+            writer.close();
+            return new MethodsResult<>(ResultType.SUCCESSFUL);
+        } catch (TitleNotUniqueException e) {
+            logger.error(e);
+            return new MethodsResult(ResultType.TITLE_ALREADY_EXIST);
+        } catch (WrongEntryTypeException e) {
+            logger.error(e);
+            return new MethodsResult<>(ResultType.WRONG_ENTRY_TYPE_EXCEPTION);
+        } catch (LoginNotUniqueException e) {
+            logger.error(e);
+            return new MethodsResult(ResultType.LOGIN_ALREADY_EXIST);
+        } catch (IntegrityConstrainException e) {
+            logger.error(e);
+            return new MethodsResult(ResultType.SQL_INTEGRITY_CONSTRAIN_EXCEPTION);
+        } catch (IOException e){
+            logger.error(e);
+            return new MethodsResult<>(ResultType.IO_EXCEPTION);
         } catch (Exception e){
             logger.error(e);
+            return new MethodsResult<>(ResultType.EXCEPTION);
         }
-        return new MethodsResult(ResultType.SOME_ERROR);
     }
 
     @Override
@@ -64,27 +81,21 @@ public class DataProviderCSV<T extends WithId> implements IDataProvider<T> {
                 initBeanToScv(type, false);
                 beanToCsv.write(beans);
                 writer.close();
-                return new MethodsResult(ResultType.SUCCESSFUL);
+                return new MethodsResult<>(ResultType.SUCCESSFUL);
             } else {
                 writer.close();
-                return new MethodsResult(ResultType.ID_NOT_EXIST);
+                return new MethodsResult<>(ResultType.ID_NOT_EXIST);
             }
-        } catch (Exception e){
+        } catch (WrongEntryTypeException e){
             logger.error(e);
-        }
-        return new MethodsResult(ResultType.SOME_ERROR);
-    }
-
-    @Override
-    public MethodsResult initDataSource() {
-        try {
-            users_path = ConfigurationUtil.getConfigurationEntry(Constants.CSV_PATH_USERS);
-            projects_path = ConfigurationUtil.getConfigurationEntry(Constants.CSV_PATH_PROJECTS);
-            tasks_path = ConfigurationUtil.getConfigurationEntry(Constants.CSV_PATH_TASKS);
+            return new MethodsResult<>(ResultType.WRONG_ENTRY_TYPE_EXCEPTION);
         } catch (IOException e){
             logger.error(e);
+            return new MethodsResult<>(ResultType.IO_EXCEPTION);
+        } catch (Exception e){
+            logger.error(e);
+            return new MethodsResult<>(ResultType.EXCEPTION);
         }
-        return new MethodsResult(ResultType.SUCCESSFUL);
     }
 
     @Override
@@ -96,17 +107,57 @@ public class DataProviderCSV<T extends WithId> implements IDataProvider<T> {
             if (searchedBean != null){
                 return new MethodsResult<T>(ResultType.SUCCESSFUL, searchedBean);
             } else {
-                return new MethodsResult(ResultType.ID_NOT_EXIST);
+                return new MethodsResult<>(ResultType.ID_NOT_EXIST);
             }
-        } catch (Exception e){
+        } catch (WrongEntryTypeException e){
             logger.error(e);
+            return new MethodsResult<>(ResultType.WRONG_ENTRY_TYPE_EXCEPTION);
+        } catch (FileNotFoundException e){
+            logger.error(e);
+            return new MethodsResult<>(ResultType.FILE_NOT_FOUND_EXCEPTION);
         }
-        return new MethodsResult(ResultType.SOME_ERROR);
     }
 
     @Override
     public MethodsResult updateRecord(T bean, EntryType type){
-        return null;
+        try {
+            initCsvToBean(type);
+            List<T> beans = csvToBean.parse();
+            T updatedBean = beans.stream().filter(currentBean -> Objects.equals(bean.getId(), currentBean.getId()))
+                    .findFirst().orElse(null);
+            if (updatedBean == null){
+                return new MethodsResult(ResultType.ID_NOT_EXIST);
+            }
+            int index = beans.indexOf(updatedBean);
+            beans.remove(updatedBean);
+            entryConstrainVerification(beans, bean, type);
+            beans.add(index, bean);
+            initBeanToScv(type, false);
+            beanToCsv.write(beans);
+            writer.close();
+            return new MethodsResult<>(ResultType.SUCCESSFUL);
+        } catch (TitleNotUniqueException e) {
+            logger.error(e);
+            return new MethodsResult(ResultType.TITLE_ALREADY_EXIST);
+        } catch (LoginNotUniqueException e) {
+            logger.error(e);
+            return new MethodsResult(ResultType.LOGIN_ALREADY_EXIST);
+        } catch (IntegrityConstrainException e) {
+            logger.error(e);
+            return new MethodsResult(ResultType.SQL_INTEGRITY_CONSTRAIN_EXCEPTION);
+        } catch (IdNotUniqueException e){
+            logger.error(e);
+            return new MethodsResult(ResultType.ID_ALREADY_EXIST);
+        } catch (IOException e){
+            logger.error(e);
+            return new MethodsResult<>(ResultType.IO_EXCEPTION);
+        } catch (WrongEntryTypeException e){
+            logger.error(e);
+            return new MethodsResult<>(ResultType.WRONG_ENTRY_TYPE_EXCEPTION);
+        } catch (Exception e){
+            logger.error(e);
+            return new MethodsResult<>(ResultType.EXCEPTION);
+        }
     }
 
     @Override
@@ -116,63 +167,167 @@ public class DataProviderCSV<T extends WithId> implements IDataProvider<T> {
             List<User> beans = csvToBean.parse();
             User searchedBean = beans.stream().filter(bean -> Objects.equals(login, (bean).getLogin())).findFirst().orElse(null);
             if (searchedBean != null){
-                return new MethodsResult<User>(ResultType.SUCCESSFUL, searchedBean);
+                return new MethodsResult<>(ResultType.SUCCESSFUL, searchedBean);
             } else {
-                return new MethodsResult(ResultType.ID_NOT_EXIST);
+                return new MethodsResult<>(ResultType.LOGIN_NOT_EXIST);
             }
-        } catch (Exception e){
+        } catch (WrongEntryTypeException e){
             logger.error(e);
-        }
-        return new MethodsResult(ResultType.SOME_ERROR);
-    }
-
-
-    protected void initCsvToBean(EntryType type) throws Exception{
-        try {
-            switch (type) {
-                case TASK:
-                    reader = new FileReader(tasks_path);
-                    csvToBean = new CsvToBeanBuilder(reader).withType(Task.class).build();
-                    break;
-                case USER:
-                    reader = new FileReader(users_path);
-                    csvToBean = new CsvToBeanBuilder(reader).withType(User.class).build();
-                    break;
-                case PROJECT:
-                    reader = new FileReader(projects_path);
-                    csvToBean = new CsvToBeanBuilder(reader).withType(Project.class).build();
-                    break;
-                default:
-                    logger.info("Wrong entity type");
-                    throw new Exception("Wrong entity type");
-            }
-        } catch (FileNotFoundException e) {
+            return new MethodsResult<>(ResultType.WRONG_ENTRY_TYPE_EXCEPTION);
+        } catch (FileNotFoundException e){
             logger.error(e);
+            return new MethodsResult<>(ResultType.FILE_NOT_FOUND_EXCEPTION);
         }
     }
 
-    protected void initBeanToScv(EntryType type, Boolean append) throws Exception{
+    @Override
+    public MethodsResult getTasksByTitle(String title){
         try {
-            switch (type) {
-                case TASK:
-                    writer = new FileWriter(tasks_path, append);
-                    beanToCsv = new StatefulBeanToCsvBuilder(writer).build();
-                    break;
-                case USER:
-                    writer = new FileWriter(users_path, append);
-                    beanToCsv = new StatefulBeanToCsvBuilder(writer).build();
-                    break;
-                case PROJECT:
-                    writer = new FileWriter(projects_path, append);
-                    beanToCsv = new StatefulBeanToCsvBuilder(writer).build();
-                    break;
-                default:
-                    logger.info("Wrong entity type");
-                    throw new Exception("Wrong entity type");
-            }
-        } catch (FileNotFoundException e) {
+            initCsvToBean(EntryType.TASK);
+            List<Task> beans = csvToBean.parse();
+            return new MethodsResult( ResultType.SUCCESSFUL,
+                    beans.stream().filter(bean -> Objects.equals(title, (bean).getTitle())).collect(Collectors.toList()));
+        } catch (WrongEntryTypeException e){
             logger.error(e);
-            throw new Exception("Wrong entity type");
+            return new MethodsResult<>(ResultType.WRONG_ENTRY_TYPE_EXCEPTION);
+        } catch (FileNotFoundException e){
+            logger.error(e);
+            return new MethodsResult<>(ResultType.FILE_NOT_FOUND_EXCEPTION);
+        }
+    }
+
+    @Override
+    public MethodsResult getProjectByTitle(String title){
+        try {
+            initCsvToBean(EntryType.PROJECT);
+            List<Project> beans = csvToBean.parse();
+            Project searchedBean =
+                    beans.stream().filter(bean -> Objects.equals(title, (bean).getTitle())).findFirst().orElse(null);
+            if (searchedBean != null){
+                return new MethodsResult<>(ResultType.SUCCESSFUL, searchedBean);
+            } else {
+                return new MethodsResult<>(ResultType.TITLE_NOT_EXIST);
+            }
+        } catch (WrongEntryTypeException e){
+            logger.error(e);
+            return new MethodsResult<>(ResultType.WRONG_ENTRY_TYPE_EXCEPTION);
+        } catch (FileNotFoundException e){
+            logger.error(e);
+            return new MethodsResult<>(ResultType.FILE_NOT_FOUND_EXCEPTION);
+        }
+    }
+
+    @Override
+    public MethodsResult getAllRecords(EntryType type){
+        try {
+            initCsvToBean(type);
+            List<T> beans = csvToBean.parse();
+                return new MethodsResult<T>(ResultType.SUCCESSFUL, beans);
+        } catch (IOException e){
+            logger.error(e);
+            return new MethodsResult<>(ResultType.IO_EXCEPTION);
+        } catch (WrongEntryTypeException e){
+            logger.error(e);
+            return new MethodsResult<>(ResultType.WRONG_ENTRY_TYPE_EXCEPTION);
+        }
+    }
+
+    @Override
+    public MethodsResult initDataSource() {
+        try {
+            users_path = ConfigurationUtil.getConfigurationEntry(Constants.CSV_PATH_USERS);
+            projects_path = ConfigurationUtil.getConfigurationEntry(Constants.CSV_PATH_PROJECTS);
+            tasks_path = ConfigurationUtil.getConfigurationEntry(Constants.CSV_PATH_TASKS);
+        } catch (IOException e){
+            logger.error(e);
+            return new MethodsResult<>(ResultType.IO_EXCEPTION);
+        }
+        return new MethodsResult<>(ResultType.SUCCESSFUL);
+    }
+
+
+    protected void initCsvToBean(EntryType type) throws WrongEntryTypeException, FileNotFoundException {
+        switch (type) {
+            case TASK:
+                reader = new FileReader(tasks_path);
+                csvToBean = new CsvToBeanBuilder(reader).withType(Task.class).build();
+                break;
+            case USER:
+                reader = new FileReader(users_path);
+                csvToBean = new CsvToBeanBuilder(reader).withType(User.class).build();
+                break;
+            case PROJECT:
+                reader = new FileReader(projects_path);
+                csvToBean = new CsvToBeanBuilder(reader).withType(Project.class).build();
+                break;
+            default:
+                logger.info("Wrong entries type");
+                throw new WrongEntryTypeException();
+            }
+    }
+
+    protected void initBeanToScv(EntryType type, Boolean append) throws WrongEntryTypeException, IOException{
+        switch (type) {
+            case TASK:
+                writer = new FileWriter(tasks_path, append);
+                beanToCsv = new StatefulBeanToCsvBuilder(writer).build();
+                break;
+            case USER:
+                writer = new FileWriter(users_path, append);
+                beanToCsv = new StatefulBeanToCsvBuilder(writer).build();
+                break;
+            case PROJECT:
+                writer = new FileWriter(projects_path, append);
+                beanToCsv = new StatefulBeanToCsvBuilder(writer).build();
+                break;
+            default:
+                logger.info("Wrong entity type");
+                throw new WrongEntryTypeException();
+        }
+    }
+
+    protected void entryConstrainVerification(List<T> beans, T bean, EntryType type) throws ConstrainException, FileNotFoundException {
+        List<Project> projects;
+        List<User> users;
+        switch (type){
+            case USER:
+                initCsvToBean(EntryType.PROJECT);
+                projects = csvToBean.parse();
+                User user = (User)bean;
+                if (beans.stream().filter(tempBean -> Objects.equals(user.getLogin(), ((User)tempBean).getLogin()))
+                        .findFirst().orElse(null) != null){
+                    throw new LoginNotUniqueException();
+                } else if (user.getProjectId() != null &&
+                        projects.stream().filter(tempBean -> Objects.equals(tempBean.getId(), ((User) bean).getProjectId()))
+                        .findFirst().orElse(null) == null) {
+                    throw new IntegrityConstrainException();
+                }
+                break;
+            case TASK:
+                initCsvToBean(EntryType.PROJECT);
+                projects = csvToBean.parse();
+                initCsvToBean(EntryType.USER);
+                users = csvToBean.parse();
+                Task task = (Task)bean;
+                if (task.getUserId() != null &&
+                        users.stream().filter(tempBean -> Objects.equals(tempBean.getId(), ((Task) bean).getUserId()))
+                                .findFirst().orElse(null) == null) {
+                    throw new IntegrityConstrainException();
+                } else if (task.getProjectId() != null &&
+                        projects.stream().filter(tempBean -> Objects.equals(tempBean.getId(), ((Task) bean).getProjectId()))
+                                .findFirst().orElse(null) == null) {
+                    throw new IntegrityConstrainException();
+                }
+                break;
+            case PROJECT:
+                Project project = (Project)bean;
+                if (beans.stream().filter(tempBean -> Objects.equals(project.getTitle(), ((Project)tempBean).getTitle()))
+                        .findFirst().orElse(null) != null) {
+                    throw new TitleNotUniqueException();
+                }
+                break;
+            default:
+                break;
         }
     }
 }

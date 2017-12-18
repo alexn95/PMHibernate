@@ -10,6 +10,8 @@ import ru.sfedu.projectmanager.utils.ConfigurationUtil;
 
 import java.io.IOException;
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class DataProviderJDBC<T extends WithId> implements IDataProvider<T>  {
 
@@ -23,19 +25,22 @@ public class DataProviderJDBC<T extends WithId> implements IDataProvider<T>  {
         switch (type){
             case USER:
                 query = "INSERT INTO  Users(login, email, password, projectId) " +
-                        " VALUES (" + bean.toString() + ");";
+                        " VALUES (" + bean.toInsert() + ");";
                 break;
             case TASK:
                 query = "INSERT INTO  Tasks(title, description, projectId, state, type, createDate, userId) " +
-                        " VALUES (" + bean.toString() + ");";
+                        " VALUES (" + bean.toInsert() + ");";
                 break;
             case PROJECT:
                 query = "INSERT INTO  Projects(title, description, state, createDate) " +
-                        " VALUES (" + bean.toString() + ");";
+                        " VALUES (" + bean.toInsert() + ");";
                 break;
         }
         try {
             statement.executeUpdate(query);
+        } catch (SQLIntegrityConstraintViolationException e) {
+            logger.error(e);
+            return new MethodsResult<>(ResultType.SQL_INTEGRITY_CONSTRAIN_EXCEPTION);
         } catch (SQLException e){
             logger.error(e);
             return new MethodsResult<>(ResultType.SQL_EXCEPTION);
@@ -68,32 +73,169 @@ public class DataProviderJDBC<T extends WithId> implements IDataProvider<T>  {
 
     @Override
     public MethodsResult getRecordById(long id, EntryType type){
-        switch (type){
-            case USER:
-                MethodsResult<WithId> user = selectUserById(id);
-                return new MethodsResult<>(user.getResult(), user.getData());
-            case TASK:
-                MethodsResult<WithId> task = selectTaskById(id);
-                return new MethodsResult<>(task.getResult(), task.getData());
-            case PROJECT:
-                MethodsResult<WithId> project = selectProjectById(id);
-                return new MethodsResult<>(project.getResult(), project.getData());
+        String query = "";
+        ResultSet resultSet;
+        try {
+            switch (type){
+                case USER:
+                    query = "SELECT * FROM Users WHERE id = " + id;
+                    resultSet = statement.executeQuery(query);
+                    resultSet.next();
+                    User user = selectUser(resultSet);
+                    return new MethodsResult<>(ResultType.SUCCESSFUL, user);
+                case TASK:
+                    query = "SELECT * FROM Tasks WHERE id = " + id;
+                    resultSet = statement.executeQuery(query);
+                    resultSet.next();
+                    Task task = selectTask(resultSet);
+                    return new MethodsResult<>(ResultType.SUCCESSFUL, task);
+                case PROJECT:
+                    query = "SELECT * FROM Project WHERE id = " + id;
+                    resultSet = statement.executeQuery(query);
+                    resultSet.next();
+                    Project project = selectProject(resultSet);
+                    return new MethodsResult<>(ResultType.SUCCESSFUL, project);
+                default:
+                    return new MethodsResult(ResultType.WRONG_ENTRY_TYPE_EXCEPTION);
+            }
+        } catch (SQLException e){
+            logger.error(e);
+            return new MethodsResult(ResultType.SQL_EXCEPTION);
         }
-        return new MethodsResult<>(ResultType.SOME_ERROR);
     }
 
     @Override
     public MethodsResult getUserByLogin(String login){
-        MethodsResult<WithId> user = selectUserByLogin(login);
-        return new MethodsResult<>(user.getResult(), user.getData());
+        String query = "SELECT * FROM Users WHERE login = '" + login + "'";
+        try {
+            ResultSet resultSet = statement.executeQuery(query);
+            resultSet.next();
+            User user = selectUser(resultSet);
+            return new MethodsResult<>(ResultType.SUCCESSFUL, user);
+        } catch (SQLException e){
+            logger.error(e);
+            return new MethodsResult<>(ResultType.SQL_EXCEPTION);
+        }
+    }
+
+    @Override
+    public MethodsResult getTasksByTitle(String title){
+        String query = "SELECT * FROM Tasks WHERE title = '" + title + "'";
+        try {
+            ResultSet resultSet = statement.executeQuery(query);
+            List<Task> tasks = new ArrayList<>();
+            while (resultSet.next()){
+                tasks.add(selectTask(resultSet));
+            }
+            return new MethodsResult<>(ResultType.SUCCESSFUL, tasks);
+        } catch (SQLException e){
+            logger.error(e);
+            return new MethodsResult<>(ResultType.SQL_EXCEPTION);
+        }
+    }
+
+    @Override
+    public MethodsResult getProjectByTitle(String title){
+        String query = "SELECT * FROM Projects WHERE title = '" + title + "'";
+        try {
+            ResultSet resultSet = statement.executeQuery(query);
+            List<Project> projects = new ArrayList<>();
+            while (resultSet.next()){
+                projects.add(selectProject(resultSet));
+            }
+            return new MethodsResult<>(ResultType.SUCCESSFUL, projects);
+        } catch (SQLException e){
+            logger.error(e);
+            return new MethodsResult<>(ResultType.SQL_EXCEPTION);
+        }
     }
 
     @Override
     public MethodsResult updateRecord(T bean, EntryType type){
-        return null;
+        String query = "";
+        switch (type){
+            case USER:
+                User user = (User)bean;
+                query = "UPDATE Users SET " +
+                        "login = '" + user.getLogin() + "', " +
+                        "email = '" + user.getEmail() + "', " +
+                        "password = '" + user.getPassword() + "', " +
+                        "projectId = " + user.getProjectId() + " " +
+                        "WHERE id = " + bean.getId() + ";";
+                logger.info(query);
+                break;
+            case TASK:
+                Task task = (Task)bean;
+                query = "UPDATE Tasks SET " +
+                        "title = '" + task.getTitle() + "', " +
+                        "description = '" + task.getDescription() + "', " +
+                        "projectId = " + task.getProjectId() + ", " +
+                        "state = '" + task.getState() + "', " +
+                        "type = '" + task.getType() + "', " +
+                        "userId = " + task.getUserId() + " " +
+                        "WHERE id = " + bean.getId() + ";";
+                logger.info(query);
+                break;
+            case PROJECT:
+                Project project = (Project)bean;
+                query = "UPDATE Projects SET " +
+                        "title = '" + project.getTitle() + "', " +
+                        "description = '" + project.getDescription() + "', " +
+                        "state = '" + project.getState() + "' " +
+                        "WHERE id = " + bean.getId() + ";";
+                logger.info(query);
+                break;
+        }
+        try {
+            statement.executeUpdate(query);
+        } catch (SQLIntegrityConstraintViolationException e) {
+            logger.error(e);
+            return new MethodsResult<>(ResultType.SQL_INTEGRITY_CONSTRAIN_EXCEPTION);
+        } catch (SQLException e){
+            logger.error(e);
+            return new MethodsResult<>(ResultType.SQL_EXCEPTION);
+        }
+        return new MethodsResult<>(ResultType.SUCCESSFUL);
     }
 
-
+    @Override
+    public MethodsResult getAllRecords(EntryType type){
+        String query = "";
+        ResultSet resultSet;
+        try {
+            switch (type){
+                case USER:
+                    query = "SELECT * FROM Users";
+                    resultSet = statement.executeQuery(query);
+                    List<User> users = new ArrayList<>();
+                    while (resultSet.next()){
+                        users.add(selectUser(resultSet));
+                    }
+                    return new MethodsResult<>(ResultType.SUCCESSFUL, users);
+                case TASK:
+                    query = "SELECT * FROM Tasks";
+                    resultSet = statement.executeQuery(query);
+                    List<Task> tasks = new ArrayList<>();
+                    while (resultSet.next()){
+                        tasks.add(selectTask(resultSet));
+                    }
+                    return new MethodsResult<>(ResultType.SUCCESSFUL, tasks);
+                case PROJECT:
+                    query = "SELECT * FROM Projects";
+                    resultSet = statement.executeQuery(query);
+                    List<Project> projects = new ArrayList<>();
+                    while (resultSet.next()){
+                        projects.add(selectProject(resultSet));
+                    }
+                    return new MethodsResult<>(ResultType.SUCCESSFUL, projects);
+                default:
+                    return new MethodsResult(ResultType.WRONG_ENTRY_TYPE_EXCEPTION);
+            }
+        } catch (SQLException e){
+            logger.error(e);
+            return new MethodsResult(ResultType.SQL_EXCEPTION);
+        }
+    }
 
     @Override
     public MethodsResult initDataSource(){
@@ -124,83 +266,42 @@ public class DataProviderJDBC<T extends WithId> implements IDataProvider<T>  {
         return new MethodsResult<>(ResultType.SUCCESSFUL);
     }
 
-    private MethodsResult<WithId> selectUserByLogin(String login){
-        String query = "SELECT * FROM Users WHERE login = '" + login + "'";
-        ResultSet resultSet;
+    private User selectUser(ResultSet resultSet) throws SQLException{
         User user = new User();
-        try {
-            resultSet = statement.executeQuery(query);
-            resultSet.next();
-            user.setId(resultSet.getLong("id"));
-            user.setLogin(resultSet.getString("login"));
-            user.setEmail(resultSet.getString("email"));
-            user.setPassword(resultSet.getString("password"));
+        user.setId(resultSet.getLong("id"));
+        user.setLogin(resultSet.getString("login"));
+        user.setEmail(resultSet.getString("email"));
+        user.setPassword(resultSet.getString("password"));
+        if (resultSet.getObject("projectId") != null){
             user.setProjectId(resultSet.getLong("projectId"));
-        } catch (SQLException e){
-            logger.error(e);
-            return new MethodsResult<>(ResultType.SQL_EXCEPTION);
         }
-        return new MethodsResult<>(ResultType.SUCCESSFUL, user);
+        return user;
     }
 
-    private MethodsResult<WithId> selectUserById(long id){
-        String query = "SELECT * FROM Users WHERE id = " + id;
-        ResultSet resultSet;
-        User user = new User();
-        try {
-            resultSet = statement.executeQuery(query);
-            resultSet.next();
-            user.setId(resultSet.getLong("id"));
-            user.setLogin(resultSet.getString("login"));
-            user.setEmail(resultSet.getString("email"));
-            user.setPassword(resultSet.getString("password"));
-            user.setProjectId(resultSet.getLong("projectId"));
-        } catch (SQLException e){
-            logger.error(e);
-            return new MethodsResult<>(ResultType.SQL_EXCEPTION);
-        }
-        return new MethodsResult<>(ResultType.SUCCESSFUL, user);
-    }
-
-    private MethodsResult<WithId> selectTaskById(long id){
-        String query = "SELECT * FROM Tasks WHERE id = " + id;
-        ResultSet resultSet;
+    private Task selectTask(ResultSet resultSet) throws SQLException{
         Task task = new Task();
-        try {
-            resultSet = statement.executeQuery(query);
-            resultSet.next();
-            task.setId(resultSet.getLong("id"));
-            task.setTitle(resultSet.getString("title"));
-            task.setDescription(resultSet.getString("description"));
+        task.setId(resultSet.getLong("id"));
+        task.setTitle(resultSet.getString("title"));
+        task.setDescription(resultSet.getString("description"));
+        if (resultSet.getObject("projectId") != null){
             task.setProjectId(resultSet.getLong("projectId"));
-            task.setState(resultSet.getString("state"));
-            task.setType(resultSet.getString("type"));
-            task.setCreateDate(resultSet.getDate("createDate"));
-            task.setUserId(resultSet.getLong("userId"));
-        } catch (SQLException e){
-            logger.error(e);
-            return new MethodsResult<>(ResultType.SQL_EXCEPTION);
         }
-        return new MethodsResult<>(ResultType.SUCCESSFUL, task);
+        task.setState(resultSet.getString("state"));
+        task.setType(resultSet.getString("type"));
+        task.setCreateDate(resultSet.getLong("createDate"));
+        if (resultSet.getObject("userId") != null){
+            task.setUserId(resultSet.getLong("userId"));
+        }
+        return task;
     }
 
-    private MethodsResult<WithId> selectProjectById(long id){
-        String query = "SELECT * FROM Projects WHERE id = " + id;
-        ResultSet resultSet;
+    private Project selectProject(ResultSet resultSet) throws SQLException{
         Project project = new Project();
-        try {
-            resultSet = statement.executeQuery(query);
-            resultSet.next();
-            project.setId(resultSet.getLong("id"));
-            project.setTitle(resultSet.getString("title"));
-            project.setDescription(resultSet.getString("description"));
-            project.setState(resultSet.getString("state"));
-            project.setCreateDate(resultSet.getDate("createDate"));
-        } catch (SQLException e){
-            logger.error(e);
-            return new MethodsResult<>(ResultType.SQL_EXCEPTION);
-        }
-        return new MethodsResult<>(ResultType.SUCCESSFUL, project);
-
+        project.setId(resultSet.getLong("id"));
+        project.setTitle(resultSet.getString("title"));
+        project.setDescription(resultSet.getString("description"));
+        project.setState(resultSet.getString("state"));
+        project.setCreateDate(resultSet.getLong("createDate"));
+        return project;
     }
 }

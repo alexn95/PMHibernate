@@ -1,16 +1,24 @@
 package ru.sfedu.projectmanager.model.enums;
 
 import ru.sfedu.projectmanager.model.entries.WithId;
-import ru.sfedu.projectmanager.model.enums.ResultType;
+
+import java.util.List;
 
 public class MethodsResult<T extends WithId> {
 
     private ResultType result;
 
-    private T data = null;
+    private T bean = null;
 
-    public MethodsResult(ResultType result, T data) {
-        this.data = data;
+    private List<T> beans = null;
+
+    public MethodsResult(ResultType result, T bean) {
+        this.bean = bean;
+        this.result = result;
+    }
+
+    public MethodsResult(ResultType result, List<T> beans) {
+        this.beans = beans;
         this.result = result;
     }
 
@@ -25,15 +33,23 @@ public class MethodsResult<T extends WithId> {
         return result;
     }
 
-    public T getData() {
-        return data;
+    public T getBean() {
+        return bean;
+    }
+
+    public List<T> getBeans(){
+        return beans;
     }
 
     public void setResult(ResultType result) {
         this.result = result;
     }
 
-    public void setData(T data) {
-        this.data = data;
+    public void setBean(T bean) {
+        this.bean = bean;
+    }
+
+    public void setBeans(List<T> beans) {
+        this.beans = beans;
     }
 }

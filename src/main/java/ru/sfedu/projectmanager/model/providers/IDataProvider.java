@@ -15,7 +15,13 @@ public abstract interface IDataProvider<T> {
 
     public MethodsResult updateRecord(T bean, EntryType type);
 
+    public MethodsResult getAllRecords(EntryType type);
+
     public MethodsResult initDataSource();
 
     public MethodsResult getUserByLogin(String login);
+
+    public MethodsResult getTasksByTitle(String title);
+
+    public MethodsResult getProjectByTitle(String title);
 }

@@ -29,11 +29,11 @@
 //
 //        MethodsResult result = service.getUserByLogin(user.getLogin());
 //        Assert.assertEquals(result.getResult(), ResultType.SUCCESSFUL);
-//        Assert.assertEquals(result.getData().getId(), user.getId());
+//        Assert.assertEquals(result.getBean().getId(), user.getId());
 //
 //        result = service.getUserById(user.getId());
 //        Assert.assertEquals(result.getResult(), ResultType.SUCCESSFUL);
-//        Assert.assertEquals(result.getData().getId(), user.getId());
+//        Assert.assertEquals(result.getBean().getId(), user.getId());
 //
 //        Assert.assertEquals(service.deleteUser(user).getResult(), ResultType.SUCCESSFUL);
 //        Assert.assertEquals(service.deleteUser(user).getResult(), ResultType.ID_NOT_EXIST);

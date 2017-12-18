@@ -6,7 +6,10 @@ import org.simpleframework.xml.Attribute;
 import org.simpleframework.xml.Element;
 
 import java.io.Serializable;
-import java.sql.Date;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Calendar;
+import java.util.Objects;
 import java.util.Random;
 
 /**
@@ -35,7 +38,7 @@ public class Task implements WithId, Serializable {
     private String type;
 
     @CsvBindByPosition(position = 6)
-    private Date createDate;
+    private long createDate;
 
     @CsvBindByPosition(position = 7)
     private Long userId;
@@ -45,9 +48,12 @@ public class Task implements WithId, Serializable {
   //
   // Constructors
   //
-      public Task () { }
+      public Task () {
+          this.id = random.nextLong();
+          this.createDate =  new Date().getTime();;
+      }
 
-      public Task(Long id, String title, String description, Long projectId, String state, String type, Date createDate, Long userId) {
+      public Task(Long id, String title, String description, Long projectId, String state, String type, long createDate, Long userId) {
         this.id = id;
         this.title = title;
         this.description = description;
@@ -58,7 +64,7 @@ public class Task implements WithId, Serializable {
         this.userId = userId;
       }
 
-      public Task(Long id, String title, String description, Long projectId, String state, String type, Date createDate) {
+      public Task(Long id, String title, String description, Long projectId, String state, String type, long createDate) {
         this.id = id;
         this.title = title;
         this.description = description;
@@ -68,7 +74,7 @@ public class Task implements WithId, Serializable {
         this.createDate = createDate;
       }
 
-    public Task(String title, String description, Long projectId, String state, String type, Date createDate) {
+    public Task(String title, String description, Long projectId, String state, String type, long createDate) {
         this.id = random.nextLong();
         this.title = title;
         this.description = description;
@@ -76,6 +82,16 @@ public class Task implements WithId, Serializable {
         this.state = state;
         this.type = type;
         this.createDate = createDate;
+    }
+
+    public Task(String title, String description, String state, String type, Long projectId) {
+        this.id = random.nextLong();
+        this.title = title;
+        this.description = description;
+        this.projectId = projectId;
+        this.state = state;
+        this.type = type;
+        this.createDate = new Date().getTime();
     }
 
   //
@@ -125,7 +141,7 @@ public class Task implements WithId, Serializable {
    * Set the value of description
    * @param newVar the new value of description
    */
-    @Element
+    @Element(required=false)
     public void setDescription (String newVar) {
     description = newVar;
   }
@@ -134,7 +150,7 @@ public class Task implements WithId, Serializable {
    * Get the value of description
    * @return the value of description
    */
-    @Element
+    @Element(required=false)
     public String getDescription () {
     return description;
   }
@@ -143,7 +159,7 @@ public class Task implements WithId, Serializable {
    * Set the value of projectId
    * @param newVar the new value of projectId
    */
-    @Element
+    @Element(required=false)
     public void setProjectId (Long newVar) {
     projectId = newVar;
   }
@@ -152,7 +168,7 @@ public class Task implements WithId, Serializable {
    * Get the value of projectId
    * @return the value of projectId
    */
-    @Element
+    @Element(required=false)
     public Long getProjectId () {
     return projectId;
   }
@@ -198,7 +214,7 @@ public class Task implements WithId, Serializable {
    * @param newVar the new value of createDate
    */
     @Element
-    public void setCreateDate (Date newVar) {
+    public void setCreateDate (long newVar) {
     createDate = newVar;
   }
 
@@ -207,7 +223,7 @@ public class Task implements WithId, Serializable {
    * @return the value of createDate
    */
     @Element
-    public Date getCreateDate () {
+    public long getCreateDate () {
     return createDate;
   }
 
@@ -223,7 +239,24 @@ public class Task implements WithId, Serializable {
 
     @Override
     public String toString(){
+        SimpleDateFormat format = new SimpleDateFormat();
+        return "'" + title + "', '" + description + "', " + projectId + ", '" + state + "', '"
+                + type + "', '" + format.format(new Date(createDate)) + "', " + userId;
+    }
+
+    @Override
+    public String toInsert(){
         return "'" + title + "', '" + description + "', " + projectId + ", '" + state + "', '"
                 + type + "', '" + createDate + "', " + userId;
+    }
+
+    @Override
+    public boolean equals(Object object){
+        boolean isEquals = false;
+        if (object != null && object instanceof Task)
+        {
+            isEquals = Objects.equals(this.toString(), object.toString());
+        }
+        return isEquals;
     }
 }

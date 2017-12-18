@@ -12,8 +12,7 @@ import ru.sfedu.projectmanager.model.enums.EntryType;
 import ru.sfedu.projectmanager.model.enums.MethodsResult;
 import ru.sfedu.projectmanager.model.enums.ResultType;
 
-import java.sql.Date;
-import java.util.Calendar;
+import java.util.List;
 import java.util.Random;
 
 public class DataProviderJDBCTest {
@@ -24,40 +23,88 @@ public class DataProviderJDBCTest {
 
     @Test
     public void usersTest(){
-        String login = "login" + random.nextLong();
-        User user = new User(login,"mr.alexn95@mail.com","mycastpass", null);
+        User user = DataGenerator.createUser();
         Assert.assertEquals(dataProvider.saveRecord(user, EntryType.USER).getResult(), ResultType.SUCCESSFUL);
 
-        Long id = 1L;
-        login = "test_login";
-        MethodsResult result = dataProvider.getRecordById(id, EntryType.USER);
+        MethodsResult trueResult = dataProvider.getUserByLogin(user.getLogin());
+        Assert.assertEquals(trueResult.getResult(), ResultType.SUCCESSFUL);
+        Assert.assertEquals(((User)trueResult.getBean()).getLogin(), user.getLogin());
+
+        Long id = trueResult.getBean().getId();
+        String login = ((User) trueResult.getBean()).getLogin();
+        user = (User) trueResult.getBean();
+        trueResult = dataProvider.getRecordById(id, EntryType.USER);
+        Assert.assertEquals(trueResult.getResult(), ResultType.SUCCESSFUL);
+        Assert.assertEquals(trueResult.getBean().getId(), id);
+        Assert.assertEquals(((User) trueResult.getBean()).getLogin(), login);
+
+        user.setEmail("test_email");
+        Assert.assertEquals(dataProvider.updateRecord(user, EntryType.USER).getResult(), ResultType.SUCCESSFUL);
+        trueResult = dataProvider.getUserByLogin(user.getLogin());
+        Assert.assertEquals(trueResult.getResult(), ResultType.SUCCESSFUL);
+        Assert.assertEquals(((User) trueResult.getBean()).getEmail(), user.getEmail());
+
+        MethodsResult result = dataProvider.getAllRecords(EntryType.USER);
         Assert.assertEquals(result.getResult(), ResultType.SUCCESSFUL);
-        Assert.assertEquals(((User)result.getData()).getLogin(), login);
-        Assert.assertEquals((result.getData()).getId(), id);
+        List users = result.getBeans();
+        Assert.assertTrue(users.contains(user));
+
+        Assert.assertEquals(dataProvider.deleteRecord(id, EntryType.USER).getResult(), ResultType.SUCCESSFUL);
+        Assert.assertEquals(dataProvider.getRecordById(id, EntryType.USER).getResult(), ResultType.SQL_EXCEPTION);
     }
 
     @Test
     public void tasksTest(){
-        Date date = new Date(Calendar.getInstance().getTimeInMillis());
-        Task task = new Task("title", "description", null, "state", "type", date);
-        Assert.assertEquals(dataProvider.saveRecord(task, EntryType.TASK).getResult(),ResultType.SUCCESSFUL);
+        Task task = DataGenerator.createTask();
+        Assert.assertEquals(dataProvider.saveRecord(task, EntryType.TASK).getResult(), ResultType.SUCCESSFUL);
 
-        Long id = 1L;
-        MethodsResult result = dataProvider.getRecordById(id, EntryType.TASK);
+        MethodsResult trueResult = dataProvider.getTasksByTitle(task.getTitle());
+        Assert.assertEquals(trueResult.getResult(), ResultType.SUCCESSFUL);
+        List<Task> tasks = trueResult.getBeans();
+        Assert.assertTrue(tasks.contains(task));
+        task = tasks.get(0);
+
+        task.setState("some_test_state");
+        Assert.assertEquals(dataProvider.updateRecord(task, EntryType.TASK).getResult(), ResultType.SUCCESSFUL);
+        trueResult = dataProvider.getTasksByTitle(task.getTitle());
+        Assert.assertEquals(trueResult.getResult(),ResultType.SUCCESSFUL);
+        tasks = trueResult.getBeans();
+        Assert.assertTrue(tasks.contains(task));
+
+        MethodsResult result = dataProvider.getAllRecords(EntryType.TASK);
         Assert.assertEquals(result.getResult(), ResultType.SUCCESSFUL);
-        Assert.assertEquals(result.getData().getId(), id);
+        tasks = result.getBeans();
+        Assert.assertTrue(tasks.contains(task));
+
+        Assert.assertEquals(dataProvider.deleteRecord(task.getId(), EntryType.TASK).getResult(), ResultType.SUCCESSFUL);
+        Assert.assertEquals(dataProvider.getRecordById(task.getId(), EntryType.TASK).getResult(), ResultType.SQL_EXCEPTION);
     }
 
     @Test
     public void projectTest(){
-        Date date = new Date(Calendar.getInstance().getTimeInMillis());
-        Project project = new Project("title", "description", "state", date);
-        Assert.assertEquals(dataProvider.saveRecord(project, EntryType.PROJECT).getResult(),ResultType.SUCCESSFUL);
+        Project project = DataGenerator.createProject();
+        Assert.assertEquals(dataProvider.saveRecord(project, EntryType.PROJECT).getResult(), ResultType.SUCCESSFUL);
 
-        Long id = 1L;
-        MethodsResult result = dataProvider.getRecordById(id, EntryType.PROJECT);
+        MethodsResult trueResult = dataProvider.getProjectByTitle(project.getTitle());
+        Assert.assertEquals(trueResult.getResult(), ResultType.SUCCESSFUL);
+        List<Project> projects = trueResult.getBeans();
+        Assert.assertTrue(projects.contains(project));
+        project = projects.get(0);
+
+        project.setState("some_test_state");
+        Assert.assertEquals(dataProvider.updateRecord(project, EntryType.PROJECT).getResult(), ResultType.SUCCESSFUL);
+        trueResult = dataProvider.getProjectByTitle(project.getTitle());
+        Assert.assertEquals(trueResult.getResult(),ResultType.SUCCESSFUL);
+        projects = trueResult.getBeans();
+        Assert.assertTrue(projects.contains(project));
+
+        MethodsResult result = dataProvider.getAllRecords(EntryType.PROJECT);
         Assert.assertEquals(result.getResult(), ResultType.SUCCESSFUL);
-        Assert.assertEquals(result.getData().getId(), id);
+        projects = result.getBeans();
+        Assert.assertTrue(projects.contains(project));
+
+        Assert.assertEquals(dataProvider.deleteRecord(project.getId(), EntryType.TASK).getResult(), ResultType.SUCCESSFUL);
+        Assert.assertEquals(dataProvider.getRecordById(project.getId(), EntryType.TASK).getResult(), ResultType.SQL_EXCEPTION);
     }
 
 
