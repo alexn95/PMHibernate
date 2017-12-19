@@ -122,11 +122,11 @@ public class Project implements WithId, Serializable {
 
     /**
     * Set the value of state
-    * @param newVar the new value of state
+    * @param state the new value of state
     */
     @Element
-    public void setState(String newVar) {
-    state = newVar;
+    public void setState(String state) {
+        this.state = state;
     }
 
     /**
@@ -157,7 +157,13 @@ public class Project implements WithId, Serializable {
     @Override
     public String toString(){
       SimpleDateFormat format = new SimpleDateFormat();
-      return title + ", " + description + ", " + state + ", " + format.format(new Date(createDate));
+      return title + ", " + state + ", " + description + ", " + format.format(new Date(createDate));
+    }
+
+    @Override
+    public String toCLI(){
+        SimpleDateFormat format = new SimpleDateFormat();
+        return id + ", " + title + ", " + description + ", " + state + ", " + format.format(new Date(createDate));
     }
 
     @Override

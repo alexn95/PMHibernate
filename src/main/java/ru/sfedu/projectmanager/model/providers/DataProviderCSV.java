@@ -222,7 +222,7 @@ public class DataProviderCSV<T extends WithId> implements IDataProvider<T> {
         try {
             initCsvToBean(type);
             List<T> beans = csvToBean.parse();
-                return new MethodsResult<T>(ResultType.SUCCESSFUL, beans);
+                return new MethodsResult<>(ResultType.SUCCESSFUL, beans);
         } catch (IOException e){
             logger.error(e);
             return new MethodsResult<>(ResultType.IO_EXCEPTION);

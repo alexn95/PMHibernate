@@ -7,4 +7,6 @@ public interface WithId {
     public void setId(Long id);
 
     public String toInsert();
+
+    public String toCLI();
 }

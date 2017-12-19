@@ -50,7 +50,7 @@ public class DataProviderJDBCTest {
         Assert.assertTrue(users.contains(user));
 
         Assert.assertEquals(dataProvider.deleteRecord(id, EntryType.USER).getResult(), ResultType.SUCCESSFUL);
-        Assert.assertEquals(dataProvider.getRecordById(id, EntryType.USER).getResult(), ResultType.SQL_EXCEPTION);
+        Assert.assertEquals(dataProvider.getRecordById(id, EntryType.USER).getResult(), ResultType.ID_NOT_EXIST);
     }
 
     @Test
@@ -77,7 +77,7 @@ public class DataProviderJDBCTest {
         Assert.assertTrue(tasks.contains(task));
 
         Assert.assertEquals(dataProvider.deleteRecord(task.getId(), EntryType.TASK).getResult(), ResultType.SUCCESSFUL);
-        Assert.assertEquals(dataProvider.getRecordById(task.getId(), EntryType.TASK).getResult(), ResultType.SQL_EXCEPTION);
+        Assert.assertEquals(dataProvider.getRecordById(task.getId(), EntryType.TASK).getResult(), ResultType.ID_NOT_EXIST);
     }
 
     @Test
@@ -86,25 +86,24 @@ public class DataProviderJDBCTest {
         Assert.assertEquals(dataProvider.saveRecord(project, EntryType.PROJECT).getResult(), ResultType.SUCCESSFUL);
 
         MethodsResult trueResult = dataProvider.getProjectByTitle(project.getTitle());
+        Project resultBean = (Project)trueResult.getBean();
         Assert.assertEquals(trueResult.getResult(), ResultType.SUCCESSFUL);
-        List<Project> projects = trueResult.getBeans();
-        Assert.assertTrue(projects.contains(project));
-        project = projects.get(0);
+        Assert.assertEquals(resultBean, project);
 
-        project.setState("some_test_state");
-        Assert.assertEquals(dataProvider.updateRecord(project, EntryType.PROJECT).getResult(), ResultType.SUCCESSFUL);
-        trueResult = dataProvider.getProjectByTitle(project.getTitle());
+        resultBean.setState("update_state");
+        Assert.assertEquals(dataProvider.updateRecord(resultBean, EntryType.PROJECT).getResult(), ResultType.SUCCESSFUL);
+        trueResult = dataProvider.getProjectByTitle(resultBean.getTitle());
         Assert.assertEquals(trueResult.getResult(),ResultType.SUCCESSFUL);
-        projects = trueResult.getBeans();
-        Assert.assertTrue(projects.contains(project));
+        Project searchedProject = (Project) trueResult.getBean();
+        Assert.assertEquals(searchedProject, resultBean);
 
         MethodsResult result = dataProvider.getAllRecords(EntryType.PROJECT);
         Assert.assertEquals(result.getResult(), ResultType.SUCCESSFUL);
-        projects = result.getBeans();
-        Assert.assertTrue(projects.contains(project));
+        List<Project> projects = result.getBeans();
+        Assert.assertTrue(projects.contains(resultBean));
 
-        Assert.assertEquals(dataProvider.deleteRecord(project.getId(), EntryType.TASK).getResult(), ResultType.SUCCESSFUL);
-        Assert.assertEquals(dataProvider.getRecordById(project.getId(), EntryType.TASK).getResult(), ResultType.SQL_EXCEPTION);
+        Assert.assertEquals(dataProvider.deleteRecord(resultBean.getId(), EntryType.PROJECT).getResult(), ResultType.SUCCESSFUL);
+        Assert.assertEquals(dataProvider.getRecordById(project.getId(), EntryType.PROJECT).getResult(), ResultType.ID_NOT_EXIST);
     }
 
 

@@ -17,8 +17,8 @@ public class DataGenerator {
         User user = new User();
         user.setId(random.nextLong());
         user.setLogin("login_" + random.nextInt());
-        user.setEmail("mail_" + random.nextInt() + "@mail.ru");
-        user.setPassword("password_" + random.nextInt());
+        user.setEmail("test@mail.com");
+        user.setPassword("test_password");
         user.setProjectId(null);
         return user;
     }
@@ -28,8 +28,8 @@ public class DataGenerator {
         project.setId(random.nextLong());
         project.setTitle("projectTitle_" + random.nextInt());
         project.setCreateDate(date);
-        project.setState("state_" + random.nextInt());
-        project.setDescription("description_" + random.nextInt());
+        project.setState("test_state_open");
+        project.setDescription("test_description");
         return project;
     }
 
@@ -37,9 +37,9 @@ public class DataGenerator {
         Task task = new Task();
         task.setId(random.nextLong());
         task.setTitle("taskTitle_" + random.nextInt());
-        task.setType("type_" + random.nextInt());
-        task.setState("state_" + random.nextInt());
-        task.setDescription("description_" + random.nextInt());
+        task.setType("bug");
+        task.setState("test_state_open");
+        task.setDescription("test_description");
         task.setCreateDate(date);
         task.setUserId(null);
         task.setProjectId(null);

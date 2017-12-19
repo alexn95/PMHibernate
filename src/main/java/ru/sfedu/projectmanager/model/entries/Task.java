@@ -240,7 +240,14 @@ public class Task implements WithId, Serializable {
     @Override
     public String toString(){
         SimpleDateFormat format = new SimpleDateFormat();
-        return title + ", " + description + ", " + projectId + ", " + state + ", "
+        return title + ", " + state + ", " + type + ", " + description + ", "
+                + userId + ", " + projectId + ", " + format.format(new Date(createDate));
+    }
+
+    @Override
+    public String toCLI(){
+        SimpleDateFormat format = new SimpleDateFormat();
+        return id + ", " + title + ", " + description + ", " + projectId + ", " + state + ", "
                 + type + ", " + format.format(new Date(createDate)) + ", " + userId;
     }
 

@@ -1,5 +1,6 @@
 package ru.sfedu.projectmanager.model.providers;
 
+import com.mysql.cj.jdbc.exceptions.CommunicationsException;
 import org.apache.log4j.Logger;
 import ru.sfedu.projectmanager.Constants;
 import ru.sfedu.projectmanager.model.entries.*;
@@ -41,6 +42,10 @@ public class DataProviderJDBC<T extends WithId> implements IDataProvider<T>  {
         } catch (SQLIntegrityConstraintViolationException e) {
             logger.error(e);
             return new MethodsResult<>(ResultType.SQL_INTEGRITY_CONSTRAIN_EXCEPTION);
+        } catch (CommunicationsException e){
+            logger.error(e);
+            initDataSource();
+            return new MethodsResult(ResultType.COMMUNICATIONS_EXCEPTION);
         } catch (SQLException e){
             logger.error(e);
             return new MethodsResult<>(ResultType.SQL_EXCEPTION);
@@ -51,19 +56,33 @@ public class DataProviderJDBC<T extends WithId> implements IDataProvider<T>  {
     @Override
     public MethodsResult deleteRecord(long id, EntryType type){
         String query = "";
-        switch (type){
-            case USER:
-                query = "DELETE FROM Users WHERE id = " + id;
-                break;
-            case TASK:
-                query = "DELETE FROM Tasks WHERE id = " + id;
-                break;
-            case PROJECT:
-                query = "DELETE FROM Projects WHERE id = " + id;
-                break;
-        }
+        ResultSet resultSet;
         try {
+            switch (type) {
+                case USER:
+                    query = "SELECT * FROM Users WHERE id = " + id;
+                    resultSet = statement.executeQuery(query);
+                    if (!resultSet.next()) return new MethodsResult(ResultType.ID_NOT_EXIST);
+                    query = "DELETE FROM Users WHERE id = " + id;
+                    break;
+                case TASK:
+                    query = "SELECT * FROM Tasks WHERE id = " + id;
+                    resultSet = statement.executeQuery(query);
+                    if (!resultSet.next()) return new MethodsResult(ResultType.ID_NOT_EXIST);
+                    query = "DELETE FROM Tasks WHERE id = " + id;
+                    break;
+                case PROJECT:
+                    query = "SELECT * FROM Projects WHERE id = " + id;
+                    resultSet = statement.executeQuery(query);
+                    if (!resultSet.next()) return new MethodsResult(ResultType.ID_NOT_EXIST);
+                    query = "DELETE FROM Projects WHERE id = " + id;
+                    break;
+            }
             statement.executeUpdate(query);
+        } catch (CommunicationsException e){
+            logger.error(e);
+            initDataSource();
+            return new MethodsResult(ResultType.COMMUNICATIONS_EXCEPTION);
         } catch (SQLException e){
             logger.error(e);
             return new MethodsResult<>(ResultType.SQL_EXCEPTION);
@@ -73,31 +92,35 @@ public class DataProviderJDBC<T extends WithId> implements IDataProvider<T>  {
 
     @Override
     public MethodsResult getRecordById(long id, EntryType type){
-        String query = "";
+        String query;
         ResultSet resultSet;
         try {
             switch (type){
                 case USER:
                     query = "SELECT * FROM Users WHERE id = " + id;
                     resultSet = statement.executeQuery(query);
-                    resultSet.next();
+                    if (!resultSet.next()) return new MethodsResult(ResultType.ID_NOT_EXIST);
                     User user = selectUser(resultSet);
                     return new MethodsResult<>(ResultType.SUCCESSFUL, user);
                 case TASK:
                     query = "SELECT * FROM Tasks WHERE id = " + id;
                     resultSet = statement.executeQuery(query);
-                    resultSet.next();
+                    if (!resultSet.next()) return new MethodsResult(ResultType.ID_NOT_EXIST);
                     Task task = selectTask(resultSet);
                     return new MethodsResult<>(ResultType.SUCCESSFUL, task);
                 case PROJECT:
-                    query = "SELECT * FROM Project WHERE id = " + id;
+                    query = "SELECT * FROM Projects WHERE id = " + id;
                     resultSet = statement.executeQuery(query);
-                    resultSet.next();
+                    if (!resultSet.next()) return new MethodsResult(ResultType.ID_NOT_EXIST);
                     Project project = selectProject(resultSet);
                     return new MethodsResult<>(ResultType.SUCCESSFUL, project);
                 default:
                     return new MethodsResult(ResultType.WRONG_ENTRY_TYPE_EXCEPTION);
             }
+        } catch (CommunicationsException e){
+            logger.error(e);
+            initDataSource();
+            return new MethodsResult(ResultType.COMMUNICATIONS_EXCEPTION);
         } catch (SQLException e){
             logger.error(e);
             return new MethodsResult(ResultType.SQL_EXCEPTION);
@@ -109,9 +132,13 @@ public class DataProviderJDBC<T extends WithId> implements IDataProvider<T>  {
         String query = "SELECT * FROM Users WHERE login = '" + login + "'";
         try {
             ResultSet resultSet = statement.executeQuery(query);
-            resultSet.next();
+            if (!resultSet.next()) return new MethodsResult(ResultType.LOGIN_NOT_EXIST);
             User user = selectUser(resultSet);
             return new MethodsResult<>(ResultType.SUCCESSFUL, user);
+        } catch (CommunicationsException e){
+            logger.error(e);
+            initDataSource();
+            return new MethodsResult(ResultType.COMMUNICATIONS_EXCEPTION);
         } catch (SQLException e){
             logger.error(e);
             return new MethodsResult<>(ResultType.SQL_EXCEPTION);
@@ -123,11 +150,17 @@ public class DataProviderJDBC<T extends WithId> implements IDataProvider<T>  {
         String query = "SELECT * FROM Tasks WHERE title = '" + title + "'";
         try {
             ResultSet resultSet = statement.executeQuery(query);
+            if (!resultSet.next()) return new MethodsResult(ResultType.TITLE_NOT_EXIST);
             List<Task> tasks = new ArrayList<>();
+            tasks.add(selectTask(resultSet));
             while (resultSet.next()){
                 tasks.add(selectTask(resultSet));
             }
             return new MethodsResult<>(ResultType.SUCCESSFUL, tasks);
+        } catch (CommunicationsException e){
+            logger.error(e);
+            initDataSource();
+            return new MethodsResult(ResultType.COMMUNICATIONS_EXCEPTION);
         } catch (SQLException e){
             logger.error(e);
             return new MethodsResult<>(ResultType.SQL_EXCEPTION);
@@ -139,11 +172,13 @@ public class DataProviderJDBC<T extends WithId> implements IDataProvider<T>  {
         String query = "SELECT * FROM Projects WHERE title = '" + title + "'";
         try {
             ResultSet resultSet = statement.executeQuery(query);
-            List<Project> projects = new ArrayList<>();
-            while (resultSet.next()){
-                projects.add(selectProject(resultSet));
-            }
-            return new MethodsResult<>(ResultType.SUCCESSFUL, projects);
+            if (!resultSet.next()) return new MethodsResult(ResultType.TITLE_NOT_EXIST);
+            Project project = selectProject(resultSet);
+            return new MethodsResult<>(ResultType.SUCCESSFUL, project);
+        } catch (CommunicationsException e){
+            logger.error(e);
+            initDataSource();
+            return new MethodsResult(ResultType.COMMUNICATIONS_EXCEPTION);
         } catch (SQLException e){
             logger.error(e);
             return new MethodsResult<>(ResultType.SQL_EXCEPTION);
@@ -188,6 +223,11 @@ public class DataProviderJDBC<T extends WithId> implements IDataProvider<T>  {
         }
         try {
             statement.executeUpdate(query);
+            return new MethodsResult<>(ResultType.SUCCESSFUL);
+        } catch (CommunicationsException e){
+            logger.error(e);
+            initDataSource();
+            return new MethodsResult(ResultType.COMMUNICATIONS_EXCEPTION);
         } catch (SQLIntegrityConstraintViolationException e) {
             logger.error(e);
             return new MethodsResult<>(ResultType.SQL_INTEGRITY_CONSTRAIN_EXCEPTION);
@@ -195,12 +235,11 @@ public class DataProviderJDBC<T extends WithId> implements IDataProvider<T>  {
             logger.error(e);
             return new MethodsResult<>(ResultType.SQL_EXCEPTION);
         }
-        return new MethodsResult<>(ResultType.SUCCESSFUL);
     }
 
     @Override
     public MethodsResult getAllRecords(EntryType type){
-        String query = "";
+        String query;
         ResultSet resultSet;
         try {
             switch (type){
@@ -231,6 +270,10 @@ public class DataProviderJDBC<T extends WithId> implements IDataProvider<T>  {
                 default:
                     return new MethodsResult(ResultType.WRONG_ENTRY_TYPE_EXCEPTION);
             }
+        } catch (CommunicationsException e){
+            logger.error(e);
+            initDataSource();
+            return new MethodsResult(ResultType.COMMUNICATIONS_EXCEPTION);
         } catch (SQLException e){
             logger.error(e);
             return new MethodsResult(ResultType.SQL_EXCEPTION);
@@ -245,6 +288,10 @@ public class DataProviderJDBC<T extends WithId> implements IDataProvider<T>  {
             String password = ConfigurationUtil.getConfigurationEntry(Constants.JDBC_PASSWORD);
             connection = DriverManager.getConnection(url, user, password);
             statement = connection.createStatement();
+        } catch (CommunicationsException e){
+            logger.error(e);
+            initDataSource();
+            return new MethodsResult(ResultType.COMMUNICATIONS_EXCEPTION);
         } catch (SQLException sqlEx) {
             sqlEx.printStackTrace();
             return new MethodsResult<>(ResultType.SQL_EXCEPTION);

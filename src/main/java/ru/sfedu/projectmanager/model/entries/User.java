@@ -156,7 +156,12 @@ public class User implements WithId, Serializable {
 
     @Override
     public String toString() {
-    return login + ", " +  email + ", " + password+ ", " + projectId;
+        return login + ", " +  email + ", " + password+ ", " + projectId;
+    }
+
+    @Override
+    public String toCLI() {
+        return id + ", " + login + ", " +  email + ", " + password+ ", " + projectId;
     }
 
     @Override

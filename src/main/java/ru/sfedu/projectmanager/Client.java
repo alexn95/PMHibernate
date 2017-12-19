@@ -29,7 +29,10 @@ public class Client {
                 break;
             }
             String[] commands = temp.split("[ ]+");
-            if (commands.length < 2) continue;
+            if (commands.length < 2 && !commands[0].equals("help")) {
+                System.out.println("Command not exist");
+                continue;
+            }
             switch (commands[0]) {
                 case "use":
                     dataProvider = CLIServices.choseDataSource(commands);
@@ -59,6 +62,49 @@ public class Client {
                         continue;
                     }
                     CLIServices.selectEntries(commands, dataProvider);
+                    break;
+                case "delete":
+                    if (dataProvider == null) {
+                        System.out.println("You should select data source");
+                        continue;
+                    }
+                    CLIServices.deleteEntries(commands, dataProvider);
+                    break;
+                case "update":
+                    if (dataProvider == null) {
+                        System.out.println("You should select data source");
+                        continue;
+                    }
+                    switch (commands[1]) {
+                        case "user":
+                            CLIServices.updateUser(dataProvider);
+                            break;
+                        case "task":
+                            CLIServices.updateTask(dataProvider);
+                            break;
+                        case "project":
+                            CLIServices.updateProject(dataProvider);
+                            break;
+                        default:
+                            System.out.println("Entry invalid");
+                    }
+                    break;
+                case "add":
+                    if (dataProvider == null) {
+                        System.out.println("You should select data source");
+                        continue;
+                    }
+                    CLIServices.setUserProject(commands, dataProvider);
+                    break;
+                case "take":
+                    if (dataProvider == null) {
+                        System.out.println("You should select data source");
+                        continue;
+                    }
+                    CLIServices.takeTask(commands, dataProvider);
+                    break;
+                case "help":
+                    CLIServices.help();
                     break;
                 default:
                     System.out.println("Command not exist");

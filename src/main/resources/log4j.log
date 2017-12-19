@@ -1,677 +1,89 @@
-10.30:22.11.29  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:48 - 0
-10.30:22.11.29  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:48 - 1
-10.30:22.11.29  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:48 - 4
-10.30:22.11.29  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:48 - 4
-10.30:22.11.29  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:48 - 4
-10.30:22.11.29  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:48 - 4
-10.30:22.14.37  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:48 - 0
-10.30:22.14.37  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:48 - 1
-10.30:22.14.37  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:48 - 4
-10.30:22.14.37  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:48 - 4
-10.30:22.14.37  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:48 - 4
-10.30:22.14.37  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:48 - 4
-10.30:22.15.01  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:48 - 0
-10.30:22.15.01  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:49 - 0
-10.30:22.15.01  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:48 - 1
-10.30:22.15.01  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:49 - 0
-10.30:22.15.01  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:48 - 4
-10.30:22.15.01  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:49 - 0
-10.30:22.15.01  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:48 - 4
-10.30:22.15.01  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:49 - 0
-10.30:22.15.01  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:48 - 4
-10.30:22.15.01  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:49 - 0
-10.30:22.15.01  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:48 - 4
-10.30:22.15.01  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:49 - 0
-10.30:22.15.51  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:49 - 0
-10.30:22.15.51  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:50 - 0
-10.30:22.15.51  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:52 - ufuu!
-10.30:22.15.51  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:49 - 1
-10.30:22.15.51  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:50 - 0
-10.30:22.15.51  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:49 - 4
-10.30:22.15.51  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:50 - 0
-10.30:22.15.51  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:49 - 4
-10.30:22.15.51  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:50 - 0
-10.30:22.15.51  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:49 - 4
-10.30:22.15.51  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:50 - 0
-10.30:22.15.51  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:49 - 4
-10.30:22.15.51  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:50 - 0
-10.30:22.16.18  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:49 - 0
-10.30:22.16.18  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:50 - 0
-10.30:22.16.18  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:52 - ufuu!
-10.30:22.16.18  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:49 - 1
-10.30:22.16.18  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:50 - 0
-10.30:22.16.18  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:49 - 4
-10.30:22.16.18  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:50 - 0
-10.30:22.16.18  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:49 - 4
-10.30:22.16.18  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:50 - 0
-10.30:22.16.18  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:49 - 4
-10.30:22.16.18  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:50 - 0
-10.30:22.16.18  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:49 - 4
-10.30:22.16.18  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:50 - 0
-10.30:22.16.38  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:49 - 0
-10.30:22.16.38  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:50 - 0
-10.30:22.16.38  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:52 - ufuu!
-10.30:22.16.38  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:49 - 1
-10.30:22.16.38  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:50 - 0
-10.30:22.16.38  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:49 - 2
-10.30:22.16.38  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:50 - 0
-10.30:22.16.38  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:49 - 3
-10.30:22.16.38  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:50 - 0
-10.30:22.16.38  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:49 - 4
-10.30:22.16.38  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:50 - 0
-10.30:22.17.41  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:50 - ufuu!
-10.30:22.21.01  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:48 - 0lehaLoginmr.alexn95@mail.commycastpass
-10.30:22.21.01  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:48 - 1lehaLoginmr.alexn95@mail.commycastpass
-10.30:22.21.01  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:48 - 2lehaLoginmr.alexn95@mail.commycastpass
-10.30:22.21.01  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:48 - 3lehaLoginmr.alexn95@mail.commycastpass
-10.30:22.21.01  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:48 - 4lehaLoginmr.alexn95@mail.commycastpass
-10.30:22.21.01  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:53 - ufuu!
-10.30:22.21.10  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:48 - 0
-10.30:22.21.10  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:53 - ufuu!
-10.30:22.21.21  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:48 - 0
-10.30:22.21.21  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:48 - 1
-10.30:22.21.21  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:48 - 2
-10.30:22.21.21  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:48 - 3
-10.30:22.21.21  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:48 - 4
-10.30:22.21.21  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:53 - ufuu!
-10.30:22.22.33  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:48 - 0
-10.30:22.22.33  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:48 - 1
-10.30:22.22.33  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:48 - 2
-10.30:22.22.33  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:48 - 3
-10.30:22.22.33  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:48 - 4
-10.30:22.22.33  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:53 - ufuu!
-10.30:22.23.21  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:48 - 0
-10.30:22.23.21  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:48 - 1
-10.30:22.23.21  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:48 - 2
-10.30:22.23.21  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:48 - 3
-10.30:22.23.21  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:48 - 4
-10.30:22.23.21  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:53 - ufuu!
-10.30:22.23.33  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:48 - 0
-10.30:22.23.33  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:48 - 1
-10.30:22.23.33  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:48 - 2
-10.30:22.23.33  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:48 - 3
-10.30:22.23.33  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:48 - 4
-10.30:22.23.33  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:53 - ufuu!
-10.30:22.23.38  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:48 - 1
-10.30:22.23.38  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:48 - 2
-10.30:22.23.38  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:48 - 3
-10.30:22.23.38  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:48 - 4
-10.30:22.23.40  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:48 - 1
-10.30:22.23.40  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:48 - 2
-10.30:22.23.40  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:48 - 3
-10.30:22.23.40  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:48 - 4
-10.31:08.58.50  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:48 - 0
-10.31:08.58.50  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:48 - 1
-10.31:08.58.50  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:48 - 2
-10.31:08.58.50  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:48 - 3
-10.31:08.58.50  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:48 - 4
-10.31:08.58.50  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:53 - ufuu!
-10.31:08.59.36  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:48 - 1
-10.31:08.59.36  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:48 - 2
-10.31:08.59.36  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:48 - 3
-10.31:08.59.36  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:48 - 4
-10.31:08.59.36  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:53 - ufuu!
-10.31:09.00.01  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:48 - 2
-10.31:09.00.01  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:48 - 3
-10.31:09.00.01  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:48 - 4
-10.31:09.00.20  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:48 - 2
-10.31:09.00.20  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:48 - 3
-10.31:09.00.20  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:48 - 4
-10.31:09.00.20  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:53 - ufuu!
-11.06:19.29.38  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:69 - java.lang.NullPointerException
-11.11:11.04.04  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:108 - Error parsing CSV line: 3, values: null
-11.11:11.04.09  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:108 - Error parsing CSV line: 3, values: null
-11.11:11.05.24  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:108 - Error parsing CSV line: 3, values: null
-11.11:11.05.37  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:108 - Error parsing CSV line: 2, values: null
-11.11:11.05.44  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:108 - Error parsing CSV line: 2, values: null
-11.11:11.07.32  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:108 -
-11.11:11.08.49  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:108 -
-11.11:11.09.21  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:108 -
-11.11:11.09.30  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:108 -
-11.11:11.10.06  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:108 -
-11.11:11.23.20  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:108 -
-11.11:11.23.20  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:108 -
-11.11:11.30.52  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:105 - Error parsing CSV line: 2, values: null
-11.11:11.30.52  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:105 - Error parsing CSV line: 2, values: null
-11.11:15.37.35  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXML:38 - 
-11.11:15.38.11  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXML:38 - 
-11.11:15.38.20  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXML:38 -  asd
-11.11:15.38.39  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXML:38 - 
-11.11:15.39.10  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXML:38 - [Ljava.lang.StackTraceElement;@75828a0f
-11.11:15.39.53 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:38 - [Ljava.lang.StackTraceElement;@75828a0f
-11.11:15.40.05 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:38 - 
-11.11:22.17.24  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXML:34 - 1
-11.11:22.17.58  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXML:34 - bean id - 1
-11.11:22.28.55  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXML:34 - bean id - 1
-11.11:22.29.46  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXML:34 - bean id - 2
-11.12:11.42.52  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXML:34 - bean id - 3
-11.13:21.44.38  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:74 - Index: 1, Size: 0
-12.07:12.17.52  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:46 - mr.alexn95@mail.com
-12.07:12.17.52  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:47 -
-12.07:13.18.09  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:35 - mr.alexn95@mail.com
-12.07:13.18.09  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:36 -
-12.07:13.18.35  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:35 - mr.alexn95@mail.com
-12.07:13.18.35  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:36 -
-12.07:13.18.45  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:35 - mr.alexn95@mail.com
-12.07:13.18.45  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:36 -
-12.10:12.07.08 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:46 - org.simpleframework.xml.core.ElementException: Value for @org.simpleframework.xml.Element(name=, type=void, bean=false, required=true) on method 'projectId' is null in class ru.sfedu.projectmanager.model.entries.User
-12.10:12.07.13 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:46 - javax.xml.stream.XMLStreamException: ParseError at [row,col]:[4,34]
-Message: XML document structures must start and end within the same entity.
-12.10:12.10.13 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:46 - org.simpleframework.xml.core.ElementException: Value for @org.simpleframework.xml.Element(name=, type=void, bean=false, required=true) on method 'projectId' is null in class ru.sfedu.projectmanager.model.entries.User
-12.10:12.16.34 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:46 - org.simpleframework.xml.core.ElementException: Value for @org.simpleframework.xml.Element(name=, type=void, bean=false, required=true) on method 'userId' is null in class ru.sfedu.projectmanager.model.entries.Task
-12.10:12.16.34 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:46 - org.simpleframework.xml.core.ElementException: Value for @org.simpleframework.xml.Element(name=, type=void, bean=false, required=true) on method 'projectId' is null in class ru.sfedu.projectmanager.model.entries.User
-12.10:12.17.07 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:46 - org.simpleframework.xml.core.ElementException: Value for @org.simpleframework.xml.Element(name=, type=void, bean=false, required=true) on method 'userId' is null in class ru.sfedu.projectmanager.model.entries.Task
-12.10:12.17.07 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:46 - org.simpleframework.xml.core.ElementException: Value for @org.simpleframework.xml.Element(name=, type=void, bean=false, required=true) on method 'projectId' is null in class ru.sfedu.projectmanager.model.entries.User
-12.10:12.18.14 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:46 - org.simpleframework.xml.core.ElementException: Value for @org.simpleframework.xml.Element(name=, type=void, bean=false, required=true) on method 'userId' is null in class ru.sfedu.projectmanager.model.entries.Task
-12.10:12.18.14 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:46 - javax.xml.stream.XMLStreamException: ParseError at [row,col]:[2,39]
-Message: XML document structures must start and end within the same entity.
-12.10:12.18.50 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:46 - org.simpleframework.xml.core.ElementException: Value for @org.simpleframework.xml.Element(name=, type=void, bean=false, required=true) on method 'userId' is null in class ru.sfedu.projectmanager.model.entries.Task
-12.10:12.18.50 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:46 - org.simpleframework.xml.core.ElementException: Value for @org.simpleframework.xml.Element(name=, type=void, bean=false, required=true) on method 'projectId' is null in class ru.sfedu.projectmanager.model.entries.User
-12.10:12.22.07 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:46 - org.simpleframework.xml.core.ElementException: Value for @org.simpleframework.xml.Element(name=, type=void, bean=false, required=true) on method 'userId' is null in class ru.sfedu.projectmanager.model.entries.Task
-12.10:12.22.07 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:46 - org.simpleframework.xml.core.ElementException: Value for @org.simpleframework.xml.Element(name=, type=void, bean=false, required=true) on method 'projectId' is null in class ru.sfedu.projectmanager.model.entries.User
-12.10:13.43.25  INFO	ru.sfedu.projectmanager.services.EntryServices.UserService:51 - csv
-12.10:14.05.03  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:29 - SUCCESSFUL
-12.10:19.50.25  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:42 - com.mysql.cj.jdbc.result.ResultSetImpl@3a5ed7a6
-12.10:19.52.16  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:45 - 1
-12.10:19.52.16  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:46 - leha
-12.10:19.52.16  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:45 - 2
-12.10:19.52.16  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:46 - max
-12.10:21.34.11  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:41 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@mail.com, mycastpass, null)' at line 1
-12.10:21.37.20  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:41 - Unknown column 'projectId' in 'field list'
-12.10:21.41.45  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:41 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(title, description, projectId, state, type, createDate, userId)  VALUES ('title' at line 1
-12.10:21.41.49  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:41 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(title, description, state, createDate)  VALUES ('title', 'description', 'state'' at line 1
-12.10:21.41.52  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:41 - Duplicate entry 'lehaLogin' for key 'Users_login_uindex'
-12.10:21.43.20 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:41 - Duplicate entry 'lehaLogin' for key 'Users_login_uindex'
-12.10:21.43.41 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:41 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'lehaLogin' for key 'Users_login_uindex'
-12.10:21.58.57 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:41 - java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(title, description, projectId, state, type, createDate, userId)  VALUES ('title' at line 1
-12.10:21.59.34 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:41 - java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(title, description, projectId, state, type, createDate, userId)  VALUES ('title' at line 1
-12.10:21.59.56  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:39 - INSERT INTO  (title, description, projectId, state, type, createDate, userId)  VALUES ('title', 'description', 1, 'state', 'type', 'date', null);
-12.10:21.59.56 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:42 - java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(title, description, projectId, state, type, createDate, userId)  VALUES ('title' at line 1
-12.10:22.00.39  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:39 - INSERT INTO  Tasks(title, description, projectId, state, type, createDate, userId)  VALUES ('title', 'description', 1, 'state', 'type', 'date', null);
-12.10:22.00.39 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:42 - com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Incorrect datetime value: 'date' for column 'createDate' at row 1
-12.10:22.09.53 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:41 - java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`labs`.`tasks`, CONSTRAINT `Tasks_Projects_id_fk` FOREIGN KEY (`projectId`) REFERENCES `Projects` (`id`))
-12.10:22.14.07 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:41 - java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''2017-12-10)' at line 1
-12.10:22.14.37 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:41 - java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''2017-12-10)' at line 1
-12.10:22.14.53 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:41 - java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''2017-12-10)' at line 1
-12.10:22.15.53  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:38 - INSERT INTO  Projects(title, description, state, createDate)  VALUES ('title', 'description', 'state', '2017-12-10);
-12.10:22.15.53 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:42 - java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''2017-12-10)' at line 1
-12.10:22.17.04 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:41 - com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Incorrect datetime value: '1995' for column 'createDate' at row 1
-12.10:22.18.18  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:38 - INSERT INTO  Projects(title, description, state, createDate)  VALUES ('title', 'description', 'state', 2017-12-10);
-12.10:22.18.18 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:42 - com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Incorrect datetime value: '1995' for column 'createDate' at row 1
-12.10:22.18.18  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:38 - INSERT INTO  Tasks(title, description, projectId, state, type, createDate, userId)  VALUES ('title', 'description', null, 'state', 'type', '2017-12-10', null);
-12.10:22.18.18  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:38 - INSERT INTO  Users(login, email, password, projectId)  VALUES ('lehaLogin', 'mr.alexn95@mail.com', 'mycastpass', null);
-12.10:22.18.18 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:42 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'lehaLogin' for key 'Users_login_uindex'
-12.10:22.20.41  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:38 - INSERT INTO  Projects(title, description, state, createDate)  VALUES ('title', 'description', 'state', 2017-12-10);
-12.10:22.20.41 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:42 - com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Incorrect datetime value: '1995' for column 'createDate' at row 1
-12.10:22.20.41  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:38 - INSERT INTO  Tasks(title, description, projectId, state, type, createDate, userId)  VALUES ('title', 'description', null, 'state', 'type', '2017-12-10', null);
-12.10:22.20.41  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:38 - INSERT INTO  Users(login, email, password, projectId)  VALUES ('lehaLogin', 'mr.alexn95@mail.com', 'mycastpass', null);
-12.10:22.24.31  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:38 - INSERT INTO  Projects(title, description, state, createDate)  VALUES ('title', 'description', 'state', 2017-12-10);
-12.10:22.24.32 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:42 - com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Incorrect datetime value: '1995' for column 'createDate' at row 1
-12.10:22.24.32  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:38 - INSERT INTO  Tasks(title, description, projectId, state, type, createDate, userId)  VALUES ('title', 'description', null, 'state', 'type', 2017-12-10, null);
-12.10:22.24.32 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:42 - com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Incorrect datetime value: '1995' for column 'createDate' at row 1
-12.10:22.24.32  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:38 - INSERT INTO  Users(login, email, password, projectId)  VALUES ('lehaLogin', 'mr.alexn95@mail.com', 'mycastpass', null);
-12.10:22.25.57  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:38 - INSERT INTO  Projects(title, description, state, createDate)  VALUES ('title', 'description', 'state', '2017-12-10');
-12.10:22.25.57  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:38 - INSERT INTO  Tasks(title, description, projectId, state, type, createDate, userId)  VALUES ('title', 'description', null, 'state', 'type', '2017-12-10', null);
-12.10:22.25.57  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:38 - INSERT INTO  Users(login, email, password, projectId)  VALUES ('lehaLogin', 'mr.alexn95@mail.com', 'mycastpass', null);
-12.10:22.26.21 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:41 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'lehaLogin' for key 'Users_login_uindex'
-12.11:13.00.26 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:43 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'lehaLogin' for key 'Users_login_uindex'
-12.11:13.05.37 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:130 - java.sql.SQLException: Illegal operation on empty result set.
-12.11:13.07.24  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBCTest:31 - lehaLogin
-12.11:13.26.09 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:43 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'lehaLogin' for key 'Users_login_uindex'
-12.12:09.58.42 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:43 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'loginjava.util.Random@7d907bac' for key 'Users_login_uindex'
-12.12:10.01.03 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:46 - org.simpleframework.xml.core.MethodException: Annotations do not match for 'projectId' in class ru.sfedu.projectmanager.model.entries.User
-12.12:10.01.03 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:27 - javax.xml.stream.XMLStreamException: ParseError at [row,col]:[1,14]
-Message: XML document structures must start and end within the same entity.
-12.12:10.01.03 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:46 - javax.xml.stream.XMLStreamException: ParseError at [row,col]:[1,14]
-Message: XML document structures must start and end within the same entity.
-12.12:10.03.10 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:27 - javax.xml.stream.XMLStreamException: ParseError at [row,col]:[1,14]
-Message: XML document structures must start and end within the same entity.
-12.12:10.03.10 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:46 - javax.xml.stream.XMLStreamException: ParseError at [row,col]:[1,14]
-Message: XML document structures must start and end within the same entity.
-12.12:10.03.10 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:27 - javax.xml.stream.XMLStreamException: ParseError at [row,col]:[1,14]
-Message: XML document structures must start and end within the same entity.
-12.12:10.03.10 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:46 - javax.xml.stream.XMLStreamException: ParseError at [row,col]:[1,14]
-Message: XML document structures must start and end within the same entity.
-12.12:10.03.17 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:27 - javax.xml.stream.XMLStreamException: ParseError at [row,col]:[1,14]
-Message: XML document structures must start and end within the same entity.
-12.12:10.03.17 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:46 - javax.xml.stream.XMLStreamException: ParseError at [row,col]:[1,14]
-Message: XML document structures must start and end within the same entity.
-12.12:10.03.17 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:27 - javax.xml.stream.XMLStreamException: ParseError at [row,col]:[1,14]
-Message: XML document structures must start and end within the same entity.
-12.12:10.03.17 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:46 - javax.xml.stream.XMLStreamException: ParseError at [row,col]:[1,14]
-Message: XML document structures must start and end within the same entity.
-12.12:10.03.52 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:46 - org.simpleframework.xml.core.MethodException: Annotations do not match for 'projectId' in class ru.sfedu.projectmanager.model.entries.User
-12.12:10.03.52 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:27 - javax.xml.stream.XMLStreamException: ParseError at [row,col]:[1,14]
-Message: XML document structures must start and end within the same entity.
-12.12:10.03.52 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:46 - javax.xml.stream.XMLStreamException: ParseError at [row,col]:[1,14]
-Message: XML document structures must start and end within the same entity.
-12.12:10.09.24 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:46 - javax.xml.stream.XMLStreamException: ParseError at [row,col]:[1,14]
-Message: XML document structures must start and end within the same entity.
-12.12:10.09.57 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:46 - org.simpleframework.xml.core.MethodException: Annotations do not match for 'projectId' in class ru.sfedu.projectmanager.model.entries.User
-12.16:16.55.36 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:46 - org.simpleframework.xml.core.ElementException: Value for @org.simpleframework.xml.Element(name=, type=void, bean=false, required=true) on method 'projectId' is null in class ru.sfedu.projectmanager.model.entries.Task
-12.16:20.16.17 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:55 - java.io.FileNotFoundException: src\main\resources\bean\csv\projects.csv (Системе не удается найти указанный путь)
-12.16:20.16.17 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:55 - java.io.FileNotFoundException: src\main\resources\bean\csv\tasks.csv (Системе не удается найти указанный путь)
-12.16:20.16.17 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:55 - java.io.FileNotFoundException: src\main\resources\bean\csv\users.csv (Системе не удается найти указанный путь)
-12.16:20.17.45 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:55 - java.io.FileNotFoundException: src\main\resources\bean\csv\projects.csv (Системе не удается найти указанный путь)
-12.16:20.17.45 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:55 - java.io.FileNotFoundException: src\main\resources\bean\csv\tasks.csv (Системе не удается найти указанный путь)
-12.16:20.17.45 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:55 - java.io.FileNotFoundException: src\main\resources\bean\csv\users.csv (Системе не удается найти указанный путь)
-12.17:10.25.04 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:42 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'login_734272498' for key 'Users_login_uindex'
-12.17:10.28.12 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:42 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'login_1454238181' for key 'Users_login_uindex'
-12.17:10.28.12 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:113 - java.sql.SQLException: Illegal operation on empty result set.
-12.17:10.29.27 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:42 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'login_-1237005406' for key 'Users_login_uindex'
-12.17:10.29.27 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:113 - java.sql.SQLException: Illegal operation on empty result set.
-12.17:10.29.27 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:99 - java.sql.SQLException: Illegal operation on empty result set.
-12.17:10.30.28 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:42 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'login_1955623280' for key 'Users_login_uindex'
-12.17:10.30.28 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:113 - java.sql.SQLException: Illegal operation on empty result set.
-12.17:10.30.28 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:99 - java.sql.SQLException: Illegal operation on empty result set.
-12.17:10.34.12 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:42 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'login_2047835644' for key 'Users_login_uindex'
-12.17:10.34.12 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:113 - java.sql.SQLException: Illegal operation on empty result set.
-12.17:10.34.12 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:99 - java.sql.SQLException: Illegal operation on empty result set.
-12.17:10.35.14 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:42 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'login_-1305635196' for key 'Users_login_uindex'
-12.17:10.35.14 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:113 - java.sql.SQLException: Illegal operation on empty result set.
-12.17:10.35.14 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:99 - java.sql.SQLException: Illegal operation on empty result set.
-12.17:10.35.58 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:42 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'login_243471425' for key 'Users_login_uindex'
-12.17:10.35.58 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:113 - java.sql.SQLException: Illegal operation on empty result set.
-12.17:10.35.58 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:99 - java.sql.SQLException: Illegal operation on empty result set.
-12.17:10.43.57 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:42 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'login_-1044645839' for key 'Users_login_uindex'
-12.17:10.43.57 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:113 - java.sql.SQLException: Illegal operation on empty result set.
-12.17:10.45.42 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:42 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'login_1333467462' for key 'Users_login_uindex'
-12.17:10.45.42 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:113 - java.sql.SQLException: Illegal operation on empty result set.
-12.17:10.45.42  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBCTest:57 - 'login_-1305635196', 'mail_-2101744022@mail.ru', 'password_2083933429', 0
-12.17:10.45.42  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBCTest:57 - 'login_243471425', 'mail_-3295144@mail.ru', 'password_2113417225', 0
-12.17:10.45.42  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBCTest:57 - 'login_-1044645839', 'mail_-458079501@mail.ru', 'password_678325070', 0
-12.17:10.45.42  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBCTest:57 - 'login_1333467462', 'mail_1320110776@mail.ru', 'password_-334285319', 0
-12.17:10.45.42 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:99 - java.sql.SQLException: Illegal operation on empty result set.
-12.17:10.46.17 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:42 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'login_1144485066' for key 'Users_login_uindex'
-12.17:10.46.17 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:113 - java.sql.SQLException: Illegal operation on empty result set.
-12.17:10.46.17  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBCTest:57 - 'login_-1305635196', 'mail_-2101744022@mail.ru', 'password_2083933429', 0
-12.17:10.46.17  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBCTest:57 - 'login_243471425', 'mail_-3295144@mail.ru', 'password_2113417225', 0
-12.17:10.46.17  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBCTest:57 - 'login_-1044645839', 'mail_-458079501@mail.ru', 'password_678325070', 0
-12.17:10.46.17  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBCTest:57 - 'login_1144485066', 'mail_54963007@mail.ru', 'password_-969237744', 0
-12.17:10.46.17  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBCTest:58 - 'login_1144485066', 'mail_54963007@mail.ru', 'password_-969237744', null
-12.17:10.46.17 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:99 - java.sql.SQLException: Illegal operation on empty result set.
-12.17:10.47.50 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:42 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'login_838664410' for key 'Users_login_uindex'
-12.17:10.47.50 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:113 - java.sql.SQLException: Illegal operation on empty result set.
-12.17:10.47.50  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBCTest:57 - 'login_838664410', 'mail_-456183483@mail.ru', 'password_457187949', 0
-12.17:10.47.50  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBCTest:58 - 'login_838664410', 'mail_-456183483@mail.ru', 'password_457187949', null
-12.17:10.47.50 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:99 - java.sql.SQLException: Illegal operation on empty result set.
-12.17:10.48.30 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:42 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'login_-1760680041' for key 'Users_login_uindex'
-12.17:10.48.30 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:113 - java.sql.SQLException: Illegal operation on empty result set.
-12.17:10.48.30  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBCTest:57 - 'login_-1760680041', 'mail_-721004893@mail.ru', 'password_478604132', 0
-12.17:10.48.30  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBCTest:58 - 'login_-1760680041', 'mail_-721004893@mail.ru', 'password_478604132', null
-12.17:10.50.42 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:42 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'login_-1895808803' for key 'Users_login_uindex'
-12.17:10.50.42  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:201 - 0
-12.17:10.50.42 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:113 - java.sql.SQLException: Illegal operation on empty result set.
-12.17:10.50.42  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:201 - 0
-12.17:10.50.42  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:201 - 0
-12.17:10.50.42  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:201 - 0
-12.17:10.50.42  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBCTest:57 - 'login_-1760680041', 'mail_-721004893@mail.ru', 'password_478604132', 0
-12.17:10.50.42  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBCTest:57 - 'login_-1895808803', 'mail_1987883614@mail.ru', 'password_480800205', 0
-12.17:10.50.42  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBCTest:58 - 'login_-1895808803', 'mail_1987883614@mail.ru', 'password_480800205', null
-12.17:10.50.58 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:42 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'login_-1012792714' for key 'Users_login_uindex'
-12.17:10.50.58  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:201 - 0
-12.17:10.50.58 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:113 - java.sql.SQLException: Illegal operation on empty result set.
-12.17:10.50.58  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:201 - 0
-12.17:10.50.58  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:201 - 0
-12.17:10.50.58  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBCTest:57 - 'login_-1012792714', 'mail_1749940386@mail.ru', 'password_-2027731042', 0
-12.17:10.50.58  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBCTest:58 - 'login_-1012792714', 'mail_1749940386@mail.ru', 'password_-2027731042', null
-12.17:10.50.58 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:99 - java.sql.SQLException: Illegal operation on empty result set.
-12.17:10.51.04 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:42 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'login_-398841621' for key 'Users_login_uindex'
-12.17:10.51.04  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:201 - 0
-12.17:10.51.04 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:113 - java.sql.SQLException: Illegal operation on empty result set.
-12.17:10.51.04  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:201 - 0
-12.17:10.51.04  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:201 - 0
-12.17:10.51.04  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBCTest:57 - 'login_-398841621', 'mail_-1346493420@mail.ru', 'password_886510467', 0
-12.17:10.51.04  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBCTest:58 - 'login_-398841621', 'mail_-1346493420@mail.ru', 'password_886510467', null
-12.17:10.51.15 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:42 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'login_1384399249' for key 'Users_login_uindex'
-12.17:10.51.15  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:201 - 0
-12.17:10.51.15 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:113 - java.sql.SQLException: Illegal operation on empty result set.
-12.17:10.51.15  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:201 - 0
-12.17:10.51.15  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:201 - 0
-12.17:10.51.15  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:201 - 0
-12.17:10.51.15  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBCTest:57 - 'login_-398841621', 'mail_-1346493420@mail.ru', 'password_886510467', 0
-12.17:10.51.15  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBCTest:57 - 'login_1384399249', 'mail_-1754273376@mail.ru', 'password_-386666455', 0
-12.17:10.51.15  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBCTest:58 - 'login_1384399249', 'mail_-1754273376@mail.ru', 'password_-386666455', null
-12.17:10.51.15 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:99 - java.sql.SQLException: Illegal operation on empty result set.
-12.17:10.53.09 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:42 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'login_-204082206' for key 'Users_login_uindex'
-12.17:10.53.09  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:200 - 
-12.17:10.53.09 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:113 - java.sql.SQLException: Illegal operation on empty result set.
-12.17:10.53.09  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:200 - 
-12.17:10.53.09  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:200 - 
-12.17:10.53.09  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:200 - 
-12.17:10.53.09  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBCTest:57 - 'login_-398841621', 'mail_-1346493420@mail.ru', 'password_886510467', 0
-12.17:10.53.09  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBCTest:57 - 'login_-204082206', 'mail_462375934@mail.ru', 'password_-589892879', 0
-12.17:10.53.09  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBCTest:58 - 'login_-204082206', 'mail_462375934@mail.ru', 'password_-589892879', null
-12.17:10.53.09 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:99 - java.sql.SQLException: Illegal operation on empty result set.
-12.17:10.54.17 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:42 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'login_1947907869' for key 'Users_login_uindex'
-12.17:10.54.17  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:201 - 
-12.17:10.54.17 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:113 - java.sql.SQLException: Illegal operation on empty result set.
-12.17:10.54.17  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:201 - 
-12.17:10.54.17  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:201 - 
-12.17:10.54.17  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:201 - 
-12.17:10.54.17  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBCTest:57 - 'login_-398841621', 'mail_-1346493420@mail.ru', 'password_886510467', 0
-12.17:10.54.17  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBCTest:57 - 'login_1947907869', 'mail_-932731427@mail.ru', 'password_-181414583', 0
-12.17:10.54.17  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBCTest:58 - 'login_1947907869', 'mail_-932731427@mail.ru', 'password_-181414583', null
-12.17:10.54.17 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:99 - java.sql.SQLException: Illegal operation on empty result set.
-12.17:10.56.31 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:42 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'login_786993649' for key 'Users_login_uindex'
-12.17:10.56.31 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:113 - java.sql.SQLException: Illegal operation on empty result set.
-12.17:10.56.31  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBCTest:57 - 'login_-398841621', 'mail_-1346493420@mail.ru', 'password_886510467', null
-12.17:10.56.31  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBCTest:57 - 'login_786993649', 'mail_1049545962@mail.ru', 'password_2140164697', null
-12.17:10.56.31  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBCTest:58 - 'login_786993649', 'mail_1049545962@mail.ru', 'password_2140164697', null
-12.17:10.56.31 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:99 - java.sql.SQLException: Illegal operation on empty result set.
-12.17:10.56.56 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:42 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'login_1225301882' for key 'Users_login_uindex'
-12.17:10.56.56 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:113 - java.sql.SQLException: Illegal operation on empty result set.
-12.17:10.57.17 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:42 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'login_-1033558625' for key 'Users_login_uindex'
-12.17:10.57.17 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:113 - java.sql.SQLException: Illegal operation on empty result set.
-12.17:10.57.17  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBCTest:57 - 'login_-398841621', 'mail_-1346493420@mail.ru', 'password_886510467', null
-12.17:10.57.17  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBCTest:57 - 'login_1225301882', 'mail_1763680549@mail.ru', 'password_-27343469', null
-12.17:10.57.17  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBCTest:57 - 'login_-1033558625', 'mail_-1510041289@mail.ru', 'password_626397482', null
-12.17:10.57.17  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBCTest:58 - 'login_-1033558625', 'mail_-1510041289@mail.ru', 'password_626397482', null
-12.17:10.57.17 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:99 - java.sql.SQLException: Illegal operation on empty result set.
-12.17:10.57.20 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:42 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'login_-603614345' for key 'Users_login_uindex'
-12.17:10.57.20 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:113 - java.sql.SQLException: Illegal operation on empty result set.
-12.17:10.57.20  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBCTest:57 - 'login_-603614345', 'mail_502066758@mail.ru', 'password_1657627114', null
-12.17:10.57.20  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBCTest:58 - 'login_-603614345', 'mail_502066758@mail.ru', 'password_1657627114', null
-12.17:10.57.20 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:99 - java.sql.SQLException: Illegal operation on empty result set.
-12.17:11.00.01 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:42 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'login_977950807' for key 'Users_login_uindex'
-12.17:11.00.01 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:113 - java.sql.SQLException: Illegal operation on empty result set.
-12.17:11.00.35 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:42 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'login_-1893621953' for key 'Users_login_uindex'
-12.17:11.00.35 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:113 - java.sql.SQLException: Illegal operation on empty result set.
-12.17:11.00.35  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBCTest:56 - 'login_977950807', 'mail_1259897392@mail.ru', 'password_-875164488', null
-12.17:11.00.35  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBCTest:56 - 'login_-1893621953', 'mail_-213865484@mail.ru', 'password_-2017058583', null
-12.17:11.00.35  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBCTest:57 - 'login_-1893621953', 'mail_-213865484@mail.ru', 'password_-2017058583', null
-12.17:11.00.35 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:99 - java.sql.SQLException: Illegal operation on empty result set.
-12.17:11.01.01 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:42 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'login_1586009908' for key 'Users_login_uindex'
-12.17:11.01.01 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:113 - java.sql.SQLException: Illegal operation on empty result set.
-12.17:11.01.01  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBCTest:56 - 'login_1586009908', 'mail_-1561466997@mail.ru', 'password_-1230699263', null
-12.17:11.01.01  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBCTest:57 - 'login_1586009908', 'mail_-1561466997@mail.ru', 'password_-1230699263', null
-12.17:11.01.01 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:99 - java.sql.SQLException: Illegal operation on empty result set.
-12.17:11.01.33 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:42 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'login_-1017527710' for key 'Users_login_uindex'
-12.17:11.01.33 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:113 - java.sql.SQLException: Illegal operation on empty result set.
-12.17:11.01.33 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:99 - java.sql.SQLException: Illegal operation on empty result set.
-12.17:11.04.09  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXMLTest:134 - true
-12.17:11.05.16  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXMLTest:135 - deletedProjects['projectTitle_29378196', 'description_743925059', 'state_218625547', '2017-12-17', 'projectTitle_888225454', 'description_127179447', 'state_862306609', '2017-12-17', 'projectTitle_284470966', 'description_439235045', 'state_-1962298850', '2017-12-17', 'projectTitle_-1683795967', 'description_-906413139', 'state_1890150375', '2017-12-17', 'projectTitle_1909228792', 'description_774680081', 'state_128126390', '2017-12-17', 'projectTitle_-463583421', 'description_-426348767', 'state_-581107854', '2017-12-17', 'projectTitle_478096532', 'description_814444087', 'state_1616679967', '2017-12-17', 'projectTitle_-1677734211', 'description_-95962082', 'state_-1197311620', '2017-12-17', 'projectTitle_-790192462', 'description_67853633', 'state_-749030960', '2017-12-17', 'projectTitle_245410224', 'description_579288231', 'state_-595861050', '2017-12-17']
-12.17:11.05.16  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXMLTest:136 - projects['projectTitle_29378196', 'description_743925059', 'state_218625547', '2017-12-17', 'projectTitle_888225454', 'description_127179447', 'state_862306609', '2017-12-17', 'projectTitle_284470966', 'description_439235045', 'state_-1962298850', '2017-12-17', 'projectTitle_-1683795967', 'description_-906413139', 'state_1890150375', '2017-12-17', 'projectTitle_1909228792', 'description_774680081', 'state_128126390', '2017-12-17', 'projectTitle_-463583421', 'description_-426348767', 'state_-581107854', '2017-12-17', 'projectTitle_478096532', 'description_814444087', 'state_1616679967', '2017-12-17', 'projectTitle_-1677734211', 'description_-95962082', 'state_-1197311620', '2017-12-17', 'projectTitle_-790192462', 'description_67853633', 'state_-749030960', '2017-12-17', 'projectTitle_245410224', 'description_579288231', 'state_-595861050', '2017-12-17']
-12.17:11.05.27  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXMLTest:135 - deletedProjects ['projectTitle_-1411151137', 'description_-1383591826', 'state_-1125192275', '2017-12-17', 'projectTitle_-948639529', 'description_-1935747397', 'state_775648097', '2017-12-17', 'projectTitle_779020361', 'description_-2000972793', 'state_-953487215', '2017-12-17', 'projectTitle_1640643690', 'description_-1870043479', 'state_-184094832', '2017-12-17', 'projectTitle_1689719402', 'description_-1418426207', 'state_995015354', '2017-12-17', 'projectTitle_1506616009', 'description_1731434408', 'state_-767862857', '2017-12-17', 'projectTitle_306488372', 'description_-1269192002', 'state_538480659', '2017-12-17', 'projectTitle_-1176647745', 'description_-1417918669', 'state_855919906', '2017-12-17', 'projectTitle_488654238', 'description_505323404', 'state_1307713836', '2017-12-17', 'projectTitle_1374134154', 'description_830933847', 'state_891049909', '2017-12-17']
-12.17:11.05.27  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXMLTest:136 - projects ['projectTitle_-1411151137', 'description_-1383591826', 'state_-1125192275', '2017-12-17', 'projectTitle_-948639529', 'description_-1935747397', 'state_775648097', '2017-12-17', 'projectTitle_779020361', 'description_-2000972793', 'state_-953487215', '2017-12-17', 'projectTitle_1640643690', 'description_-1870043479', 'state_-184094832', '2017-12-17', 'projectTitle_1689719402', 'description_-1418426207', 'state_995015354', '2017-12-17', 'projectTitle_1506616009', 'description_1731434408', 'state_-767862857', '2017-12-17', 'projectTitle_306488372', 'description_-1269192002', 'state_538480659', '2017-12-17', 'projectTitle_-1176647745', 'description_-1417918669', 'state_855919906', '2017-12-17', 'projectTitle_488654238', 'description_505323404', 'state_1307713836', '2017-12-17', 'projectTitle_1374134154', 'description_830933847', 'state_891049909', '2017-12-17']
-12.17:11.11.08  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXMLTest:62 - ['lehaLogin', 'mr.alexn95@mail.com', 'mycastpass', null, 'lehaLogin', 'mr.alexn95@mail.com', 'mycastpass', null, 'lehaLogin', 'mr.alexn95@mail.com', 'mycastpass', null, 'login_1999374982', 'mail_1046438269@mail.ru', 'password_-1011387939', null, 'login_-1870208387', 'mail_1047376940@mail.ru', 'password_2028147214', null, 'login_1010040386', 'mail_555142954@mail.ru', 'password_-664880596', null, 'login_576870061', 'mail_-1482799574@mail.ru', 'password_1587617986', null, 'login_990332898', 'mail_233722296@mail.ru', 'password_2021939666', null, 'login_-88819322', 'mail_-1970333864@mail.ru', 'password_789420091', null, 'login_-1791896314', 'mail_742228093@mail.ru', 'password_-1076271084', null, 'login_899899692', 'mail_385256229@mail.ru', 'password_166001296', null, 'login_1065737886', 'mail_-191821534@mail.ru', 'password_-380593772', null, 'login_1827946860', 'mail_1954293212@mail.ru', 'password_-245732558', null, 'login_-865100570', 'mail_-402633122@mail.ru', 'password_-1762187552', null, 'login_-68917136', 'mail_-317318766@mail.ru', 'password_518074303', null, 'login_2143647257', 'mail_-859746863@mail.ru', 'password_1850678050', null, 'login_2036775644', 'mail_-838004434@mail.ru', 'password_1915026727', null, 'login_668229429', 'mail_-988319647@mail.ru', 'password_1786792038', null, 'login_1180230391', 'mail_-16968386@mail.ru', 'password_-1228139791', null, 'login_-855388912', 'mail_-1059381820@mail.ru', 'password_355028894', null, 'login_474639513', 'mail_-385853959@mail.ru', 'password_707456728', null, 'login_677595660', 'mail_-866918906@mail.ru', 'password_1384435996', null, 'login_1207149076', 'mail_-676415804@mail.ru', 'password_1394768869', null]
-12.17:11.11.08  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXMLTest:63 - ['login_-865100570', 'mail_-402633122@mail.ru', 'password_-1762187552', null, 'login_-68917136', 'mail_-317318766@mail.ru', 'password_518074303', null, 'login_2143647257', 'mail_-859746863@mail.ru', 'password_1850678050', null, 'login_2036775644', 'mail_-838004434@mail.ru', 'password_1915026727', null, 'login_668229429', 'mail_-988319647@mail.ru', 'password_1786792038', null, 'login_1180230391', 'mail_-16968386@mail.ru', 'password_-1228139791', null, 'login_-855388912', 'mail_-1059381820@mail.ru', 'password_355028894', null, 'login_474639513', 'mail_-385853959@mail.ru', 'password_707456728', null, 'login_677595660', 'mail_-866918906@mail.ru', 'password_1384435996', null, 'login_1207149076', 'mail_-676415804@mail.ru', 'password_1394768869', null]
-12.17:11.13.19  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXMLTest:62 - ['lehaLogin', 'mr.alexn95@mail.com', 'mycastpass', null, 'lehaLogin', 'mr.alexn95@mail.com', 'mycastpass', null, 'lehaLogin', 'mr.alexn95@mail.com', 'mycastpass', null, 'login_1999374982', 'mail_1046438269@mail.ru', 'password_-1011387939', null, 'login_-1870208387', 'mail_1047376940@mail.ru', 'password_2028147214', null, 'login_1010040386', 'mail_555142954@mail.ru', 'password_-664880596', null, 'login_576870061', 'mail_-1482799574@mail.ru', 'password_1587617986', null, 'login_990332898', 'mail_233722296@mail.ru', 'password_2021939666', null, 'login_-88819322', 'mail_-1970333864@mail.ru', 'password_789420091', null, 'login_-1791896314', 'mail_742228093@mail.ru', 'password_-1076271084', null, 'login_899899692', 'mail_385256229@mail.ru', 'password_166001296', null, 'login_1065737886', 'mail_-191821534@mail.ru', 'password_-380593772', null, 'login_1827946860', 'mail_1954293212@mail.ru', 'password_-245732558', null, 'login_-865100570', 'mail_-402633122@mail.ru', 'password_-1762187552', null, 'login_-68917136', 'mail_-317318766@mail.ru', 'password_518074303', null, 'login_2143647257', 'mail_-859746863@mail.ru', 'password_1850678050', null, 'login_2036775644', 'mail_-838004434@mail.ru', 'password_1915026727', null, 'login_668229429', 'mail_-988319647@mail.ru', 'password_1786792038', null, 'login_1180230391', 'mail_-16968386@mail.ru', 'password_-1228139791', null, 'login_-855388912', 'mail_-1059381820@mail.ru', 'password_355028894', null, 'login_474639513', 'mail_-385853959@mail.ru', 'password_707456728', null, 'login_677595660', 'mail_-866918906@mail.ru', 'password_1384435996', null, 'login_1207149076', 'mail_-676415804@mail.ru', 'password_1394768869', null, 'login_-1047239600', 'mail_855427728@mail.ru', 'password_-1484361944', null, 'login_1093608152', 'mail_-620385717@mail.ru', 'password_1216380942', null, 'login_1877039716', 'mail_798057621@mail.ru', 'password_-1072574974', null, 'login_581262512', 'mail_-637375915@mail.ru', 'password_451135399', null, 'login_-1448194574', 'mail_1609683021@mail.ru', 'password_898850877', null, 'login_-2128852510', 'mail_142312336@mail.ru', 'password_-1350931521', null, 'login_437669440', 'mail_764854907@mail.ru', 'password_1342648614', null, 'login_-1146787291', 'mail_-1983294466@mail.ru', 'password_-1206094527', null, 'login_2124901289', 'mail_772380567@mail.ru', 'password_2091471071', null, 'login_-1039984717', 'mail_-1053066622@mail.ru', 'password_133694282', null]
-12.17:11.13.19  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXMLTest:63 - ['login_-1047239600', 'mail_855427728@mail.ru', 'password_-1484361944', null, 'login_1093608152', 'mail_-620385717@mail.ru', 'password_1216380942', null, 'login_1877039716', 'mail_798057621@mail.ru', 'password_-1072574974', null, 'login_581262512', 'mail_-637375915@mail.ru', 'password_451135399', null, 'login_-1448194574', 'mail_1609683021@mail.ru', 'password_898850877', null, 'login_-2128852510', 'mail_142312336@mail.ru', 'password_-1350931521', null, 'login_437669440', 'mail_764854907@mail.ru', 'password_1342648614', null, 'login_-1146787291', 'mail_-1983294466@mail.ru', 'password_-1206094527', null, 'login_2124901289', 'mail_772380567@mail.ru', 'password_2091471071', null, 'login_-1039984717', 'mail_-1053066622@mail.ru', 'password_133694282', null]
-12.17:11.19.55  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXMLTest:63 - false
-12.17:11.20.18  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXMLTest:63 - false
-12.17:11.22.02  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXMLTest:63 - false
-12.17:11.22.34  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXMLTest:63 - false
-12.17:11.23.28  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXMLTest:63 - false
-12.17:11.23.51  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXMLTest:63 - false
-12.17:11.25.28  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXMLTest:63 - false
-12.17:11.28.48  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXMLTest:62 - ['login_-1663578484', 'mail_-1822745637@mail.ru', 'password_-554112806', null, 'login_1577877439', 'mail_-559601309@mail.ru', 'password_-1235227382', null, 'login_-1147895944', 'mail_-2048895725@mail.ru', 'password_-1602689743', null, 'login_993113167', 'mail_447392095@mail.ru', 'password_1693825188', null, 'login_58855895', 'mail_1806846500@mail.ru', 'password_222835896', null, 'login_345642477', 'mail_-607038002@mail.ru', 'password_1914166445', null, 'login_496449805', 'mail_-997587783@mail.ru', 'password_1241682709', null, 'login_-1680703319', 'mail_-886962242@mail.ru', 'password_41068479', null, 'login_1755792947', 'mail_-554077464@mail.ru', 'password_1609755421', null, 'login_680328010', 'mail_-137015051@mail.ru', 'password_685741471', null]
-12.17:11.28.48  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXMLTest:63 - ['login_-1663578484', 'mail_-1822745637@mail.ru', 'password_-554112806', null, 'login_1577877439', 'mail_-559601309@mail.ru', 'password_-1235227382', null, 'login_-1147895944', 'mail_-2048895725@mail.ru', 'password_-1602689743', null, 'login_993113167', 'mail_447392095@mail.ru', 'password_1693825188', null, 'login_58855895', 'mail_1806846500@mail.ru', 'password_222835896', null, 'login_345642477', 'mail_-607038002@mail.ru', 'password_1914166445', null, 'login_496449805', 'mail_-997587783@mail.ru', 'password_1241682709', null, 'login_-1680703319', 'mail_-886962242@mail.ru', 'password_41068479', null, 'login_1755792947', 'mail_-554077464@mail.ru', 'password_1609755421', null, 'login_680328010', 'mail_-137015051@mail.ru', 'password_685741471', null]
-12.17:11.28.48  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXMLTest:65 - false
-12.17:11.33.59  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXMLTest:62 - ['login_1602974179', 'mail_1473126552@mail.ru', 'password_775715599', null, 'login_826232205', 'mail_1865418012@mail.ru', 'password_789543403', null, 'login_-1935857260', 'mail_-21632645@mail.ru', 'password_-1864129423', null, 'login_86383191', 'mail_-1528467856@mail.ru', 'password_-1260330631', null, 'login_-1603542523', 'mail_6871426@mail.ru', 'password_-631530124', null, 'login_-1292699680', 'mail_2062222961@mail.ru', 'password_510394590', null, 'login_-616581785', 'mail_-650964168@mail.ru', 'password_-1095481269', null, 'login_1253200622', 'mail_-392413866@mail.ru', 'password_1584379994', null, 'login_1174911696', 'mail_-1905390746@mail.ru', 'password_-1202872719', null, 'login_1520697699', 'mail_1028700097@mail.ru', 'password_-311987578', null]
-12.17:11.33.59  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXMLTest:63 - ['login_1602974179', 'mail_1473126552@mail.ru', 'password_775715599', null, 'login_826232205', 'mail_1865418012@mail.ru', 'password_789543403', null, 'login_-1935857260', 'mail_-21632645@mail.ru', 'password_-1864129423', null, 'login_86383191', 'mail_-1528467856@mail.ru', 'password_-1260330631', null, 'login_-1603542523', 'mail_6871426@mail.ru', 'password_-631530124', null, 'login_-1292699680', 'mail_2062222961@mail.ru', 'password_510394590', null, 'login_-616581785', 'mail_-650964168@mail.ru', 'password_-1095481269', null, 'login_1253200622', 'mail_-392413866@mail.ru', 'password_1584379994', null, 'login_1174911696', 'mail_-1905390746@mail.ru', 'password_-1202872719', null, 'login_1520697699', 'mail_1028700097@mail.ru', 'password_-311987578', null]
-12.17:11.33.59  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXMLTest:65 - false
-12.17:11.38.17  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXMLTest:62 - ['login_-999151136', 'mail_2063545686@mail.ru', 'password_-2110371064', null, 'login_506029686', 'mail_475222944@mail.ru', 'password_-881300876', null, 'login_1454704562', 'mail_-336268806@mail.ru', 'password_-1431884542', null, 'login_1304751693', 'mail_583865577@mail.ru', 'password_1837192227', null, 'login_-330550360', 'mail_988168879@mail.ru', 'password_-1613396908', null, 'login_-1834575598', 'mail_861977233@mail.ru', 'password_769093311', null, 'login_1645295795', 'mail_657735652@mail.ru', 'password_573283719', null, 'login_448852567', 'mail_-809291732@mail.ru', 'password_-270741877', null, 'login_-1455546586', 'mail_189987131@mail.ru', 'password_591175316', null, 'login_106256788', 'mail_418889391@mail.ru', 'password_660668956', null]
-12.17:11.38.17  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXMLTest:63 - ['login_-999151136', 'mail_2063545686@mail.ru', 'password_-2110371064', null, 'login_506029686', 'mail_475222944@mail.ru', 'password_-881300876', null, 'login_1454704562', 'mail_-336268806@mail.ru', 'password_-1431884542', null, 'login_1304751693', 'mail_583865577@mail.ru', 'password_1837192227', null, 'login_-330550360', 'mail_988168879@mail.ru', 'password_-1613396908', null, 'login_-1834575598', 'mail_861977233@mail.ru', 'password_769093311', null, 'login_1645295795', 'mail_657735652@mail.ru', 'password_573283719', null, 'login_448852567', 'mail_-809291732@mail.ru', 'password_-270741877', null, 'login_-1455546586', 'mail_189987131@mail.ru', 'password_591175316', null, 'login_106256788', 'mail_418889391@mail.ru', 'password_660668956', null]
-12.17:11.38.33  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXMLTest:62 - ['login_1133127248', 'mail_-649120070@mail.ru', 'password_-29923014', null, 'login_1329761882', 'mail_-1492137452@mail.ru', 'password_870001949', null, 'login_1115853454', 'mail_-1407784147@mail.ru', 'password_-1109734341', null, 'login_669388789', 'mail_-1854481732@mail.ru', 'password_-131887163', null, 'login_1400483332', 'mail_-901570991@mail.ru', 'password_321479118', null, 'login_-612340837', 'mail_605668395@mail.ru', 'password_-941624942', null, 'login_730387553', 'mail_191899213@mail.ru', 'password_960136857', null, 'login_-1563839417', 'mail_-118675327@mail.ru', 'password_536221574', null, 'login_-1208257463', 'mail_-1764029543@mail.ru', 'password_1516531856', null, 'login_1487979608', 'mail_-668553657@mail.ru', 'password_-41481971', null]
-12.17:11.38.33  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXMLTest:63 - ['login_1133127248', 'mail_-649120070@mail.ru', 'password_-29923014', null, 'login_1329761882', 'mail_-1492137452@mail.ru', 'password_870001949', null, 'login_1115853454', 'mail_-1407784147@mail.ru', 'password_-1109734341', null, 'login_669388789', 'mail_-1854481732@mail.ru', 'password_-131887163', null, 'login_1400483332', 'mail_-901570991@mail.ru', 'password_321479118', null, 'login_-612340837', 'mail_605668395@mail.ru', 'password_-941624942', null, 'login_730387553', 'mail_191899213@mail.ru', 'password_960136857', null, 'login_-1563839417', 'mail_-118675327@mail.ru', 'password_536221574', null, 'login_-1208257463', 'mail_-1764029543@mail.ru', 'password_1516531856', null, 'login_1487979608', 'mail_-668553657@mail.ru', 'password_-41481971', null]
-12.17:11.38.39  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXMLTest:62 - ['login_2069811378', 'mail_-571944994@mail.ru', 'password_159779142', null, 'login_65651842', 'mail_1549338396@mail.ru', 'password_-2132557959', null, 'login_2144052071', 'mail_-2130586854@mail.ru', 'password_650901551', null, 'login_-1853315262', 'mail_332203374@mail.ru', 'password_-547625443', null, 'login_1792516826', 'mail_2015046184@mail.ru', 'password_-250058381', null, 'login_993441034', 'mail_-1874425604@mail.ru', 'password_1504792877', null, 'login_-968765183', 'mail_485790676@mail.ru', 'password_-1039682273', null, 'login_-130055730', 'mail_262692017@mail.ru', 'password_1431592695', null, 'login_1902326189', 'mail_924754827@mail.ru', 'password_580059720', null, 'login_-577935962', 'mail_550063516@mail.ru', 'password_1274990064', null]
-12.17:11.38.39  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXMLTest:63 - ['login_1133127248', 'mail_-649120070@mail.ru', 'password_-29923014', null, 'login_1329761882', 'mail_-1492137452@mail.ru', 'password_870001949', null, 'login_1115853454', 'mail_-1407784147@mail.ru', 'password_-1109734341', null, 'login_669388789', 'mail_-1854481732@mail.ru', 'password_-131887163', null, 'login_1400483332', 'mail_-901570991@mail.ru', 'password_321479118', null, 'login_-612340837', 'mail_605668395@mail.ru', 'password_-941624942', null, 'login_730387553', 'mail_191899213@mail.ru', 'password_960136857', null, 'login_-1563839417', 'mail_-118675327@mail.ru', 'password_536221574', null, 'login_-1208257463', 'mail_-1764029543@mail.ru', 'password_1516531856', null, 'login_1487979608', 'mail_-668553657@mail.ru', 'password_-41481971', null, 'login_2069811378', 'mail_-571944994@mail.ru', 'password_159779142', null, 'login_65651842', 'mail_1549338396@mail.ru', 'password_-2132557959', null, 'login_2144052071', 'mail_-2130586854@mail.ru', 'password_650901551', null, 'login_-1853315262', 'mail_332203374@mail.ru', 'password_-547625443', null, 'login_1792516826', 'mail_2015046184@mail.ru', 'password_-250058381', null, 'login_993441034', 'mail_-1874425604@mail.ru', 'password_1504792877', null, 'login_-968765183', 'mail_485790676@mail.ru', 'password_-1039682273', null, 'login_-130055730', 'mail_262692017@mail.ru', 'password_1431592695', null, 'login_1902326189', 'mail_924754827@mail.ru', 'password_580059720', null, 'login_-577935962', 'mail_550063516@mail.ru', 'password_1274990064', null]
-12.17:11.40.30  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXMLTest:62 - ['login_1463124426', 'mail_-145049042@mail.ru', 'password_-1535801820', null, 'login_-1347201775', 'mail_-1929233974@mail.ru', 'password_-581116617', null, 'login_-600766311', 'mail_1434669770@mail.ru', 'password_151112561', null, 'login_301784338', 'mail_2043139946@mail.ru', 'password_1292264380', null, 'login_-809694763', 'mail_-1107206089@mail.ru', 'password_333791664', null, 'login_-513754252', 'mail_1192806296@mail.ru', 'password_1587714064', null, 'login_-465589077', 'mail_892260971@mail.ru', 'password_1171134741', null, 'login_-797633313', 'mail_1676788715@mail.ru', 'password_1032832234', null, 'login_1985943308', 'mail_-704432510@mail.ru', 'password_-1141289942', null, 'login_1213542018', 'mail_-2087811420@mail.ru', 'password_-2099687773', null]
-12.17:11.40.30  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXMLTest:63 - ['login_1133127248', 'mail_-649120070@mail.ru', 'password_-29923014', null, 'login_1329761882', 'mail_-1492137452@mail.ru', 'password_870001949', null, 'login_1115853454', 'mail_-1407784147@mail.ru', 'password_-1109734341', null, 'login_669388789', 'mail_-1854481732@mail.ru', 'password_-131887163', null, 'login_1400483332', 'mail_-901570991@mail.ru', 'password_321479118', null, 'login_-612340837', 'mail_605668395@mail.ru', 'password_-941624942', null, 'login_730387553', 'mail_191899213@mail.ru', 'password_960136857', null, 'login_-1563839417', 'mail_-118675327@mail.ru', 'password_536221574', null, 'login_-1208257463', 'mail_-1764029543@mail.ru', 'password_1516531856', null, 'login_1487979608', 'mail_-668553657@mail.ru', 'password_-41481971', null, 'login_2069811378', 'mail_-571944994@mail.ru', 'password_159779142', null, 'login_65651842', 'mail_1549338396@mail.ru', 'password_-2132557959', null, 'login_2144052071', 'mail_-2130586854@mail.ru', 'password_650901551', null, 'login_-1853315262', 'mail_332203374@mail.ru', 'password_-547625443', null, 'login_1792516826', 'mail_2015046184@mail.ru', 'password_-250058381', null, 'login_993441034', 'mail_-1874425604@mail.ru', 'password_1504792877', null, 'login_-968765183', 'mail_485790676@mail.ru', 'password_-1039682273', null, 'login_-130055730', 'mail_262692017@mail.ru', 'password_1431592695', null, 'login_1902326189', 'mail_924754827@mail.ru', 'password_580059720', null, 'login_-577935962', 'mail_550063516@mail.ru', 'password_1274990064', null, 'login_1463124426', 'mail_-145049042@mail.ru', 'password_-1535801820', null, 'login_-1347201775', 'mail_-1929233974@mail.ru', 'password_-581116617', null, 'login_-600766311', 'mail_1434669770@mail.ru', 'password_151112561', null, 'login_301784338', 'mail_2043139946@mail.ru', 'password_1292264380', null, 'login_-809694763', 'mail_-1107206089@mail.ru', 'password_333791664', null, 'login_-513754252', 'mail_1192806296@mail.ru', 'password_1587714064', null, 'login_-465589077', 'mail_892260971@mail.ru', 'password_1171134741', null, 'login_-797633313', 'mail_1676788715@mail.ru', 'password_1032832234', null, 'login_1985943308', 'mail_-704432510@mail.ru', 'password_-1141289942', null, 'login_1213542018', 'mail_-2087811420@mail.ru', 'password_-2099687773', null]
-12.17:11.40.59  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXMLTest:62 - ['login_1606870413', 'mail_-1644512001@mail.ru', 'password_-85400346', null, 'login_1410883222', 'mail_1299424990@mail.ru', 'password_161430118', null, 'login_-1081407814', 'mail_1295836152@mail.ru', 'password_-1823447542', null, 'login_713363160', 'mail_206507721@mail.ru', 'password_-1682955628', null, 'login_402680914', 'mail_1284179834@mail.ru', 'password_1928564750', null, 'login_759344179', 'mail_-2073745558@mail.ru', 'password_-1111392929', null, 'login_477650159', 'mail_1696647306@mail.ru', 'password_1576586167', null, 'login_1175012536', 'mail_-533801266@mail.ru', 'password_-481403752', null, 'login_-1288284112', 'mail_799824108@mail.ru', 'password_-2048548666', null, 'login_-2147006496', 'mail_1359998970@mail.ru', 'password_917206633', null]
-12.17:11.40.59  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXMLTest:63 - ['login_1606870413', 'mail_-1644512001@mail.ru', 'password_-85400346', null, 'login_1410883222', 'mail_1299424990@mail.ru', 'password_161430118', null, 'login_-1081407814', 'mail_1295836152@mail.ru', 'password_-1823447542', null, 'login_713363160', 'mail_206507721@mail.ru', 'password_-1682955628', null, 'login_402680914', 'mail_1284179834@mail.ru', 'password_1928564750', null, 'login_759344179', 'mail_-2073745558@mail.ru', 'password_-1111392929', null, 'login_477650159', 'mail_1696647306@mail.ru', 'password_1576586167', null, 'login_1175012536', 'mail_-533801266@mail.ru', 'password_-481403752', null, 'login_-1288284112', 'mail_799824108@mail.ru', 'password_-2048548666', null, 'login_-2147006496', 'mail_1359998970@mail.ru', 'password_917206633', null]
-12.17:11.41.22  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXMLTest:62 - ['login_249174329', 'mail_1289166816@mail.ru', 'password_451192446', null, 'login_-824117944', 'mail_-1605519862@mail.ru', 'password_1761700660', null, 'login_752818215', 'mail_-370216849@mail.ru', 'password_1540460794', null, 'login_554700535', 'mail_1397116291@mail.ru', 'password_178700885', null, 'login_-1117911408', 'mail_-2106566894@mail.ru', 'password_-1207441059', null, 'login_461046739', 'mail_1039708017@mail.ru', 'password_-1795156598', null, 'login_-1003846332', 'mail_-472723555@mail.ru', 'password_-1421935414', null, 'login_1219818106', 'mail_126277874@mail.ru', 'password_1765576259', null, 'login_-874729149', 'mail_-746975163@mail.ru', 'password_-1989653602', null, 'login_71018325', 'mail_-675972470@mail.ru', 'password_-409339518', null]
-12.17:11.41.22  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXMLTest:63 - ['login_1606870413', 'mail_-1644512001@mail.ru', 'password_-85400346', null, 'login_1410883222', 'mail_1299424990@mail.ru', 'password_161430118', null, 'login_-1081407814', 'mail_1295836152@mail.ru', 'password_-1823447542', null, 'login_713363160', 'mail_206507721@mail.ru', 'password_-1682955628', null, 'login_402680914', 'mail_1284179834@mail.ru', 'password_1928564750', null, 'login_759344179', 'mail_-2073745558@mail.ru', 'password_-1111392929', null, 'login_477650159', 'mail_1696647306@mail.ru', 'password_1576586167', null, 'login_1175012536', 'mail_-533801266@mail.ru', 'password_-481403752', null, 'login_-1288284112', 'mail_799824108@mail.ru', 'password_-2048548666', null, 'login_-2147006496', 'mail_1359998970@mail.ru', 'password_917206633', null, 'login_249174329', 'mail_1289166816@mail.ru', 'password_451192446', null, 'login_-824117944', 'mail_-1605519862@mail.ru', 'password_1761700660', null, 'login_752818215', 'mail_-370216849@mail.ru', 'password_1540460794', null, 'login_554700535', 'mail_1397116291@mail.ru', 'password_178700885', null, 'login_-1117911408', 'mail_-2106566894@mail.ru', 'password_-1207441059', null, 'login_461046739', 'mail_1039708017@mail.ru', 'password_-1795156598', null, 'login_-1003846332', 'mail_-472723555@mail.ru', 'password_-1421935414', null, 'login_1219818106', 'mail_126277874@mail.ru', 'password_1765576259', null, 'login_-874729149', 'mail_-746975163@mail.ru', 'password_-1989653602', null, 'login_71018325', 'mail_-675972470@mail.ru', 'password_-409339518', null]
-12.17:11.41.22  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXMLTest:65 - false
-12.17:11.41.34  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXMLTest:62 - ['login_-1237316208', 'mail_1437870912@mail.ru', 'password_1660217005', null, 'login_-1195185889', 'mail_1629595072@mail.ru', 'password_1480825784', null, 'login_-980464086', 'mail_-1785634716@mail.ru', 'password_1660566129', null, 'login_-677572174', 'mail_1185081280@mail.ru', 'password_1042077917', null, 'login_-789398763', 'mail_1840581757@mail.ru', 'password_-2131886767', null, 'login_-2005610084', 'mail_877115765@mail.ru', 'password_-354118213', null, 'login_1706636669', 'mail_-1312744397@mail.ru', 'password_-2046391027', null, 'login_2088847829', 'mail_595670510@mail.ru', 'password_-1872986999', null, 'login_-1255578121', 'mail_-890522690@mail.ru', 'password_-1793166089', null, 'login_1904776474', 'mail_325214492@mail.ru', 'password_1231020698', null]
-12.17:11.41.34  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXMLTest:63 - ['login_1606870413', 'mail_-1644512001@mail.ru', 'password_-85400346', null, 'login_1410883222', 'mail_1299424990@mail.ru', 'password_161430118', null, 'login_-1081407814', 'mail_1295836152@mail.ru', 'password_-1823447542', null, 'login_713363160', 'mail_206507721@mail.ru', 'password_-1682955628', null, 'login_402680914', 'mail_1284179834@mail.ru', 'password_1928564750', null, 'login_759344179', 'mail_-2073745558@mail.ru', 'password_-1111392929', null, 'login_477650159', 'mail_1696647306@mail.ru', 'password_1576586167', null, 'login_1175012536', 'mail_-533801266@mail.ru', 'password_-481403752', null, 'login_-1288284112', 'mail_799824108@mail.ru', 'password_-2048548666', null, 'login_-2147006496', 'mail_1359998970@mail.ru', 'password_917206633', null, 'login_-1237316208', 'mail_1437870912@mail.ru', 'password_1660217005', null, 'login_-1195185889', 'mail_1629595072@mail.ru', 'password_1480825784', null, 'login_-980464086', 'mail_-1785634716@mail.ru', 'password_1660566129', null, 'login_-677572174', 'mail_1185081280@mail.ru', 'password_1042077917', null, 'login_-789398763', 'mail_1840581757@mail.ru', 'password_-2131886767', null, 'login_-2005610084', 'mail_877115765@mail.ru', 'password_-354118213', null, 'login_1706636669', 'mail_-1312744397@mail.ru', 'password_-2046391027', null, 'login_2088847829', 'mail_595670510@mail.ru', 'password_-1872986999', null, 'login_-1255578121', 'mail_-890522690@mail.ru', 'password_-1793166089', null, 'login_1904776474', 'mail_325214492@mail.ru', 'password_1231020698', null]
-12.17:11.41.34  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXMLTest:65 - false
-12.17:11.45.39 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:139 - java.lang.IndexOutOfBoundsException: Index: -1, Size: 11
-12.17:11.47.24  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXMLTest:62 - ['login_807836951', 'mail_-459958230@mail.ru', 'password_1042755389', null, 'login_-1233899285', 'mail_1818886323@mail.ru', 'password_1908731456', null, 'login_1873353272', 'mail_-133027084@mail.ru', 'password_-349099661', null, 'login_1090667270', 'mail_920440833@mail.ru', 'password_1304638226', null, 'login_-484075262', 'mail_-578845819@mail.ru', 'password_1567475304', null, 'login_-1306808740', 'mail_1191276791@mail.ru', 'password_-168374118', null, 'login_-1629650438', 'mail_1309738179@mail.ru', 'password_-2041311514', null, 'login_1228056880', 'mail_432935760@mail.ru', 'password_-1339505633', null, 'login_1789816716', 'mail_-1439110725@mail.ru', 'password_1927677202', null, 'login_-1168887628', 'mail_-734064998@mail.ru', 'password_1605144713', null]
-12.17:11.47.24  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXMLTest:63 - ['login_1606870413', 'mail_-1644512001@mail.ru', 'password_-85400346', null, 'login_1410883222', 'mail_1299424990@mail.ru', 'password_161430118', null, 'login_-1081407814', 'mail_1295836152@mail.ru', 'password_-1823447542', null, 'login_713363160', 'mail_206507721@mail.ru', 'password_-1682955628', null, 'login_402680914', 'mail_1284179834@mail.ru', 'password_1928564750', null, 'login_759344179', 'mail_-2073745558@mail.ru', 'password_-1111392929', null, 'login_477650159', 'mail_1696647306@mail.ru', 'password_1576586167', null, 'login_1175012536', 'mail_-533801266@mail.ru', 'password_-481403752', null, 'login_-1288284112', 'mail_799824108@mail.ru', 'password_-2048548666', null, 'login_-2147006496', 'mail_1359998970@mail.ru', 'password_917206633', null, 'login_447306267', 'mail_1140930394@mail.ru', 'password_-1661724212', null, 'login_807836951', 'mail_-459958230@mail.ru', 'password_1042755389', null, 'login_-1233899285', 'mail_1818886323@mail.ru', 'password_1908731456', null, 'login_1873353272', 'mail_-133027084@mail.ru', 'password_-349099661', null, 'login_1090667270', 'mail_920440833@mail.ru', 'password_1304638226', null, 'login_-484075262', 'mail_-578845819@mail.ru', 'password_1567475304', null, 'login_-1306808740', 'mail_1191276791@mail.ru', 'password_-168374118', null, 'login_-1629650438', 'mail_1309738179@mail.ru', 'password_-2041311514', null, 'login_1228056880', 'mail_432935760@mail.ru', 'password_-1339505633', null, 'login_1789816716', 'mail_-1439110725@mail.ru', 'password_1927677202', null, 'login_-1168887628', 'mail_-734064998@mail.ru', 'password_1605144713', null]
-12.17:11.47.24  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXMLTest:65 - false
-12.17:13.14.00  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXMLTest:65 - true
-12.17:13.50.22 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:42 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'login_1840341065' for key 'Users_login_uindex'
-12.17:13.50.22 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:113 - java.sql.SQLException: Illegal operation on empty result set.
-12.17:13.50.22 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:99 - java.sql.SQLException: Illegal operation on empty result set.
-12.17:14.42.05 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:42 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'login_863121983' for key 'Users_login_uindex'
-12.17:14.42.05 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:113 - java.sql.SQLException: Illegal operation on empty result set.
-12.17:14.42.05 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:99 - java.sql.SQLException: Illegal operation on empty result set.
-12.17:14.44.49  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBCTest:71 - 'taskTitle_448427942', 'description_189182047', null, 'state_-1082580626', 'type_-24283565', '2017-12-17', null
-12.17:14.44.49  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBCTest:72 - []
-12.17:14.51.20  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBCTest:71 - 'taskTitle_790195828', 'description_349402509', null, 'state_1325064807', 'type_1261816293', '2017-12-17', null
-12.17:14.51.20  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBCTest:72 - ['taskTitle_790195828', 'description_349402509', null, 'state_1325064807', 'type_1261816293', '2017-12-17', null]
-12.17:14.51.20 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:183 - java.sql.SQLSyntaxErrorException: Table 'labs.task' doesn't exist
-12.17:14.52.26  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBCTest:71 - 'taskTitle_-1424148574', 'description_-1339170954', null, 'state_-701233423', 'type_1044580115', '2017-12-17', null
-12.17:14.52.26  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBCTest:72 - ['taskTitle_-1424148574', 'description_-1339170954', null, 'state_-701233423', 'type_1044580115', '2017-12-17', null]
-12.17:14.52.26 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:183 - java.sql.SQLSyntaxErrorException: Unknown column 'nullstate' in 'field list'
-12.17:14.53.22  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBCTest:71 - 'taskTitle_17042831', 'description_164605016', null, 'state_1363466484', 'type_-1558379969', '2017-12-17', null
-12.17:14.53.22  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBCTest:72 - ['taskTitle_17042831', 'description_164605016', null, 'state_1363466484', 'type_-1558379969', '2017-12-17', null]
-12.17:14.53.22  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:172 - UPDATE Tasks SET title = 'taskTitle_17042831', description = 'description_164605016', projectId = nullstate = 'some_test_state', type = 'type_-1558379969', userId = null;
-12.17:14.53.22 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:186 - java.sql.SQLSyntaxErrorException: Unknown column 'nullstate' in 'field list'
-12.17:14.54.23  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBCTest:71 - 'taskTitle_882740083', 'description_-210955290', null, 'state_1820846625', 'type_-1943148188', '2017-12-17', null
-12.17:14.54.23  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBCTest:72 - ['taskTitle_882740083', 'description_-210955290', null, 'state_1820846625', 'type_-1943148188', '2017-12-17', null]
-12.17:14.54.23  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:172 - UPDATE Tasks SET title = 'taskTitle_882740083', description = 'description_-210955290', projectId = null, state = 'some_test_state', type = 'type_-1943148188', userId = null;
-12.17:14.54.23 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:99 - java.sql.SQLException: Illegal operation on empty result set.
-12.17:14.55.47  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBCTest:71 - 'taskTitle_377799584', 'description_-1140456112', null, 'state_-780398829', 'type_-1304920673', '2017-12-17', null
-12.17:14.55.47  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBCTest:72 - ['taskTitle_377799584', 'description_-1140456112', null, 'state_-780398829', 'type_-1304920673', '2017-12-17', null]
-12.17:14.55.47 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:99 - java.sql.SQLException: Illegal operation on empty result set.
-12.17:14.56.28 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:99 - java.sql.SQLException: Illegal operation on empty result set.
-12.17:14.59.27 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:99 - java.sql.SQLException: Illegal operation on empty result set.
-12.17:14.59.43 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:99 - java.sql.SQLException: Illegal operation on empty result set.
-12.17:15.04.30  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBCTest:97 - 'projectTitle_-1180744544', 'description_-867919605', 'state_1562955932', '2017-12-17'
-12.17:15.04.30  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBCTest:98 - []
-12.17:15.05.05  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBCTest:97 - 'projectTitle_1757919496', 'description_-2113801764', 'state_-1866581953', '2017-12-17'
-12.17:15.05.05  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBCTest:98 - ['projectTitle_1757919496', 'description_-2113801764', 'state_-1866581953', '2017-12-17']
-12.17:15.05.05 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:225 - java.sql.SQLSyntaxErrorException: Table 'labs.project' doesn't exist
-12.17:15.05.59  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBCTest:97 - 'projectTitle_2098854749', 'description_-512954196', 'state_-1568877015', '2017-12-17'
-12.17:15.05.59  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBCTest:98 - ['projectTitle_2098854749', 'description_-512954196', 'state_-1568877015', '2017-12-17']
-12.17:15.05.59 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:99 - java.sql.SQLException: Illegal operation on empty result set.
-12.17:15.06.09 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:99 - java.sql.SQLException: Illegal operation on empty result set.
-12.17:15.06.11 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:99 - java.sql.SQLException: Illegal operation on empty result set.
-12.17:15.06.11 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:99 - java.sql.SQLException: Illegal operation on empty result set.
-12.17:15.06.11 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:42 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'login_1126155914' for key 'Users_login_uindex'
-12.17:15.06.11 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:112 - java.sql.SQLException: Before start of result set
-12.17:15.06.11 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:112 - java.sql.SQLException: Illegal operation on empty result set.
-12.17:15.07.09 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:99 - java.sql.SQLException: Illegal operation on empty result set.
-12.17:15.07.09 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:99 - java.sql.SQLException: Illegal operation on empty result set.
-12.17:15.07.09 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:112 - java.sql.SQLException: Before start of result set
-12.17:15.08.38 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:99 - java.sql.SQLException: Illegal operation on empty result set.
-12.17:15.08.38 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:99 - java.sql.SQLException: Illegal operation on empty result set.
-12.17:15.08.38 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:112 - java.sql.SQLException: Before start of result set
-12.17:15.09.46 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:99 - java.sql.SQLException: Illegal operation on empty result set.
-12.17:15.09.46 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:99 - java.sql.SQLException: Illegal operation on empty result set.
-12.17:15.09.46 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:112 - java.sql.SQLException: Before start of result set
-12.17:15.12.52 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:99 - java.sql.SQLException: Illegal operation on empty result set.
-12.17:15.12.52 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:99 - java.sql.SQLException: Illegal operation on empty result set.
-12.17:15.12.52 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:186 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'login_292053401' for key 'Users_login_uindex'
-12.17:15.13.36 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:99 - java.sql.SQLException: Illegal operation on empty result set.
-12.17:15.13.36 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:99 - java.sql.SQLException: Illegal operation on empty result set.
-12.17:15.13.36  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:161 - UPDATE Users SET login = 'login_2020625277', email = 'test_email', password = 'password_-373374371', projectId = null;
-12.17:15.13.36 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:186 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'login_2020625277' for key 'Users_login_uindex'
-12.17:15.18.38 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:189 - java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''some_test_stateWHERE id = 1907695625166939598' at line 1
-12.17:15.18.38 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:189 - java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'id = 3267642170935721912' at line 1
-12.17:15.18.38  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:162 - UPDATE Users SET login = 'login_1318479691', email = 'test_email', password = 'password_-603780727', projectId = nullWHERE id = 580458593738706600;
-12.17:15.18.38 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:189 - java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'id = 580458593738706600' at line 1
-12.17:15.19.31 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:189 - java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''some_test_state WHERE id = -5880995470474867225' at line 1
-12.17:15.19.31  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:162 - UPDATE Users SET login = 'login_1640618271', email = 'test_email', password = 'password_1813944582', projectId = null WHERE id = -3727281515972829597;
-12.17:15.22.34 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:189 - java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''some_test_state WHERE id = -1193069816261380901' at line 1
-12.17:15.22.34  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:162 - UPDATE Users SET login = 'login_1669107561', email = 'test_email', password = 'password_-1877145636', projectId = null WHERE id = 109;
-12.17:15.22.34 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:99 - java.sql.SQLException: Illegal operation on empty result set.
-12.17:15.22.56  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:183 - UPDATE Projects SET title = 'projectTitle_-1635634044', description = 'description_-824732577', state = 'some_test_state WHERE id = -708515875676219742;
-12.17:15.22.56 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:189 - java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''some_test_state WHERE id = -708515875676219742' at line 1
-12.17:15.22.56  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:174 - UPDATE Tasks SET title = 'taskTitle_52858077', description = 'description_1932042983', projectId = null, state = 'some_test_state', type = 'type_-470500556', userId = null WHERE id = 3995463402799002898;
-12.17:15.22.56  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:162 - UPDATE Users SET login = 'login_180165365', email = 'test_email', password = 'password_-1809701585', projectId = null WHERE id = 110;
-12.17:15.22.56 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:99 - java.sql.SQLException: Illegal operation on empty result set.
-12.17:15.24.03  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:183 - UPDATE Projects SET title = 'projectTitle_-781175830', description = 'description_802268434', state = 'some_test_state' WHERE id = -2728208814883096147;
-12.17:15.24.04  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:174 - UPDATE Tasks SET title = 'taskTitle_-1256784820', description = 'description_-1620167136', projectId = null, state = 'some_test_state', type = 'type_-1349372427', userId = null WHERE id = 3288073686191825501;
-12.17:15.24.04  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:162 - UPDATE Users SET login = 'login_-399541265', email = 'test_email', password = 'password_1948328947', projectId = null WHERE id = 111;
-12.17:15.24.04 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:99 - java.sql.SQLException: Illegal operation on empty result set.
-12.17:15.25.21  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:183 - UPDATE Projects SET title = 'projectTitle_-281662824', description = 'description_2133386694', state = 'some_test_state' WHERE id = 2716119650756510168;
-12.17:15.25.21  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBCTest:100 - 'projectTitle_-281662824', 'description_2133386694', 'some_test_state', '2017-12-17'
-12.17:15.25.21  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBCTest:101 - ['projectTitle_-281662824', 'description_2133386694', 'state_-443333282', '2017-12-17']
-12.17:15.25.21  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:174 - UPDATE Tasks SET title = 'taskTitle_912291795', description = 'description_385059699', projectId = null, state = 'some_test_state', type = 'type_516732695', userId = null WHERE id = -2744582810872009961;
-12.17:15.25.21  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:162 - UPDATE Users SET login = 'login_380154497', email = 'test_email', password = 'password_-657239342', projectId = null WHERE id = 112;
-12.17:15.25.21 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:99 - java.sql.SQLException: Illegal operation on empty result set.
-12.17:15.27.08  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:183 - UPDATE Projects SET title = 'projectTitle_-2123699124', description = 'description_-1711609703', state = 'some_test_state' WHERE id = 31;
-12.17:15.27.08 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:99 - java.sql.SQLException: Illegal operation on empty result set.
-12.17:15.27.08  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:174 - UPDATE Tasks SET title = 'taskTitle_1830965954', description = 'description_1563225088', projectId = null, state = 'some_test_state', type = 'type_-1416021004', userId = null WHERE id = 4951084592829440702;
-12.17:15.27.08  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:162 - UPDATE Users SET login = 'login_-2004150351', email = 'test_email', password = 'password_2017043850', projectId = null WHERE id = 113;
-12.17:15.27.08 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:99 - java.sql.SQLException: Illegal operation on empty result set.
-12.17:15.27.32  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:183 - UPDATE Projects SET title = 'projectTitle_125433938', description = 'description_628053792', state = 'some_test_state' WHERE id = 32;
-12.17:15.27.32 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:99 - java.sql.SQLException: Illegal operation on empty result set.
-12.17:15.27.32  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:174 - UPDATE Tasks SET title = 'taskTitle_-1400956575', description = 'description_-927912646', projectId = null, state = 'some_test_state', type = 'type_-107119456', userId = null WHERE id = 45;
-12.17:15.27.32 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:99 - java.sql.SQLException: Illegal operation on empty result set.
-12.17:15.27.32  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:162 - UPDATE Users SET login = 'login_2087737744', email = 'test_email', password = 'password_1995348373', projectId = null WHERE id = 114;
-12.17:15.27.32 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:99 - java.sql.SQLException: Illegal operation on empty result set.
-12.17:15.44.06 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:42 - java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`labs`.`users`, CONSTRAINT `Users_Projects_id_fk` FOREIGN KEY (`projectId`) REFERENCES `Projects` (`id`))
-12.17:15.46.27 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:42 - java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`labs`.`users`, CONSTRAINT `Users_Projects_id_fk` FOREIGN KEY (`projectId`) REFERENCES `Projects` (`id`))
-12.17:15.50.18 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:42 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'login_-451358269' for key 'Users_login_uindex'
-12.17:17.20.09 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:58 - ru.sfedu.projectmanager.exceptions.IdNotUniqueException
-12.17:17.20.09 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:139 - ru.sfedu.projectmanager.exceptions.IdNotUniqueException
-12.17:17.20.09 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:58 - ru.sfedu.projectmanager.exceptions.IdNotUniqueException
-12.17:17.20.09 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:139 - ru.sfedu.projectmanager.exceptions.IdNotUniqueException
-12.17:17.20.09 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:58 - ru.sfedu.projectmanager.exceptions.IdNotUniqueException
-12.17:17.20.09 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:139 - ru.sfedu.projectmanager.exceptions.IdNotUniqueException
-12.17:17.25.04 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:58 - ru.sfedu.projectmanager.exceptions.IdNotUniqueException
-12.17:17.25.04 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:58 - ru.sfedu.projectmanager.exceptions.IdNotUniqueException
-12.17:17.25.04 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:58 - ru.sfedu.projectmanager.exceptions.IdNotUniqueException
-12.17:17.27.10 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:58 - ru.sfedu.projectmanager.exceptions.IdNotUniqueException
-12.17:17.27.10 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:58 - ru.sfedu.projectmanager.exceptions.IdNotUniqueException
-12.17:17.27.10 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:58 - ru.sfedu.projectmanager.exceptions.IdNotUniqueException
-12.17:17.28.47 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:58 - ru.sfedu.projectmanager.exceptions.IdNotUniqueException
-12.17:17.28.47 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:139 - ru.sfedu.projectmanager.exceptions.IdNotUniqueException
-12.17:17.28.47 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:58 - ru.sfedu.projectmanager.exceptions.IdNotUniqueException
-12.17:17.28.47 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:139 - ru.sfedu.projectmanager.exceptions.IdNotUniqueException
-12.17:17.28.47 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:58 - ru.sfedu.projectmanager.exceptions.IdNotUniqueException
-12.17:17.28.47 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:139 - ru.sfedu.projectmanager.exceptions.IdNotUniqueException
-12.17:17.29.04 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:58 - ru.sfedu.projectmanager.exceptions.IdNotUniqueException
-12.17:17.29.04 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:58 - ru.sfedu.projectmanager.exceptions.IdNotUniqueException
-12.17:17.29.04 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:58 - ru.sfedu.projectmanager.exceptions.IdNotUniqueException
-12.17:17.30.23 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:58 - ru.sfedu.projectmanager.exceptions.IdNotUniqueException
-12.17:17.30.23 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:139 - ru.sfedu.projectmanager.exceptions.IdNotUniqueException
-12.17:17.30.23 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:58 - ru.sfedu.projectmanager.exceptions.IdNotUniqueException
-12.17:17.30.23 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:139 - ru.sfedu.projectmanager.exceptions.IdNotUniqueException
-12.17:17.30.23 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:58 - ru.sfedu.projectmanager.exceptions.IdNotUniqueException
-12.17:17.30.23 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:139 - ru.sfedu.projectmanager.exceptions.IdNotUniqueException
-12.17:17.35.58 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:137 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
-12.17:17.40.54  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:124 - 'projectTitle_687388352', 'description_-200244399', 'some_test_state', '2017-12-17'
-12.17:17.40.54  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:124 - 'taskTitle_310080930', 'description_1392397592', null, 'some_test_state', 'type_17216823', '2017-12-17', null
-12.17:17.40.55 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:138 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
-12.17:17.41.33  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:123 - 'projectTitle_1715986885', 'description_-1886380712', 'some_test_state', '2017-12-17'
-12.17:17.41.33  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:123 - 'taskTitle_1408122289', 'description_-847861628', null, 'some_test_state', 'type_1483511517', '2017-12-17', null
-12.17:17.41.34  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:123 - 'login_1062094620', 'test_email', 'password_38811380', null
-12.17:17.41.34 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:138 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
-12.17:17.43.52  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:128 - 'projectTitle_-1268497903', 'description_-465678193', 'some_test_state', '2017-12-17'
-12.17:17.43.53  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:128 - 'taskTitle_358270803', 'description_-1920924360', null, 'some_test_state', 'type_-1628860673', '2017-12-17', null
-12.17:17.43.53  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:128 - 'login_-141069670', 'test_email', 'password_-1450485092', null
-12.17:17.44.13  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:128 - 'projectTitle_110483624', 'description_2083676434', 'some_test_state', '2017-12-17'
-12.17:17.44.13  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:128 - 'taskTitle_-543954454', 'description_-1672156876', null, 'some_test_state', 'type_853358991', '2017-12-17', null
-12.17:17.44.14  INFO	ru.sfedu.projectmanager.model.providers.DataProviderCSV:128 - 'login_1600247161', 'test_email', 'password_1144257733', null
-12.17:21.05.06 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:50 - java.lang.ClassCastException: ru.sfedu.projectmanager.model.entries.Task cannot be cast to ru.sfedu.projectmanager.model.entries.User
-12.17:21.08.41 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:50 - java.lang.ClassCastException: ru.sfedu.projectmanager.model.entries.Task cannot be cast to ru.sfedu.projectmanager.model.entries.User
-12.17:21.10.18 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:50 - java.lang.ClassCastException: ru.sfedu.projectmanager.model.entries.Task cannot be cast to ru.sfedu.projectmanager.model.entries.User
-12.17:21.12.06 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:56 - java.lang.ClassCastException: ru.sfedu.projectmanager.model.entries.Task cannot be cast to ru.sfedu.projectmanager.model.entries.User
-12.17:21.15.28  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXML:36 - PROJECT
-12.17:21.15.29  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXML:36 - PROJECT
-12.17:21.15.29  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXML:36 - PROJECT
-12.17:21.15.29  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXML:36 - PROJECT
-12.17:21.15.29  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXML:36 - PROJECT
-12.17:21.15.29  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXML:36 - PROJECT
-12.17:21.15.29  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXML:36 - PROJECT
-12.17:21.15.29  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXML:36 - PROJECT
-12.17:21.15.29  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXML:36 - PROJECT
-12.17:21.15.29  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXML:36 - PROJECT
-12.17:21.15.29  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXML:36 - PROJECT
-12.17:21.15.29  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXML:36 - PROJECT
-12.17:21.15.29  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXML:36 - TASK
-12.17:21.15.29  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXML:36 - TASK
-12.17:21.15.29  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXML:36 - USER
-12.17:21.15.29 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:57 - java.lang.ClassCastException: ru.sfedu.projectmanager.model.entries.Task cannot be cast to ru.sfedu.projectmanager.model.entries.User
-12.17:21.20.31 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:56 - java.lang.ClassCastException: ru.sfedu.projectmanager.model.entries.Task cannot be cast to ru.sfedu.projectmanager.model.entries.User
-12.17:21.21.19 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:56 - java.lang.ClassCastException: ru.sfedu.projectmanager.model.entries.Task cannot be cast to ru.sfedu.projectmanager.model.entries.User
-12.17:21.25.10  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXML:38 - ['taskTitle_-1617264918', 'description_300450101', null, 'state_-1067922131', 'type_-633277207', '2017-12-17', null]
-12.17:21.25.10 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:57 - java.lang.ClassCastException: ru.sfedu.projectmanager.model.entries.Task cannot be cast to ru.sfedu.projectmanager.model.entries.User
-12.17:21.29.13  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXML:243 - 111111111
-12.17:21.29.13 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:56 - java.lang.ClassCastException: ru.sfedu.projectmanager.model.entries.Task cannot be cast to ru.sfedu.projectmanager.model.entries.User
-12.17:21.30.16  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXML:243 - 111111111
-12.17:21.30.16 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:56 - java.lang.ClassCastException: ru.sfedu.projectmanager.model.entries.Task cannot be cast to ru.sfedu.projectmanager.model.entries.User
-12.17:21.31.27  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXML:243 - 111111111
-12.17:21.31.27 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:56 - java.lang.ClassCastException: ru.sfedu.projectmanager.model.entries.Task cannot be cast to ru.sfedu.projectmanager.model.entries.User
-12.17:21.31.58  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXML:243 - 111111111
-12.17:21.31.58 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:56 - java.lang.ClassCastException: ru.sfedu.projectmanager.model.entries.Task cannot be cast to ru.sfedu.projectmanager.model.entries.User
-12.17:21.34.30  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXML:37 - ru.sfedu.projectmanager.model.entries.XMLBeanList@fe18270
-12.17:21.34.30  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXML:43 - USER
-12.17:21.34.30  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXML:44 - ['taskTitle_-1617264918', 'description_300450101', null, 'state_-1067922131', 'type_-633277207', '2017-12-17', null]
-12.17:21.34.30  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXML:45 - 'login_-522723886', 'mail_-521333661@mail.ru', 'password_-1256171405', null
-12.17:21.34.30  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXML:247 - 111111111
-12.17:21.34.30 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:60 - java.lang.ClassCastException: ru.sfedu.projectmanager.model.entries.Task cannot be cast to ru.sfedu.projectmanager.model.entries.User
-12.17:21.37.28  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXML:38 - ru.sfedu.projectmanager.model.entries.XMLBeanList@fe18270
-12.17:21.37.28  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXML:44 - USER
-12.17:21.37.28  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXML:45 - ['taskTitle_-1617264918', 'description_300450101', null, 'state_-1067922131', 'type_-633277207', '2017-12-17', null]
-12.17:21.37.28  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXML:46 - 'login_1245058868', 'mail_-217696704@mail.ru', 'password_1989756040', null
-12.17:21.37.28  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXML:248 - 111111111
-12.17:21.37.28 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:61 - java.lang.ClassCastException: ru.sfedu.projectmanager.model.entries.Task cannot be cast to ru.sfedu.projectmanager.model.entries.User
-12.17:21.37.59  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXML:38 - ['taskTitle_-1617264918', 'description_300450101', null, 'state_-1067922131', 'type_-633277207', '2017-12-17', null]
-12.17:21.37.59  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXML:44 - USER
-12.17:21.37.59  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXML:45 - ['taskTitle_-1617264918', 'description_300450101', null, 'state_-1067922131', 'type_-633277207', '2017-12-17', null]
-12.17:21.37.59  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXML:46 - 'login_1533836542', 'mail_1970489396@mail.ru', 'password_325948752', null
-12.17:21.37.59  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXML:248 - 111111111
-12.17:21.37.59 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:61 - java.lang.ClassCastException: ru.sfedu.projectmanager.model.entries.Task cannot be cast to ru.sfedu.projectmanager.model.entries.User
-12.17:21.38.38  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXML:37 - src\main\resources\data\xml\users.xml
-12.17:21.38.38  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXML:39 - ['taskTitle_-1617264918', 'description_300450101', null, 'state_-1067922131', 'type_-633277207', '2017-12-17', null]
-12.17:21.38.38  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXML:45 - USER
-12.17:21.38.38  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXML:46 - ['taskTitle_-1617264918', 'description_300450101', null, 'state_-1067922131', 'type_-633277207', '2017-12-17', null]
-12.17:21.38.38  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXML:47 - 'login_324170325', 'mail_734318114@mail.ru', 'password_207830595', null
-12.17:21.38.38  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXML:249 - 111111111
-12.17:21.38.38 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:62 - java.lang.ClassCastException: ru.sfedu.projectmanager.model.entries.Task cannot be cast to ru.sfedu.projectmanager.model.entries.User
-12.17:21.41.49  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXML:37 - []
-12.17:21.41.49  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXML:244 - 111111111
-12.17:21.41.49  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXML:37 - []
-12.17:21.41.49  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXML:244 - 111111111
-12.17:21.44.52  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXML:38 - 
-12.17:21.44.52  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXML:38 - 
-12.17:21.51.27 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:57 - java.lang.ClassCastException: ru.sfedu.projectmanager.model.entries.Project cannot be cast to ru.sfedu.projectmanager.model.entries.User
-12.18:11.26.19 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:42 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'leha' for key 'Users_login_uindex'
-12.18:11.45.23 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:42 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'leha' for key 'Users_login_uindex'
-12.18:11.46.11 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:42 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'leha' for key 'Users_login_uindex'
-12.18:11.51.29 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:42 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'leha' for key 'Users_login_uindex'
-12.18:13.00.35 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:57 - org.simpleframework.xml.core.AttributeException: Value for @org.simpleframework.xml.Attribute(name=, required=true, empty=) on field 'id' private java.lang.Long ru.sfedu.projectmanager.model.entries.User.id is null in class ru.sfedu.projectmanager.model.entries.User
-12.18:13.03.26 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:57 - javax.xml.stream.XMLStreamException: ParseError at [row,col]:[1,14]
-Message: XML document structures must start and end within the same entity.
-12.18:13.04.33 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:48 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
-12.18:16.30.36  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXMLTest:124 - 
-12.18:16.35.40  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXMLTest:124 - 'projectTitle_1708859489', 'description_-886873447', 'state_690143958', '2017-12-18'
-12.18:16.39.30  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXMLTest:124 - 'projectTitle_626261620', 'description_1073686968', 'state_1502700567', '2017-12-18'
-12.18:17.39.16 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:45 - java.sql.SQLException: Data truncated for column 'createDate' at row 1
-12.18:17.39.16 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:45 - java.sql.SQLException: Data truncated for column 'createDate' at row 1
-12.18:17.39.16  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:165 - UPDATE Users SET login = 'login_510279385', email = 'test_email', password = 'password_1356129719', projectId = null WHERE id = 124;
-12.18:17.39.16 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:102 - java.sql.SQLException: Illegal operation on empty result set.
-12.18:17.41.44 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:45 - java.sql.SQLException: Data truncated for column 'createDate' at row 1
-12.18:17.41.44 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:45 - java.sql.SQLException: Data truncated for column 'createDate' at row 1
-12.18:17.41.44  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:165 - UPDATE Users SET login = 'login_-918737248', email = 'test_email', password = 'password_-338879250', projectId = null WHERE id = 125;
-12.18:17.41.44 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:102 - java.sql.SQLException: Illegal operation on empty result set.
-12.18:17.43.06 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:45 - java.sql.SQLException: Data truncated for column 'createDate' at row 1
-12.18:17.43.06 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:45 - java.sql.SQLException: Data truncated for column 'createDate' at row 1
-12.18:17.43.06  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:165 - UPDATE Users SET login = 'login_-1168988240', email = 'test_email', password = 'password_-1111482154', projectId = null WHERE id = 126;
-12.18:17.43.06 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:102 - java.sql.SQLException: Illegal operation on empty result set.
-12.18:17.45.16 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:45 - java.sql.SQLException: Data truncated for column 'createDate' at row 1
-12.18:17.45.16 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:45 - java.sql.SQLException: Data truncated for column 'createDate' at row 1
-12.18:17.45.16  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:165 - UPDATE Users SET login = 'login_-1664603285', email = 'test_email', password = 'password_1226989850', projectId = null WHERE id = 127;
-12.18:17.45.16 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:102 - java.sql.SQLException: Illegal operation on empty result set.
-12.18:18.32.30 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:45 - com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Out of range value for column 'createDate' at row 1
-12.18:18.32.30 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:45 - com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Out of range value for column 'createDate' at row 1
-12.18:18.32.30  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:165 - UPDATE Users SET login = 'login_-497191979', email = 'test_email', password = 'password_876671558', projectId = null WHERE id = 128;
-12.18:18.32.30 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:102 - java.sql.SQLException: Illegal operation on empty result set.
-12.18:18.33.28  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:186 - UPDATE Projects SET title = 'projectTitle_1716551498', description = 'description_-113595692', state = 'some_test_state' WHERE id = 33;
-12.18:18.33.28 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:102 - java.sql.SQLException: Illegal operation on empty result set.
-12.18:18.33.28  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:177 - UPDATE Tasks SET title = 'taskTitle_1522274959', description = 'description_1201368073', projectId = null, state = 'some_test_state', type = 'type_-22858180', userId = null WHERE id = 46;
-12.18:18.33.28 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:102 - java.sql.SQLException: Illegal operation on empty result set.
-12.18:18.33.28  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:165 - UPDATE Users SET login = 'login_1588478233', email = 'test_email', password = 'password_-2026567933', projectId = null WHERE id = 129;
-12.18:18.33.28 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:102 - java.sql.SQLException: Illegal operation on empty result set.
-12.18:18.33.43 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:68 - java.lang.RuntimeException: Error parsing CSV line: 1, values: null
-12.18:18.33.43 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:68 - java.lang.RuntimeException: Error parsing CSV line: 1, values: null
-12.18:18.33.43 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:68 - java.lang.RuntimeException: Error parsing CSV line: 1, values: null
-12.18:18.35.15  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXMLTest:124 - 'projectTitle_722621478', 'description_1834716070', 'state_1294076315', '18.12.17 18:35'
-12.18:18.50.22  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXMLTest:124 - 'projectTitle_220535140', 'description_752935726', 'state_220600925', '18.12.17 18:50'
+﻿12.18:21.19.41 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:102 - java.sql.SQLException: Illegal operation on empty result set.
+12.18:21.19.41 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:102 - java.sql.SQLException: Illegal operation on empty result set.
+12.18:21.19.41 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:102 - java.sql.SQLException: Illegal operation on empty result set.
+12.18:21.32.28 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:102 - java.sql.SQLException: Illegal operation on empty result set.
+12.18:21.32.28 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:102 - java.sql.SQLException: Illegal operation on empty result set.
+12.18:21.32.28 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:102 - java.sql.SQLException: Illegal operation on empty result set.
+12.18:21.56.35 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:102 - java.sql.SQLException: Illegal operation on empty result set.
+12.18:21.59.11 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:102 - java.sql.SQLException: Illegal operation on empty result set.
+12.18:21.59.11 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:102 - java.sql.SQLException: Illegal operation on empty result set.
+12.18:21.59.11 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:102 - java.sql.SQLException: Illegal operation on empty result set.
+12.18:21.59.20  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXMLTest:124 - projectTitle_1164705414, test_description, test_state_open, 18.12.17 21:59
+12.18:22.12.01  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXMLTest:124 - projectTitle_1758003079, test_description, test_state_open, 18.12.17 22:12
+12.18:22.31.33 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:112 - java.sql.SQLException: Illegal operation on empty result set.
+12.18:22.31.33 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:112 - java.sql.SQLException: Illegal operation on empty result set.
+12.18:22.32.57 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:112 - java.sql.SQLException: Illegal operation on empty result set.
+12.18:22.32.57 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:112 - java.sql.SQLException: Illegal operation on empty result set.
+12.18:22.34.44 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:112 - java.sql.SQLException: Illegal operation on empty result set.
+12.18:22.34.44 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:112 - java.sql.SQLException: Illegal operation on empty result set.
+12.18:22.35.23 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:112 - java.sql.SQLSyntaxErrorException: Table 'labs.project' doesn't exist
+12.18:22.35.23 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:112 - java.sql.SQLException: Illegal operation on empty result set.
+12.18:22.35.23 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:112 - java.sql.SQLException: Illegal operation on empty result set.
+12.18:22.36.17 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:112 - java.sql.SQLSyntaxErrorException: Table 'labs.project' doesn't exist
+12.18:22.36.17 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:112 - java.sql.SQLException: Illegal operation on empty result set.
+12.18:22.36.17 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:112 - java.sql.SQLException: Illegal operation on empty result set.
+12.18:22.47.26 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:126 - java.sql.SQLException: Illegal operation on empty result set.
+12.18:22.48.17 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:126 - java.sql.SQLException: Illegal operation on empty result set.
+12.18:22.53.26 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:126 - java.sql.SQLException: Illegal operation on empty result set.
+12.18:22.58.14 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:159 - java.sql.SQLException: After end of result set
+12.18:22.58.14 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:127 - java.sql.SQLException: After end of result set
+12.18:22.58.37 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:159 - java.sql.SQLException: After end of result set
+12.18:22.58.37 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:127 - java.sql.SQLException: After end of result set
+12.18:22.59.13 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:159 - java.sql.SQLException: After end of result set
+12.18:22.59.13 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:127 - java.sql.SQLException: After end of result set
+12.18:23.00.27 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:112 - java.sql.SQLSyntaxErrorException: Table 'labs.project' doesn't exist
+12.18:23.00.27 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:112 - java.sql.SQLException: Illegal operation on empty result set.
+12.18:23.00.27 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:112 - java.sql.SQLException: Illegal operation on empty result set.
+12.18:23.01.00 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:112 - java.sql.SQLSyntaxErrorException: Table 'labs.project' doesn't exist
+12.18:23.01.00 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:112 - java.sql.SQLException: Illegal operation on empty result set.
+12.18:23.01.00 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:112 - java.sql.SQLException: Illegal operation on empty result set.
+12.19:00.43.10 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:112 - java.sql.SQLException: Illegal operation on empty result set.
+12.19:00.43.15 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:112 - java.sql.SQLSyntaxErrorException: Table 'labs.project' doesn't exist
+12.19:00.43.15 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:112 - java.sql.SQLException: Illegal operation on empty result set.
+12.19:00.43.15 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:112 - java.sql.SQLException: Illegal operation on empty result set.
+12.19:00.44.47 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:112 - java.sql.SQLSyntaxErrorException: Table 'labs.project' doesn't exist
+12.19:08.12.59 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:126 - com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 70 663 milliseconds ago.  The last packet sent successfully to the server was 2 milliseconds ago.
+12.19:08.13.08 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:245 - java.sql.SQLException: No operations allowed after statement closed.
+12.19:08.13.17 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:245 - java.sql.SQLException: No operations allowed after statement closed.
+12.19:08.13.38 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:245 - java.sql.SQLException: No operations allowed after statement closed.
+12.19:08.13.47 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:245 - java.sql.SQLException: No operations allowed after statement closed.
+12.19:08.17.50 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:203 - java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`labs`.`tasks`, CONSTRAINT `Tasks_Users_id_fk` FOREIGN KEY (`userId`) REFERENCES `Users` (`id`))
+12.19:08.23.26  INFO	ru.sfedu.projectmanager.services.CLIServices:188 - task2, open, type, desc, 70, 58, 18.12.17 21:40
+12.19:08.23.26  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:187 - UPDATE Tasks SET title = 'task2', description = 'desc', projectId = 70, state = 'open', type = 'type', userId = 70 WHERE id = 70;
+12.19:08.23.26 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:203 - java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`labs`.`tasks`, CONSTRAINT `Tasks_Users_id_fk` FOREIGN KEY (`userId`) REFERENCES `Users` (`id`))
+12.19:08.26.14  INFO	ru.sfedu.projectmanager.services.CLIServices:188 - task, open, bug, desv, 130, 58, 18.12.17 21:40
+12.19:08.26.14  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:187 - UPDATE Tasks SET title = 'task', description = 'desv', projectId = 58, state = 'open', type = 'bug', userId = 130 WHERE id = 70;
+12.19:08.29.59  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:196 - UPDATE Projects SET title = 'proj', description = 'desc', state = 'open' WHERE id = 58;
+12.19:08.31.53 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:245 - com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 63 284 milliseconds ago.  The last packet sent successfully to the server was 2 milliseconds ago.
+12.19:08.32.15 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:245 - java.sql.SQLException: No operations allowed after statement closed.
+12.19:08.37.54  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:201 - UPDATE Projects SET title = 'proj', description = 'sucses', state = 'close' WHERE id = 58;
+12.19:08.56.56  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:180 - UPDATE Users SET login = 'leha2', email = 'email', password = 'pass', projectId = 58 WHERE id = 154;
+12.19:09.00.12 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:163 - com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 65 416 milliseconds ago.  The last packet sent successfully to the server was 2 milliseconds ago.
+12.19:09.00.29 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:163 - java.sql.SQLException: No operations allowed after statement closed.
+12.19:09.04.24  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:200 - UPDATE Users SET login = 'leha2', email = 'email', password = 'pass', projectId = 58 WHERE id = 154;
+12.19:09.59.53 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:274 - com.mysql.cj.jdbc.exceptions.CommunicationsException: The last packet successfully received from the server was 273 984 milliseconds ago.  The last packet sent successfully to the server was 273 984 milliseconds ago. is longer than the server configured value of 'wait_timeout'. You should consider either expiring and/or testing connection validity before use in your application, increasing the server configured values for client timeouts, or using the Connector/J connection property 'autoReconnect=true' to avoid this problem.
+12.19:10.05.49  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:212 - UPDATE Tasks SET title = 'task', description = 'desv', projectId = 58, state = 'open', type = 'bug', userId = 130 WHERE id = 70;
+12.19:10.06.02  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:212 - UPDATE Tasks SET title = 'task', description = 'desv', projectId = 58, state = 'open', type = 'bug', userId = 130 WHERE id = 70;
+12.19:10.06.26  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:212 - UPDATE Tasks SET title = 'task', description = 'desv', projectId = 58, state = 'open', type = 'bug', userId = 130 WHERE id = 70;
+12.19:10.07.45  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:212 - UPDATE Tasks SET title = 'task', description = 'desv', projectId = 58, state = 'open', type = 'bug', userId = 130 WHERE id = 70;
+12.19:10.08.13  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:212 - UPDATE Tasks SET title = 'task', description = 'desv', projectId = 58, state = 'open', type = 'bug', userId = 130 WHERE id = 70;
+12.19:10.10.03  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:212 - UPDATE Tasks SET title = 'task', description = 'desv', projectId = 58, state = 'open', type = 'bug', userId = 154 WHERE id = 70;
+12.19:10.10.20  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:212 - UPDATE Tasks SET title = 'task', description = 'desv', projectId = 58, state = 'open', type = 'bug', userId = 130 WHERE id = 70;
+12.19:10.10.36  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:212 - UPDATE Tasks SET title = 'task', description = 'desv', projectId = 58, state = 'open', type = 'bug', userId = 130 WHERE id = 70;
+12.19:10.10.46  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:212 - UPDATE Tasks SET title = 'task', description = 'desv', projectId = 58, state = 'open', type = 'bug', userId = 154 WHERE id = 70;
+12.19:10.24.32  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:212 - UPDATE Tasks SET title = 'task', description = 'desv', projectId = 58, state = 'open', type = 'bug', userId = 130 WHERE id = 70;
+12.19:10.29.18  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:221 - UPDATE Projects SET title = 'projectTitle_1416954831', description = 'test_description', state = 'update_state' WHERE id = 74;
+12.19:10.29.18  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:212 - UPDATE Tasks SET title = 'taskTitle_-904317616', description = 'test_description', projectId = null, state = 'some_test_state', type = 'bug', userId = null WHERE id = 86;
+12.19:10.29.18  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:200 - UPDATE Users SET login = 'login_-1407702290', email = 'test_email', password = 'test_password', projectId = null WHERE id = 171;
+12.19:10.29.24  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXMLTest:124 - projectTitle_-307931018, test_state_open, test_description, 19.12.17 10:29
+12.19:10.29.56  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXMLTest:124 - projectTitle_817148613, test_state_open, test_description, 19.12.17 10:29
+12.19:10.43.14  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:221 - UPDATE Projects SET title = 'projectTitle_1143948398', description = 'test_description', state = 'update_state' WHERE id = 75;
+12.19:10.43.14  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:212 - UPDATE Tasks SET title = 'taskTitle_313331579', description = 'test_description', projectId = null, state = 'some_test_state', type = 'bug', userId = null WHERE id = 87;
+12.19:10.43.14  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:200 - UPDATE Users SET login = 'login_1984579315', email = 'test_email', password = 'test_password', projectId = null WHERE id = 172;
+12.19:10.43.17  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXMLTest:124 - projectTitle_-686837973, test_state_open, test_description, 19.12.17 10:43
