@@ -8,6 +8,7 @@ package ru.sfedu.projectmanager;
 import org.apache.log4j.Logger;
 import ru.sfedu.projectmanager.model.providers.IDataProvider;
 import ru.sfedu.projectmanager.services.CLIServices;
+import ru.sfedu.projectmanager.utils.ConfigurationUtil;
 
 import java.util.Scanner;
 
@@ -22,6 +23,9 @@ public class Client {
 
     public static void main(String[] args) {
         dataProvider = null;
+        System.out.println(args[0]);
+        ConfigurationUtil.setConfigPath(args[0]);
+
         Scanner scan = new Scanner(System.in);
         while (true){
             String temp = scan.nextLine();

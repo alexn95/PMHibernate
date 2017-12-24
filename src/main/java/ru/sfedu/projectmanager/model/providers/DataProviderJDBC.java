@@ -1,5 +1,6 @@
 package ru.sfedu.projectmanager.model.providers;
 
+
 import com.mysql.cj.jdbc.exceptions.CommunicationsException;
 import org.apache.log4j.Logger;
 import ru.sfedu.projectmanager.Constants;
@@ -25,15 +26,15 @@ public class DataProviderJDBC<T extends WithId> implements IDataProvider<T>  {
         String query = "";
         switch (type){
             case USER:
-                query = "INSERT INTO  Users(login, email, password, projectId) " +
+                query = "INSERT INTO  Users(id, login, email, password, projectId) " +
                         " VALUES (" + bean.toInsert() + ");";
                 break;
             case TASK:
-                query = "INSERT INTO  Tasks(title, description, projectId, state, type, createDate, userId) " +
+                query = "INSERT INTO  Tasks(id, title, description, type, state, userId, projectId, createDate) " +
                         " VALUES (" + bean.toInsert() + ");";
                 break;
             case PROJECT:
-                query = "INSERT INTO  Projects(title, description, state, createDate) " +
+                query = "INSERT INTO  Projects(id, title, description, state, createDate) " +
                         " VALUES (" + bean.toInsert() + ");";
                 break;
         }

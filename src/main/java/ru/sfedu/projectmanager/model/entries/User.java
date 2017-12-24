@@ -166,7 +166,7 @@ public class User implements WithId, Serializable {
 
     @Override
     public String toInsert() {
-    return "'" + login + "', '" +  email + "', '" + password+ "', " + projectId;
+    return id + ", '" + login + "', '" +  email + "', '" + password + "', " + projectId;
     }
 
     @Override

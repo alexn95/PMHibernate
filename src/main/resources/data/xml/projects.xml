@@ -1,10 +1,10 @@
 <XMLBeanList>
    <beans class="java.util.ArrayList">
-      <object class="ru.sfedu.projectmanager.model.entries.Project" id="1234">
+      <object class="ru.sfedu.projectmanager.model.entries.Project" id="-8298263415494595949">
          <state>open</state>
-         <description>update user</description>
-         <title>proj</title>
-         <createDate>1513662042894</createDate>
+         <title>pr1</title>
+         <description>desc</description>
+         <createDate>1514131299803</createDate>
       </object>
    </beans>
 </XMLBeanList>

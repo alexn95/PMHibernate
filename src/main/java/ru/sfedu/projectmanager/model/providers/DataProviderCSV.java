@@ -1,5 +1,6 @@
 package ru.sfedu.projectmanager.model.providers;
 
+import com.opencsv.exceptions.CsvException;
 import ru.sfedu.projectmanager.exceptions.*;
 import ru.sfedu.projectmanager.model.entries.Project;
 import ru.sfedu.projectmanager.model.entries.Task;
@@ -23,7 +24,7 @@ import ru.sfedu.projectmanager.utils.ConfigurationUtil;
 
 public class DataProviderCSV<T extends WithId> implements IDataProvider<T> {
 
-    protected static Logger logger = Logger.getLogger(DataProviderCSV.class);
+    private static Logger logger = Logger.getLogger(DataProviderCSV.class);
     private String users_path;
     private String projects_path;
     private String tasks_path;
@@ -52,9 +53,6 @@ public class DataProviderCSV<T extends WithId> implements IDataProvider<T> {
         } catch (TitleNotUniqueException e) {
             logger.error(e);
             return new MethodsResult(ResultType.TITLE_ALREADY_EXIST);
-        } catch (WrongEntryTypeException e) {
-            logger.error(e);
-            return new MethodsResult<>(ResultType.WRONG_ENTRY_TYPE_EXCEPTION);
         } catch (LoginNotUniqueException e) {
             logger.error(e);
             return new MethodsResult(ResultType.LOGIN_ALREADY_EXIST);
@@ -81,14 +79,12 @@ public class DataProviderCSV<T extends WithId> implements IDataProvider<T> {
                 initBeanToScv(type, false);
                 beanToCsv.write(beans);
                 writer.close();
+                updateRelatedEntry(id, type);
                 return new MethodsResult<>(ResultType.SUCCESSFUL);
             } else {
                 writer.close();
                 return new MethodsResult<>(ResultType.ID_NOT_EXIST);
             }
-        } catch (WrongEntryTypeException e){
-            logger.error(e);
-            return new MethodsResult<>(ResultType.WRONG_ENTRY_TYPE_EXCEPTION);
         } catch (IOException e){
             logger.error(e);
             return new MethodsResult<>(ResultType.IO_EXCEPTION);
@@ -109,9 +105,6 @@ public class DataProviderCSV<T extends WithId> implements IDataProvider<T> {
             } else {
                 return new MethodsResult<>(ResultType.ID_NOT_EXIST);
             }
-        } catch (WrongEntryTypeException e){
-            logger.error(e);
-            return new MethodsResult<>(ResultType.WRONG_ENTRY_TYPE_EXCEPTION);
         } catch (FileNotFoundException e){
             logger.error(e);
             return new MethodsResult<>(ResultType.FILE_NOT_FOUND_EXCEPTION);
@@ -151,9 +144,6 @@ public class DataProviderCSV<T extends WithId> implements IDataProvider<T> {
         } catch (IOException e){
             logger.error(e);
             return new MethodsResult<>(ResultType.IO_EXCEPTION);
-        } catch (WrongEntryTypeException e){
-            logger.error(e);
-            return new MethodsResult<>(ResultType.WRONG_ENTRY_TYPE_EXCEPTION);
         } catch (Exception e){
             logger.error(e);
             return new MethodsResult<>(ResultType.EXCEPTION);
@@ -171,9 +161,6 @@ public class DataProviderCSV<T extends WithId> implements IDataProvider<T> {
             } else {
                 return new MethodsResult<>(ResultType.LOGIN_NOT_EXIST);
             }
-        } catch (WrongEntryTypeException e){
-            logger.error(e);
-            return new MethodsResult<>(ResultType.WRONG_ENTRY_TYPE_EXCEPTION);
         } catch (FileNotFoundException e){
             logger.error(e);
             return new MethodsResult<>(ResultType.FILE_NOT_FOUND_EXCEPTION);
@@ -187,9 +174,6 @@ public class DataProviderCSV<T extends WithId> implements IDataProvider<T> {
             List<Task> beans = csvToBean.parse();
             return new MethodsResult( ResultType.SUCCESSFUL,
                     beans.stream().filter(bean -> Objects.equals(title, (bean).getTitle())).collect(Collectors.toList()));
-        } catch (WrongEntryTypeException e){
-            logger.error(e);
-            return new MethodsResult<>(ResultType.WRONG_ENTRY_TYPE_EXCEPTION);
         } catch (FileNotFoundException e){
             logger.error(e);
             return new MethodsResult<>(ResultType.FILE_NOT_FOUND_EXCEPTION);
@@ -208,9 +192,6 @@ public class DataProviderCSV<T extends WithId> implements IDataProvider<T> {
             } else {
                 return new MethodsResult<>(ResultType.TITLE_NOT_EXIST);
             }
-        } catch (WrongEntryTypeException e){
-            logger.error(e);
-            return new MethodsResult<>(ResultType.WRONG_ENTRY_TYPE_EXCEPTION);
         } catch (FileNotFoundException e){
             logger.error(e);
             return new MethodsResult<>(ResultType.FILE_NOT_FOUND_EXCEPTION);
@@ -223,21 +204,21 @@ public class DataProviderCSV<T extends WithId> implements IDataProvider<T> {
             initCsvToBean(type);
             List<T> beans = csvToBean.parse();
                 return new MethodsResult<>(ResultType.SUCCESSFUL, beans);
-        } catch (IOException e){
+        } catch (IOException e) {
             logger.error(e);
             return new MethodsResult<>(ResultType.IO_EXCEPTION);
-        } catch (WrongEntryTypeException e){
-            logger.error(e);
-            return new MethodsResult<>(ResultType.WRONG_ENTRY_TYPE_EXCEPTION);
         }
     }
 
     @Override
     public MethodsResult initDataSource() {
         try {
-            users_path = ConfigurationUtil.getConfigurationEntry(Constants.CSV_PATH_USERS);
-            projects_path = ConfigurationUtil.getConfigurationEntry(Constants.CSV_PATH_PROJECTS);
-            tasks_path = ConfigurationUtil.getConfigurationEntry(Constants.CSV_PATH_TASKS);
+            users_path = ConfigurationUtil.getConfigurationEntry(Constants.SYSTEM_PATH)
+                    + ConfigurationUtil.getConfigurationEntry(Constants.CSV_PATH_USERS);
+            projects_path = ConfigurationUtil.getConfigurationEntry(Constants.SYSTEM_PATH)
+                    + ConfigurationUtil.getConfigurationEntry(Constants.CSV_PATH_PROJECTS);
+            tasks_path = ConfigurationUtil.getConfigurationEntry(Constants.SYSTEM_PATH)
+                    + ConfigurationUtil.getConfigurationEntry(Constants.CSV_PATH_TASKS);
         } catch (IOException e){
             logger.error(e);
             return new MethodsResult<>(ResultType.IO_EXCEPTION);
@@ -246,7 +227,7 @@ public class DataProviderCSV<T extends WithId> implements IDataProvider<T> {
     }
 
 
-    protected void initCsvToBean(EntryType type) throws WrongEntryTypeException, FileNotFoundException {
+    private void initCsvToBean(EntryType type) throws FileNotFoundException {
         switch (type) {
             case TASK:
                 reader = new FileReader(tasks_path);
@@ -262,11 +243,10 @@ public class DataProviderCSV<T extends WithId> implements IDataProvider<T> {
                 break;
             default:
                 logger.info("Wrong entries type");
-                throw new WrongEntryTypeException();
             }
     }
 
-    protected void initBeanToScv(EntryType type, Boolean append) throws WrongEntryTypeException, IOException{
+    private void initBeanToScv(EntryType type, Boolean append) throws IOException{
         switch (type) {
             case TASK:
                 writer = new FileWriter(tasks_path, append);
@@ -282,11 +262,10 @@ public class DataProviderCSV<T extends WithId> implements IDataProvider<T> {
                 break;
             default:
                 logger.info("Wrong entity type");
-                throw new WrongEntryTypeException();
         }
     }
 
-    protected void entryConstrainVerification(List<T> beans, T bean, EntryType type) throws ConstrainException, FileNotFoundException {
+    private void entryConstrainVerification(List<T> beans, T bean, EntryType type) throws ConstrainException, FileNotFoundException {
         List<Project> projects;
         List<User> users;
         switch (type){
@@ -329,5 +308,36 @@ public class DataProviderCSV<T extends WithId> implements IDataProvider<T> {
             default:
                 break;
         }
+    }
+
+    private void updateRelatedEntry(long id, EntryType type) throws IOException, CsvException{
+        List<Task> tasks;
+        switch (type){
+            case PROJECT:
+                initCsvToBean(EntryType.USER);
+                List<User> users = csvToBean.parse();
+                users.forEach(user -> { if(user.getProjectId() == id) user.setProjectId(null); });
+                initBeanToScv(EntryType.USER, false);
+                beanToCsv.write(users);
+                writer.close();
+
+                initCsvToBean(EntryType.TASK);
+                tasks = csvToBean.parse();
+                List<Task> newTasks = tasks.stream().filter(task -> task.getProjectId() != id).collect(Collectors.toList());
+                initBeanToScv(EntryType.TASK, false);
+                beanToCsv.write(newTasks);
+                writer.close();
+                break;
+
+            case USER:
+                initCsvToBean(EntryType.TASK);
+                tasks = csvToBean.parse();
+                tasks.forEach(task -> { if( task.getUserId() == id) task.setUserId(null); });
+                initBeanToScv(EntryType.TASK, false);
+                beanToCsv.write(tasks);
+                writer.close();
+                break;
+        }
+
     }
 }

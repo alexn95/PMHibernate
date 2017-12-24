@@ -168,7 +168,7 @@ public class Project implements WithId, Serializable {
 
     @Override
     public String toInsert(){
-        return "'" + title + "', '" + description + "', '" + state + "', '" + createDate + "'";
+        return id + ", '" + title + "', '" + description + "', '" + state + "', " + createDate;
     }
 
     @Override

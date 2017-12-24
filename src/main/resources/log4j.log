@@ -87,3 +87,1311 @@ The last packet successfully received from the server was 65 416 milliseconds a
 12.19:10.43.14  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:212 - UPDATE Tasks SET title = 'taskTitle_313331579', description = 'test_description', projectId = null, state = 'some_test_state', type = 'bug', userId = null WHERE id = 87;
 12.19:10.43.14  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:200 - UPDATE Users SET login = 'login_1984579315', email = 'test_email', password = 'test_password', projectId = null WHERE id = 172;
 12.19:10.43.17  INFO	ru.sfedu.projectmanager.model.providers.DataProviderXMLTest:124 - projectTitle_-686837973, test_state_open, test_description, 19.12.17 10:43
+12.21:13.02.24 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:59 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.21:13.02.24 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:59 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.21:13.02.24  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:29 - ru.sfedu.projectmanager.model.enums.MethodsResult@1753acfe
+12.21:13.02.24  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:29 - ru.sfedu.projectmanager.model.enums.MethodsResult@1753acfe
+12.21:13.03.37 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:59 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.21:13.03.37 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:59 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.21:13.03.37  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:29 - LOGIN_ALREADY_EXIST
+12.21:13.03.37  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:29 - LOGIN_ALREADY_EXIST
+12.21:13.04.16 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:59 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.21:13.04.16  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:29 - LOGIN_ALREADY_EXIST
+12.21:13.05.00 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:59 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.21:13.05.00  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:29 - LOGIN_ALREADY_EXIST
+12.21:13.05.57 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:59 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.21:13.06.10 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:59 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:11.43.02 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:59 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:11.43.23 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:59 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:11.43.24 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:59 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:11.43.40 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:59 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:11.43.43 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:59 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:11.43.45 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:59 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:11.43.47 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:59 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:11.43.49 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:59 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:11.43.51 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:59 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:11.43.59 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:59 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 2584390947
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_-20353246712147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1872402348
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_5370715812147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 2303982884
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_20492348482147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 2134284898
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_9292099612147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 3194788091
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_-20859910752147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1985732754
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_-16501830802147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 229196770
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_-21283889232147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 3898890731
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_-2956984522147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1912311290
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_-1784478112147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1221776740
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_6877850552147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 3379140646
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_7924193452147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 2878947784
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_-16393231132147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1910747702
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_-345108992147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 241431155
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_5693680882147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 3813881672
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_-20211546132147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 315485277
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_-9451303102147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 3415231594
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_-2523760512147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 3709763415
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_14153327632147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 463627652
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_8753472762147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 779136917
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_-20244626342147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 2911482996
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_15757806882147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1076441964
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_19837351562147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 3708675706
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_-14074937582147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 3651668315
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_4389706582147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1861276630
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_-14200594572147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1282337359
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_-20580113562147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 648676784
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_-17386820022147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 3066436642
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_-5013973672147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1304049207
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_15559938122147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 628975716
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_-15338722242147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1861496587
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_-21299764102147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 4076813150
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_11268773542147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 2248845791
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_8586096312147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1623732051
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_13496770082147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 2794002266
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_-2143560122147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 2964686857
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_4385685352147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 2404872254
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_-7107249872147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 2311152263
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_-15959016792147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 256341195
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_16530977812147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 3488324895
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_5786772702147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 2116812389
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_-18263065012147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 628800430
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_-6974357242147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 3001108340
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_357829382147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1823493154
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_15358470752147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 3283570059
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_5074001432147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 4173369148
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_-16129829152147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 3793596875
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_-13040687582147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 3549784470
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_16240065082147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 3330456457
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_-6949279042147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 4292927719
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_15483310442147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1280139566
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_-3904104662147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 3699616134
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_-12708815162147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 435452767
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_13841263052147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 2073069612
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_4960624232147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 3971188317
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_7345164202147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 2491255805
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_7525841762147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1820300717
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_16098063622147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 2996856009
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_14361087262147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1105550843
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_13505876462147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 3743635854
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_3791955332147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 2661513530
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_-15919531132147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 2356454209
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_-3916548262147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 23218448
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_7808893442147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1091186637
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_3485588882147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 3609009009
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_10487407272147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 4100985179
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_-7045805452147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 3219551625
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_-4576831802147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1412963796
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_-21066160122147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 3538659551
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_-4430084342147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 180716195
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_-9504526262147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 3577353911
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_4527434492147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 2153205951
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_-5339904402147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 571131319
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_18788720032147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 2204189928
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_-16290015162147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 410987980
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_-4076147202147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1886539824
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_-6441086902147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 2080661070
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_4848530592147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 937206972
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_-19609198522147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 4030718561
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_5245023502147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1749764812
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_-18739041222147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 3652978591
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_9966556282147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 3719135736
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_10462371292147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 2545904371
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_-5635789782147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 195064507
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_6203762892147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 2350247879
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_-21203533572147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 100922421
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_-14752774422147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1766819169
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_2835474202147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1643080236
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_-3495119462147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 425418378
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_3005733432147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 151519059
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_-1980122362147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1940684656
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_-18901593502147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 3783901135
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_13227080802147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1165936077
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_15562005872147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1114200054
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_-15269336002147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 2661404487
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_8094303352147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 353139545
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_9144146372147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1268867609
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_-15641868722147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 292763652
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_13808871452147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 695811059
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_-7751504302147483648
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 4270635523
+12.24:11.45.50  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_-17479141752147483648
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 3076305421
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_2273024376
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 2250816564
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_2431415689
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 3485155654
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_2949495849
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 3366486946
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_216630494
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1189800280
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_796217320
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 3742096005
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_2405657458
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 4124218254
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_2403685780
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 13289642
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_2338705502
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 987560538
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_1435488908
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1936836276
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_591009434
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 2480368061
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_3204944705
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 3489828637
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_3592025009
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 206676460
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_174260998
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1419934586
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_3790093752
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1464254512
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_2427727146
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 2843406850
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_651437180
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 888230413
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_2266446663
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1794418512
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_3629795834
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 4012570278
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_1587152092
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 3200170088
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_3327815187
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1373254239
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_2320794649
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 815718647
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_1898946944
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 2281134276
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_1523794938
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 2417512926
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_2284073986
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 3403395241
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_1181883287
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 3435850737
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_1903808990
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1461466769
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_2706819769
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 625271547
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_1372685448
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 3261309267
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_2325760944
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 4011658501
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_3980823198
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 2664795386
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_3629706851
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 3754713559
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_441072407
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 2092888045
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_2382794919
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 3760287423
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_880699324
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1626750543
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_4220880852
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 4036018832
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_2679042774
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 3750748072
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_3910143893
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 2538706413
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_2145553448
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1303501508
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_677204480
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1516647367
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_243648799
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 614194139
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_3596639462
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1269032483
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_2503150663
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1504114929
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_1635817579
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 331770656
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_4157403137
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1565710463
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_3391787736
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 3755423288
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_2965907571
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 3433832019
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_1265710511
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1240531397
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_1054675135
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 4004659892
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_3420764159
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 3219944647
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_3257423734
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 2300655561
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_3526746618
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 712932
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_457539150
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 3211100474
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_3281089988
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1098931375
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_1885675795
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 3251085847
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_2215170445
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1158594092
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_3859560411
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1816528121
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_421142241
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1559706004
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_1783154813
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1382204006
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_750494526
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 60860500
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_754694979
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 2040326521
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_2574452198
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 2712452187
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_1033815774
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1973628610
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_3879378679
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 4279673749
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_1911072666
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 566764906
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_2458133432
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 2610552754
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_1344345554
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 2703124123
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_1808352308
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 3913831979
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_253308837
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 337988382
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_2081426957
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 2099436677
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_2614381033
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 3864337221
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_3671206025
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 2633483479
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_4114111583
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 828627210
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_1360215536
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 3288280714
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_2145156392
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1443498104
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_2774803994
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1894063968
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_1518280568
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 346102345
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_4065699395
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 3161303223
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_1310001544
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 2305514704
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_2109135393
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1205837069
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_4261230033
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 49256217
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_2284362296
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 975608262
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_1022694262
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 2731586125
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_1800434540
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 2053466413
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_1428937217
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 2905347419
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_3733652440
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 2596143288
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_210429010
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 3457128149
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_933679325
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 4137983887
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_3576973011
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 172108055
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_606988924
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 694669647
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_4237825264
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 2259199149
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_1767239656
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 4226767114
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_2358512070
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1916949750
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_1242777942
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1213221010
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_2836957210
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 2957978372
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_3980765976
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 2801059830
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_1829315980
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 216775366
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_2126591465
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1476022605
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_29242635
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 3700254313
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_1582876810
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 475096241
+12.24:11.46.19  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_4176479371
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1242964698
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_2818920897
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 571195661
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_2716232710
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1929684562
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_3705473155
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 3728901875
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_1901184210
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1041366687
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_1291211082
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 2048517383
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_1576130028
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 129975497
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_4054032404
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 3459704311
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_3124855974
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 3496751796
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_4160728718
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 2144285620
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_3375454144
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1455049652
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_3557473058
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 4201284637
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_723286027
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1772190310
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_279852083
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 671194365
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_1568315215
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 2932881341
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_2285458343
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1198859063
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_3851346286
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 2164166491
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_2030923429
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 172337471
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_1068653512
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1283233057
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_2824404383
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1125757132
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_1037719265
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 2478448649
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_1428988050
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 775263179
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_4141995585
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1125047858
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_2166727564
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 919898262
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_3207008923
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1072109116
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_765314926
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 4287706469
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_947681841
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 3437930965
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_3305657075
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 67077892
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_1568592758
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 3891867028
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_1814081520
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 4253073094
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_1767400948
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 3106875909
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_1443829981
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 410381241
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_2870168944
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1624627716
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_636230291
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 948192026
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_555440971
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1583348302
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_2673077847
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 4259449867
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_951200298
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 2980806228
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_1665593366
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 3654947459
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_874399705
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 317275730
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_3064247538
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1629410693
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_2743638380
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 3658019488
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_2556659197
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 3194348692
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_2248760743
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 2912489544
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_125715267
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 4065796197
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_882405791
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 3891223256
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_3484349197
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 2791494358
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_766163872
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 4184358776
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_2561442148
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 701288991
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_1619058769
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1691897150
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_436630484
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 2590647110
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_1086957078
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1496080064
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_371299697
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 3497119704
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_3900484277
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1172981994
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_897900319
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 3986219733
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_4109913915
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 286073618
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_2832605197
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 649904363
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_3619159584
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 416644169
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_4292487809
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 3017691111
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_2695245737
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 3436646900
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_1321502938
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 2808324456
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_442486925
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 470997914
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_895418067
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 2596082901
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_2381639387
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 59080702
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_3578878724
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 2934318224
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_4128035098
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1316980592
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_844520622
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 3523826283
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_2131876785
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 3382566751
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_3501371831
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 3289507674
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_1030482057
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1200522035
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_3893317875
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 426605162
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_974517488
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 2100715097
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_3945313444
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 3639243506
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_3007728064
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 3599416223
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_4225284420
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 381680135
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_1890484672
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 2009191873
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_2937660545
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 2661224244
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_3008041545
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 4238564674
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_301537416
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 3497243754
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_3725605420
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 2600142720
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_2136995718
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 4067976501
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_3778837203
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 3535567618
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_2602335083
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 2259504432
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_2214002597
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 529083668
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_3378972144
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 2095575483
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_1365415855
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1363018902
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_384462043
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 751256298
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_2243175808
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 2235029007
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_2631321217
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 3609413568
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_1466280275
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 3176860936
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_2729835148
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1951324572
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_1049446771
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 3856406167
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_3169983230
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 4009042675
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_3941727451
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 3029033273
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_3615082869
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 2982401343
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_3605904412
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 893453797
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_4025429168
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 3954068022
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_1539792003
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1815178845
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_1855076945
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 3802465343
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_3391912314
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 699763910
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_3370080484
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 2321564193
+12.24:11.46.38  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:28 - login_3776319534
+12.24:11.51.41 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:59 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:11.57.32  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105852988
+12.24:11.57.32  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105852991
+12.24:11.57.32  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105852991
+12.24:11.57.32  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105852991
+12.24:11.57.32  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105852991
+12.24:11.57.32  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105852992
+12.24:11.57.32  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105852992
+12.24:11.57.32  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105852992
+12.24:11.57.32  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105852992
+12.24:11.57.32  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105852992
+12.24:11.57.32  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105852992
+12.24:11.57.32  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105852993
+12.24:11.57.32  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105852993
+12.24:11.57.32  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105852993
+12.24:11.57.32  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105852993
+12.24:11.57.32  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105852993
+12.24:11.57.32  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105852994
+12.24:11.57.32  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105852995
+12.24:11.57.32  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105852995
+12.24:11.57.32  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105852995
+12.24:11.57.32  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105852995
+12.24:11.57.32  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105852996
+12.24:11.57.32  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105852996
+12.24:11.57.32  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105852996
+12.24:11.57.32  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105852996
+12.24:11.57.32  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105852996
+12.24:11.57.32  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105852996
+12.24:11.57.32  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105852997
+12.24:11.57.32  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105852997
+12.24:11.57.32  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105852997
+12.24:11.57.32  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105852997
+12.24:11.57.32  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105852997
+12.24:11.57.32  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105852997
+12.24:11.57.32  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105852997
+12.24:11.57.32  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105852998
+12.24:11.57.32  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105852998
+12.24:11.57.32  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105852998
+12.24:11.57.32  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105852998
+12.24:11.57.32  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105852998
+12.24:11.57.32  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105852998
+12.24:11.57.32  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105852998
+12.24:11.57.32  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105852999
+12.24:11.57.32  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105852999
+12.24:11.57.32  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105852999
+12.24:11.57.32  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105852999
+12.24:11.57.32  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105852999
+12.24:11.57.32  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105852999
+12.24:11.57.32  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105852999
+12.24:11.57.33  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105853000
+12.24:11.57.33  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105853000
+12.24:11.57.33  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105853000
+12.24:11.57.33  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105853000
+12.24:11.57.33  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105853000
+12.24:11.57.33  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105853000
+12.24:11.57.33  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105853000
+12.24:11.57.33  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105853001
+12.24:11.57.33  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105853001
+12.24:11.57.33  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105853001
+12.24:11.57.33  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105853001
+12.24:11.57.33  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105853001
+12.24:11.57.33  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105853001
+12.24:11.57.33  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105853001
+12.24:11.57.33  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105853002
+12.24:11.57.33  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105853002
+12.24:11.57.33  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105853002
+12.24:11.57.33  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105853002
+12.24:11.57.33  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105853002
+12.24:11.57.33  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105853002
+12.24:11.57.33  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105853002
+12.24:11.57.33  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105853003
+12.24:11.57.33  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105853003
+12.24:11.57.33  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105853003
+12.24:11.57.33  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105853003
+12.24:11.57.33  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105853003
+12.24:11.57.33  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105853003
+12.24:11.57.33  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105853003
+12.24:11.57.33  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105853004
+12.24:11.57.33  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105853004
+12.24:11.57.33  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105853004
+12.24:11.57.33  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105853004
+12.24:11.57.33  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105853004
+12.24:11.57.33  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105853004
+12.24:11.57.33  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105853004
+12.24:11.57.33  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105853004
+12.24:11.57.33  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105853004
+12.24:11.57.33  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105853005
+12.24:11.57.33  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105853005
+12.24:11.57.33  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105853005
+12.24:11.57.33  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105853005
+12.24:11.57.33  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105853005
+12.24:11.57.33  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105853005
+12.24:11.57.33  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105853005
+12.24:11.57.33  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105853005
+12.24:11.57.33  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105853006
+12.24:11.57.33  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105853006
+12.24:11.57.33  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105853006
+12.24:11.57.33  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105853007
+12.24:11.57.33  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105853007
+12.24:11.57.33  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105853007
+12.24:11.57.33  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:27 - 1514105853007
+12.24:11.59.14 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:59 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:11.59.20 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:59 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:11.59.29 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:59 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:12.07.25 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:59 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:12.08.09 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:59 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:12.08.40 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:59 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:12.08.40  INFO	ru.sfedu.projectmanager.model.providers.CSVTests.UserTests:32 - 12345
+12.24:12.10.37 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:59 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:12.20.10 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:59 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:12.20.29 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:59 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:12.21.29 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:59 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:12.23.07 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:59 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:12.30.13 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:59 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:12.30.25 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:59 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:12.34.44 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:59 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:12.38.32 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:59 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:13.16.35 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:57 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:13.25.51 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:57 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:13.28.23 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:57 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:13.30.26 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:57 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:13.37.44 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:57 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:13.37.44 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:13.37.44 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:13.37.44 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:13.37.44 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:13.37.44 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:13.37.44 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:13.37.44 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:13.37.44 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:13.37.44 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:13.37.44 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:13.39.53 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:57 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:13.40.28 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:57 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:13.40.28 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:13.40.28 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:13.40.28 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:13.40.28 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:13.40.28 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:13.40.28 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:13.40.28 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:13.40.28 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:13.40.28 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:13.40.28 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:13.41.32 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:57 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:13.41.45 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:57 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:13.43.45 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:57 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:13.44.13 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:57 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:15.49.58 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:54 - ru.sfedu.projectmanager.exceptions.TitleNotUniqueException
+12.24:15.59.15 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:54 - ru.sfedu.projectmanager.exceptions.TitleNotUniqueException
+12.24:15.59.15 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:15.59.15 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:15.59.15 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:15.59.15 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:15.59.15 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:15.59.15 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:15.59.15 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:15.59.15 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:15.59.15 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:15.59.15 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.00.08 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:54 - ru.sfedu.projectmanager.exceptions.TitleNotUniqueException
+12.24:16.00.08 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.00.08 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.00.08 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.00.08 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.00.08 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.00.08 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.00.09 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.00.09 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.00.09 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.00.09 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.00.09 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.01.11 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:54 - ru.sfedu.projectmanager.exceptions.TitleNotUniqueException
+12.24:16.01.11 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.01.11 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.01.11 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.01.11 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.01.11 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.01.11 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.01.11 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.01.11 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.01.11 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.01.11 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.01.11 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.01.46 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:54 - ru.sfedu.projectmanager.exceptions.TitleNotUniqueException
+12.24:16.01.47 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.01.47 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.01.47 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.01.47 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.01.47 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.01.47 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.01.47 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.01.47 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.01.47 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.01.47 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.04.29 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:54 - ru.sfedu.projectmanager.exceptions.TitleNotUniqueException
+12.24:16.04.29 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.04.29 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.04.29 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.04.29 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.04.29 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.04.29 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.04.29 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.04.29 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.04.29 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.04.29 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.13.25 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:54 - ru.sfedu.projectmanager.exceptions.TitleNotUniqueException
+12.24:16.13.25 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.13.25 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.13.25 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.13.25 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.13.25 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.13.25 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.13.25 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.13.25 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.13.25 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.13.25 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.13.25 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.14.29 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:54 - ru.sfedu.projectmanager.exceptions.TitleNotUniqueException
+12.24:16.14.29 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.14.29 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.14.29 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.14.29 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.14.29 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.14.29 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.14.29 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.14.29 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.14.29 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.14.29 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.15.22 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:54 - ru.sfedu.projectmanager.exceptions.TitleNotUniqueException
+12.24:16.15.22 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.15.22 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.15.22 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.15.22 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.15.22 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.15.22 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.15.22 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.15.22 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.15.22 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.15.22 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.15.22 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.18.03 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:54 - ru.sfedu.projectmanager.exceptions.TitleNotUniqueException
+12.24:16.18.03 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.18.03 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.18.03 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.18.03 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.18.03 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.18.03 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.18.03 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.18.03 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.18.03 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.18.03 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.21.44 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:54 - ru.sfedu.projectmanager.exceptions.TitleNotUniqueException
+12.24:16.21.48 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:54 - ru.sfedu.projectmanager.exceptions.TitleNotUniqueException
+12.24:16.21.49 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:54 - ru.sfedu.projectmanager.exceptions.TitleNotUniqueException
+12.24:16.21.53 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:54 - ru.sfedu.projectmanager.exceptions.TitleNotUniqueException
+12.24:16.24.45 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:54 - ru.sfedu.projectmanager.exceptions.TitleNotUniqueException
+12.24:16.24.46 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.24.46 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.24.46 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.24.46 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.24.46 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.24.46 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.24.46 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.24.46 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.24.46 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.24.46 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.24.50 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:54 - ru.sfedu.projectmanager.exceptions.TitleNotUniqueException
+12.24:16.24.50 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.24.50 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.24.50 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.24.50 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.24.50 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.24.50 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.24.50 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.24.50 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.24.50 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.24.50 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.24.50 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.25.13 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:54 - ru.sfedu.projectmanager.exceptions.TitleNotUniqueException
+12.24:16.25.13 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.25.13 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.25.13 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.25.13 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.25.13 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.25.13 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.25.13 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.25.13 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.25.13 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.25.13 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.26.47 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:54 - ru.sfedu.projectmanager.exceptions.TitleNotUniqueException
+12.24:16.26.47 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.26.47 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.26.47 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.26.47 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.26.47 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.26.47 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.26.47 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.26.47 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.26.47 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.26.47 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.26.56 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:54 - ru.sfedu.projectmanager.exceptions.TitleNotUniqueException
+12.24:16.26.56 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.26.57 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.26.57 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.26.57 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.26.57 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.26.57 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.26.57 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.26.57 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.26.57 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.26.57 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.26.57 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.27.57 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:54 - ru.sfedu.projectmanager.exceptions.TitleNotUniqueException
+12.24:16.27.58 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.27.58 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.27.58 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.27.58 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.27.58 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.27.58 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.27.58 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.27.58 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.27.58 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.27.58 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.28.58 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:54 - ru.sfedu.projectmanager.exceptions.TitleNotUniqueException
+12.24:16.28.58 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.28.58 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.28.59 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.28.59 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.28.59 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.28.59 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.28.59 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.28.59 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.28.59 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.28.59 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.34.54 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:54 - ru.sfedu.projectmanager.exceptions.TitleNotUniqueException
+12.24:16.35.24 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:54 - ru.sfedu.projectmanager.exceptions.TitleNotUniqueException
+12.24:16.36.21 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:54 - ru.sfedu.projectmanager.exceptions.TitleNotUniqueException
+12.24:16.37.20 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:54 - ru.sfedu.projectmanager.exceptions.TitleNotUniqueException
+12.24:16.39.57 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:54 - ru.sfedu.projectmanager.exceptions.TitleNotUniqueException
+12.24:16.40.40 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:54 - ru.sfedu.projectmanager.exceptions.TitleNotUniqueException
+12.24:16.40.50 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:54 - ru.sfedu.projectmanager.exceptions.TitleNotUniqueException
+12.24:16.41.48 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:57 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:16.42.50 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:57 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:16.42.51 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.42.51 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.42.51 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.42.51 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.42.51 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.42.51 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.42.51 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.42.51 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.42.51 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.42.51 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.43.59 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:57 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:16.46.54 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:57 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:16.47.00 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:54 - ru.sfedu.projectmanager.exceptions.TitleNotUniqueException
+12.24:16.50.09 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:54 - ru.sfedu.projectmanager.exceptions.TitleNotUniqueException
+12.24:16.50.41 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:54 - ru.sfedu.projectmanager.exceptions.TitleNotUniqueException
+12.24:16.50.41 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.50.41 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.50.41 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.50.41 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.50.41 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.50.41 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.50.41 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.50.41 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.50.41 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.50.41 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.52.35 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:54 - ru.sfedu.projectmanager.exceptions.TitleNotUniqueException
+12.24:16.52.35 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.52.35 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.52.35 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.52.35 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.52.35 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.52.35 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.52.35 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.52.35 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.52.35 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.52.35 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:92 - java.lang.NullPointerException
+12.24:16.53.16 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:54 - ru.sfedu.projectmanager.exceptions.TitleNotUniqueException
+12.24:17.11.11 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:52 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:17.12.21 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:52 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:17.14.41 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:52 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:17.17.08 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:52 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:17.17.08 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:79 - java.lang.NullPointerException
+12.24:17.17.08 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:79 - java.lang.NullPointerException
+12.24:17.17.08 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:79 - java.lang.NullPointerException
+12.24:17.17.08 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:79 - java.lang.NullPointerException
+12.24:17.17.08 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:79 - java.lang.NullPointerException
+12.24:17.17.08 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:79 - java.lang.NullPointerException
+12.24:17.17.08 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:79 - java.lang.NullPointerException
+12.24:17.17.08 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:79 - java.lang.NullPointerException
+12.24:17.17.08 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:79 - java.lang.NullPointerException
+12.24:17.17.08 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:79 - java.lang.NullPointerException
+12.24:17.17.08 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:79 - java.lang.NullPointerException
+12.24:17.18.07 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:52 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:17.18.07 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:79 - java.lang.NullPointerException
+12.24:17.18.08 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:79 - java.lang.NullPointerException
+12.24:17.18.08 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:79 - java.lang.NullPointerException
+12.24:17.18.08 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:79 - java.lang.NullPointerException
+12.24:17.18.08 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:79 - java.lang.NullPointerException
+12.24:17.18.08 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:79 - java.lang.NullPointerException
+12.24:17.18.08 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:79 - java.lang.NullPointerException
+12.24:17.18.08 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:79 - java.lang.NullPointerException
+12.24:17.18.08 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:79 - java.lang.NullPointerException
+12.24:17.18.08 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:79 - java.lang.NullPointerException
+12.24:17.18.08 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:79 - java.lang.NullPointerException
+12.24:17.26.49 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:52 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:17.26.49 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:79 - java.lang.NullPointerException
+12.24:17.26.50 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:79 - java.lang.NullPointerException
+12.24:17.26.50 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:79 - java.lang.NullPointerException
+12.24:17.26.50 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:79 - java.lang.NullPointerException
+12.24:17.26.50 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:79 - java.lang.NullPointerException
+12.24:17.26.50 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:79 - java.lang.NullPointerException
+12.24:17.26.50 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:79 - java.lang.NullPointerException
+12.24:17.26.50 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:79 - java.lang.NullPointerException
+12.24:17.26.50 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:79 - java.lang.NullPointerException
+12.24:17.26.50 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:79 - java.lang.NullPointerException
+12.24:17.26.50 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:79 - java.lang.NullPointerException
+12.24:17.31.00 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:52 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:17.31.00 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:79 - java.lang.NullPointerException
+12.24:17.31.00 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:79 - java.lang.NullPointerException
+12.24:17.31.00 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:79 - java.lang.NullPointerException
+12.24:17.31.00 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:79 - java.lang.NullPointerException
+12.24:17.31.00 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:79 - java.lang.NullPointerException
+12.24:17.31.01 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:79 - java.lang.NullPointerException
+12.24:17.31.01 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:79 - java.lang.NullPointerException
+12.24:17.31.01 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:79 - java.lang.NullPointerException
+12.24:17.31.01 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:79 - java.lang.NullPointerException
+12.24:17.31.01 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:79 - java.lang.NullPointerException
+12.24:17.31.01 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:79 - java.lang.NullPointerException
+12.24:17.31.18 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:52 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:17.32.18 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:79 - java.lang.NullPointerException
+12.24:17.32.18 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:79 - java.lang.NullPointerException
+12.24:17.32.18 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:79 - java.lang.NullPointerException
+12.24:17.32.18 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:79 - java.lang.NullPointerException
+12.24:17.32.25 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:52 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:17.35.18 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:79 - java.lang.NullPointerException
+12.24:17.35.48 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:52 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:17.37.05 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:52 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:17.38.04 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:52 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:17.44.49 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:52 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:17.52.44 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:52 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:17.54.26 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:52 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:17.54.45 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:52 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:17.55.03 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:49 - ru.sfedu.projectmanager.exceptions.TitleNotUniqueException
+12.24:18.05.04 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:50 - java.sql.SQLException: Field 'id' doesn't have a default value
+12.24:18.05.04  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:221 - UPDATE Projects SET title = 'projectTitle_1514127904933', description = 'update_desc', state = 'update_state' WHERE id = 1514127904885;
+12.24:18.05.04 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:50 - java.sql.SQLException: Field 'id' doesn't have a default value
+12.24:18.05.04 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:50 - java.sql.SQLException: Field 'id' doesn't have a default value
+12.24:18.06.39 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:50 - java.sql.SQLException: Field 'id' doesn't have a default value
+12.24:18.06.39  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:221 - UPDATE Projects SET title = 'projectTitle_1514127999700', description = 'update_desc', state = 'update_state' WHERE id = 1514127999670;
+12.24:18.06.39 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:50 - java.sql.SQLException: Field 'id' doesn't have a default value
+12.24:18.06.39 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:50 - java.sql.SQLException: Field 'id' doesn't have a default value
+12.24:18.07.42 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:50 - java.sql.SQLException: Field 'id' doesn't have a default value
+12.24:18.11.16  INFO	ru.sfedu.projectmanager.model.providers.JDBCTests.ProjectTests:30 - 1514128276740
+12.24:18.11.16  INFO	ru.sfedu.projectmanager.model.providers.JDBCTests.ProjectTests:31 - projectTitle_1514128276740, test_state_open, test_description, 24.12.17 18:11
+12.24:18.11.16 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:50 - java.sql.SQLException: Field 'id' doesn't have a default value
+12.24:18.16.13 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:50 - java.sql.SQLException: Column count doesn't match value count at row 1
+12.24:18.19.05 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:50 - com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Out of range value for column 'id' at row 1
+12.24:18.25.46 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:43 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1514129146271' for key 'PRIMARY'
+12.24:18.28.59 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:43 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1514129339781' for key 'PRIMARY'
+12.24:18.28.59 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:43 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'projectTitle_1514129339781' for key 'Projects_title_uindex'
+12.24:18.29.23 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:43 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1514129363839' for key 'PRIMARY'
+12.24:18.29.23 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:43 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'projectTitle_1514129363839' for key 'Projects_title_uindex'
+12.24:18.29.23  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:221 - UPDATE Projects SET title = 'projectTitle_1514129363866', description = 'update_desc', state = 'update_state' WHERE id = 1514129363839;
+12.24:18.29.23 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:43 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1514129363878' for key 'PRIMARY'
+12.24:18.30.42 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:43 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1514129442163' for key 'PRIMARY'
+12.24:18.30.42 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:43 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'projectTitle_1514129442163' for key 'Projects_title_uindex'
+12.24:18.30.42  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:221 - UPDATE Projects SET title = 'projectTitle_1514129442192', description = 'update_desc', state = 'update_state' WHERE id = 1514129442163;
+12.24:18.32.46 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:54 - ru.sfedu.projectmanager.exceptions.TitleNotUniqueException
+12.24:18.32.48  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:222 - UPDATE Projects SET title = 'projectTitle_1514129568025', description = 'test_description', state = 'update_state' WHERE id = 1514129568025;
+12.24:18.32.48  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:213 - UPDATE Tasks SET title = 'taskTitle_1514129568044', description = 'test_description', projectId = null, state = 'some_test_state', type = 'bug', userId = null WHERE id = 1514129568044;
+12.24:18.32.48  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:201 - UPDATE Users SET login = 'login_1514129568054', email = 'test_email', password = 'test_password', projectId = null WHERE id = 1514129568054;
+12.24:18.32.48 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1514129568199' for key 'PRIMARY'
+12.24:18.32.48 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1514129568199' for key 'PRIMARY'
+12.24:18.32.48  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:222 - UPDATE Projects SET title = 'projectTitle_1514129568211', description = 'update_desc', state = 'update_state' WHERE id = 1514129568199;
+12.24:18.32.48 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1514129568243' for key 'PRIMARY'
+12.24:18.32.48  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:213 - UPDATE Tasks SET title = 'taskTitle_1514129568248', description = 'update_desc', projectId = null, state = 'update_state', type = 'update_type', userId = null WHERE id = 1514129568243;
+12.24:18.32.48 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1514129568251' for key 'PRIMARY'
+12.24:18.32.48 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1514129568257' for key 'PRIMARY'
+12.24:18.32.48  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:201 - UPDATE Users SET login = 'login_1514129568261', email = 'update_mail@mail.com', password = 'update_password', projectId = null WHERE id = 1514129568257;
+12.24:18.32.48 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1514129568267' for key 'PRIMARY'
+12.24:18.32.48 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:77 - java.lang.NullPointerException
+12.24:18.32.48 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:77 - java.lang.NullPointerException
+12.24:18.32.48 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:77 - java.lang.NullPointerException
+12.24:18.32.48 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:77 - java.lang.NullPointerException
+12.24:18.32.48 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:77 - java.lang.NullPointerException
+12.24:18.32.48 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:77 - java.lang.NullPointerException
+12.24:18.32.48 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:77 - java.lang.NullPointerException
+12.24:18.32.48 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:77 - java.lang.NullPointerException
+12.24:18.32.48 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:77 - java.lang.NullPointerException
+12.24:18.32.48 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:77 - java.lang.NullPointerException
+12.24:18.32.48 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:77 - java.lang.NullPointerException
+12.24:18.32.48 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:77 - java.lang.NullPointerException
+12.24:18.32.48 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:77 - java.lang.NullPointerException
+12.24:18.32.48 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:77 - java.lang.NullPointerException
+12.24:18.32.48 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:77 - java.lang.NullPointerException
+12.24:18.32.48 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:77 - java.lang.NullPointerException
+12.24:18.32.48 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:77 - java.lang.NullPointerException
+12.24:18.32.48 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:77 - java.lang.NullPointerException
+12.24:18.32.49 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:77 - java.lang.NullPointerException
+12.24:18.32.49 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:77 - java.lang.NullPointerException
+12.24:18.32.49 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:77 - java.lang.NullPointerException
+12.24:18.32.49 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:77 - java.lang.NullPointerException
+12.24:18.33.57 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:54 - ru.sfedu.projectmanager.exceptions.TitleNotUniqueException
+12.24:18.33.57 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:57 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:18.34.15 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:47 - ru.sfedu.projectmanager.exceptions.TitleNotUniqueException
+12.24:18.34.54 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:54 - ru.sfedu.projectmanager.exceptions.TitleNotUniqueException
+12.24:18.34.55 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:57 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:18.35.01 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1514129701580' for key 'PRIMARY'
+12.24:18.35.01 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'projectTitle_1514129701580' for key 'Projects_title_uindex'
+12.24:18.35.01  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:222 - UPDATE Projects SET title = 'projectTitle_1514129701608', description = 'update_desc', state = 'update_state' WHERE id = 1514129701580;
+12.24:18.35.01 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1514129701650' for key 'PRIMARY'
+12.24:18.35.01  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:213 - UPDATE Tasks SET title = 'taskTitle_1514129701660', description = 'update_desc', projectId = null, state = 'update_state', type = 'update_type', userId = null WHERE id = 1514129701650;
+12.24:18.35.01 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1514129701665' for key 'PRIMARY'
+12.24:18.35.01 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1514129701677' for key 'PRIMARY'
+12.24:18.35.01  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:201 - UPDATE Users SET login = 'login_1514129701680', email = 'update_mail@mail.com', password = 'update_password', projectId = null WHERE id = 1514129701677;
+12.24:18.35.01 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1514129701685' for key 'PRIMARY'
+12.24:18.35.06 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:47 - ru.sfedu.projectmanager.exceptions.TitleNotUniqueException
+12.24:18.35.29 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:47 - ru.sfedu.projectmanager.exceptions.TitleNotUniqueException
+12.24:18.35.41 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:50 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:18.35.45 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:47 - ru.sfedu.projectmanager.exceptions.TitleNotUniqueException
+12.24:18.36.28 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:50 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:18.36.51 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:47 - ru.sfedu.projectmanager.exceptions.TitleNotUniqueException
+12.24:18.37.36 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:47 - ru.sfedu.projectmanager.exceptions.TitleNotUniqueException
+12.24:18.37.36 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:50 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:18.37.42 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:47 - ru.sfedu.projectmanager.exceptions.TitleNotUniqueException
+12.24:18.37.43 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:50 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:18.37.49 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:47 - ru.sfedu.projectmanager.exceptions.TitleNotUniqueException
+12.24:18.38.34 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:47 - ru.sfedu.projectmanager.exceptions.TitleNotUniqueException
+12.24:18.38.34 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:50 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:18.38.37 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:47 - ru.sfedu.projectmanager.exceptions.TitleNotUniqueException
+12.24:18.38.38 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:50 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:18.38.40 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:47 - ru.sfedu.projectmanager.exceptions.TitleNotUniqueException
+12.24:18.38.41 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:50 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:18.38.42 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:47 - ru.sfedu.projectmanager.exceptions.TitleNotUniqueException
+12.24:18.38.43 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:50 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:18.38.49 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:54 - ru.sfedu.projectmanager.exceptions.TitleNotUniqueException
+12.24:18.39.11 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:54 - ru.sfedu.projectmanager.exceptions.TitleNotUniqueException
+12.24:18.39.12 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:57 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:18.39.14 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:54 - ru.sfedu.projectmanager.exceptions.TitleNotUniqueException
+12.24:18.39.15 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:57 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:18.39.17 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:54 - ru.sfedu.projectmanager.exceptions.TitleNotUniqueException
+12.24:18.39.18 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:57 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:18.39.20 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:54 - ru.sfedu.projectmanager.exceptions.TitleNotUniqueException
+12.24:18.39.21 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:57 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:18.39.26 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1514129966383' for key 'PRIMARY'
+12.24:18.39.26 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'projectTitle_1514129966383' for key 'Projects_title_uindex'
+12.24:18.39.26  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:222 - UPDATE Projects SET title = 'projectTitle_1514129966414', description = 'update_desc', state = 'update_state' WHERE id = 1514129966383;
+12.24:18.39.26 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1514129966464' for key 'PRIMARY'
+12.24:18.39.26  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:213 - UPDATE Tasks SET title = 'taskTitle_1514129966478', description = 'update_desc', projectId = null, state = 'update_state', type = 'update_type', userId = null WHERE id = 1514129966464;
+12.24:18.39.26 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1514129966483' for key 'PRIMARY'
+12.24:18.39.26 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1514129966497' for key 'PRIMARY'
+12.24:18.39.26  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:201 - UPDATE Users SET login = 'login_1514129966500', email = 'update_mail@mail.com', password = 'update_password', projectId = null WHERE id = 1514129966497;
+12.24:18.39.26 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1514129966506' for key 'PRIMARY'
+12.24:18.40.05 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1514130005128' for key 'PRIMARY'
+12.24:18.40.05 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'projectTitle_1514130005128' for key 'Projects_title_uindex'
+12.24:18.40.05  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:222 - UPDATE Projects SET title = 'projectTitle_1514130005156', description = 'update_desc', state = 'update_state' WHERE id = 1514130005128;
+12.24:18.40.09 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1514130009621' for key 'PRIMARY'
+12.24:18.40.09 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'projectTitle_1514130009621' for key 'Projects_title_uindex'
+12.24:18.40.09  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:222 - UPDATE Projects SET title = 'projectTitle_1514130009650', description = 'update_desc', state = 'update_state' WHERE id = 1514130009621;
+12.24:18.40.13 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1514130013008' for key 'PRIMARY'
+12.24:18.40.13 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'projectTitle_1514130013008' for key 'Projects_title_uindex'
+12.24:18.40.13  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:222 - UPDATE Projects SET title = 'projectTitle_1514130013042', description = 'update_desc', state = 'update_state' WHERE id = 1514130013008;
+12.24:18.40.16 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1514130016154' for key 'PRIMARY'
+12.24:18.40.16 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'login_1514130016154' for key 'Users_login_uindex'
+12.24:18.40.16  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:201 - UPDATE Users SET login = 'login_1514130016185', email = 'update_mail@mail.com', password = 'update_password', projectId = null WHERE id = 1514130016154;
+12.24:18.40.16 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1514130016194' for key 'PRIMARY'
+12.24:18.41.04 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1514130064896' for key 'PRIMARY'
+12.24:18.41.04 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'projectTitle_1514130064896' for key 'Projects_title_uindex'
+12.24:18.41.04  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:222 - UPDATE Projects SET title = 'projectTitle_1514130064924', description = 'update_desc', state = 'update_state' WHERE id = 1514130064896;
+12.24:18.41.10 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1514130069994' for key 'PRIMARY'
+12.24:18.41.10 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'projectTitle_1514130069994' for key 'Projects_title_uindex'
+12.24:18.41.10  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:222 - UPDATE Projects SET title = 'projectTitle_1514130070025', description = 'update_desc', state = 'update_state' WHERE id = 1514130069994;
+12.24:18.41.13 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1514130073191' for key 'PRIMARY'
+12.24:18.41.13  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:213 - UPDATE Tasks SET title = 'taskTitle_1514130073223', description = 'update_desc', projectId = null, state = 'update_state', type = 'update_type', userId = null WHERE id = 1514130073191;
+12.24:18.41.17 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1514130077689' for key 'PRIMARY'
+12.24:18.41.17 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'login_1514130077689' for key 'Users_login_uindex'
+12.24:18.41.17  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:201 - UPDATE Users SET login = 'login_1514130077720', email = 'update_mail@mail.com', password = 'update_password', projectId = null WHERE id = 1514130077689;
+12.24:18.41.21 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1514130081847' for key 'PRIMARY'
+12.24:18.41.21 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'login_1514130081847' for key 'Users_login_uindex'
+12.24:18.41.21  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:201 - UPDATE Users SET login = 'login_1514130081874', email = 'update_mail@mail.com', password = 'update_password', projectId = null WHERE id = 1514130081847;
+12.24:18.41.25 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1514130085062' for key 'PRIMARY'
+12.24:18.41.25 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'login_1514130085062' for key 'Users_login_uindex'
+12.24:18.41.25  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:201 - UPDATE Users SET login = 'login_1514130085089', email = 'update_mail@mail.com', password = 'update_password', projectId = null WHERE id = 1514130085062;
+12.24:18.41.28 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1514130088240' for key 'PRIMARY'
+12.24:18.41.28 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'projectTitle_1514130088240' for key 'Projects_title_uindex'
+12.24:18.41.28  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:222 - UPDATE Projects SET title = 'projectTitle_1514130088271', description = 'update_desc', state = 'update_state' WHERE id = 1514130088240;
+12.24:18.41.38 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1514130098338' for key 'PRIMARY'
+12.24:18.41.38  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:213 - UPDATE Tasks SET title = 'taskTitle_1514130098374', description = 'update_desc', projectId = null, state = 'update_state', type = 'update_type', userId = null WHERE id = 1514130098338;
+12.24:18.41.50 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1514130110108' for key 'PRIMARY'
+12.24:18.41.50  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:213 - UPDATE Tasks SET title = 'taskTitle_1514130110140', description = 'update_desc', projectId = null, state = 'update_state', type = 'update_type', userId = null WHERE id = 1514130110108;
+12.24:18.42.16 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1514130136348' for key 'PRIMARY'
+12.24:18.42.16  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:213 - UPDATE Tasks SET title = 'taskTitle_1514130136382', description = 'update_desc', projectId = null, state = 'update_state', type = 'update_type', userId = null WHERE id = 1514130136348;
+12.24:18.42.18 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1514130138486' for key 'PRIMARY'
+12.24:18.42.18  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:213 - UPDATE Tasks SET title = 'taskTitle_1514130138518', description = 'update_desc', projectId = null, state = 'update_state', type = 'update_type', userId = null WHERE id = 1514130138486;
+12.24:18.43.28 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1514130208300' for key 'PRIMARY'
+12.24:18.43.28  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:213 - UPDATE Tasks SET title = 'taskTitle_1514130208331', description = 'update_desc', projectId = null, state = 'update_state', type = 'update_type', userId = null WHERE id = 1514130208300;
+12.24:18.44.02 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1514130242507' for key 'PRIMARY'
+12.24:18.44.02  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:213 - UPDATE Tasks SET title = 'taskTitle_1514130242542', description = 'update_desc', projectId = null, state = 'update_state', type = 'update_type', userId = null WHERE id = 1514130242507;
+12.24:18.48.13 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1514130493468' for key 'PRIMARY'
+12.24:18.48.13  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:213 - UPDATE Tasks SET title = 'taskTitle_1514130493499', description = 'update_desc', projectId = null, state = 'update_state', type = 'update_type', userId = null WHERE id = 1514130493468;
+12.24:18.50.10 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1514130610289' for key 'PRIMARY'
+12.24:18.50.10  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:213 - UPDATE Tasks SET title = 'taskTitle_1514130610315', description = 'update_desc', projectId = null, state = 'update_state', type = 'update_type', userId = null WHERE id = 1514130610289;
+12.24:18.50.25 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:54 - ru.sfedu.projectmanager.exceptions.TitleNotUniqueException
+12.24:18.50.26 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:57 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:18.50.26 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1514130626460' for key 'PRIMARY'
+12.24:18.50.26 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1514130626460' for key 'PRIMARY'
+12.24:18.50.26  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:222 - UPDATE Projects SET title = 'projectTitle_1514130626483', description = 'update_desc', state = 'update_state' WHERE id = 1514130626460;
+12.24:18.50.26 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1514130626516' for key 'PRIMARY'
+12.24:18.50.26  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:213 - UPDATE Tasks SET title = 'taskTitle_1514130626519', description = 'update_desc', projectId = null, state = 'update_state', type = 'update_type', userId = null WHERE id = 1514130626516;
+12.24:18.50.26 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1514130626545' for key 'PRIMARY'
+12.24:18.50.26 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1514130626545' for key 'PRIMARY'
+12.24:18.50.26  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:201 - UPDATE Users SET login = 'login_1514130626548', email = 'update_mail@mail.com', password = 'update_password', projectId = null WHERE id = 1514130626545;
+12.24:18.50.27 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:50 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:18.50.57 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:54 - ru.sfedu.projectmanager.exceptions.TitleNotUniqueException
+12.24:18.50.58 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:57 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:18.50.58 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1514130658695' for key 'PRIMARY'
+12.24:18.50.58 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1514130658695' for key 'PRIMARY'
+12.24:18.50.58  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:222 - UPDATE Projects SET title = 'projectTitle_1514130658716', description = 'update_desc', state = 'update_state' WHERE id = 1514130658695;
+12.24:18.50.58 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1514130658747' for key 'PRIMARY'
+12.24:18.50.58  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:213 - UPDATE Tasks SET title = 'taskTitle_1514130658750', description = 'update_desc', projectId = null, state = 'update_state', type = 'update_type', userId = null WHERE id = 1514130658747;
+12.24:18.50.58 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1514130658783' for key 'PRIMARY'
+12.24:18.50.58 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1514130658783' for key 'PRIMARY'
+12.24:18.50.58  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:201 - UPDATE Users SET login = 'login_1514130658786', email = 'update_mail@mail.com', password = 'update_password', projectId = null WHERE id = 1514130658783;
+12.24:18.50.58 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:47 - ru.sfedu.projectmanager.exceptions.TitleNotUniqueException
+12.24:18.50.59 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:50 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:18.51.39 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:54 - ru.sfedu.projectmanager.exceptions.TitleNotUniqueException
+12.24:18.51.40 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:57 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:18.51.40 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1514130700586' for key 'PRIMARY'
+12.24:18.51.40 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1514130700586' for key 'PRIMARY'
+12.24:18.51.40  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:222 - UPDATE Projects SET title = 'projectTitle_1514130700607', description = 'update_desc', state = 'update_state' WHERE id = 1514130700586;
+12.24:18.51.40 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1514130700641' for key 'PRIMARY'
+12.24:18.51.40  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:213 - UPDATE Tasks SET title = 'taskTitle_1514130700644', description = 'update_desc', projectId = null, state = 'update_state', type = 'update_type', userId = null WHERE id = 1514130700641;
+12.24:18.51.40 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1514130700676' for key 'PRIMARY'
+12.24:18.51.40 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1514130700676' for key 'PRIMARY'
+12.24:18.51.40  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:201 - UPDATE Users SET login = 'login_1514130700679', email = 'update_mail@mail.com', password = 'update_password', projectId = null WHERE id = 1514130700676;
+12.24:18.51.40 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:47 - ru.sfedu.projectmanager.exceptions.TitleNotUniqueException
+12.24:18.51.41 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:50 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:18.52.16 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:54 - ru.sfedu.projectmanager.exceptions.TitleNotUniqueException
+12.24:18.52.17 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:57 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:18.52.17 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1514130737483' for key 'PRIMARY'
+12.24:18.52.17 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1514130737483' for key 'PRIMARY'
+12.24:18.52.17  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:222 - UPDATE Projects SET title = 'projectTitle_1514130737503', description = 'update_desc', state = 'update_state' WHERE id = 1514130737483;
+12.24:18.52.17 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1514130737536' for key 'PRIMARY'
+12.24:18.52.17  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:213 - UPDATE Tasks SET title = 'taskTitle_1514130737538', description = 'update_desc', projectId = null, state = 'update_state', type = 'update_type', userId = null WHERE id = 1514130737536;
+12.24:18.52.17 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1514130737566' for key 'PRIMARY'
+12.24:18.52.17 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1514130737566' for key 'PRIMARY'
+12.24:18.52.17  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:201 - UPDATE Users SET login = 'login_1514130737569', email = 'update_mail@mail.com', password = 'update_password', projectId = null WHERE id = 1514130737566;
+12.24:18.52.17 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:47 - ru.sfedu.projectmanager.exceptions.TitleNotUniqueException
+12.24:18.52.18 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:50 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:18.54.54 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:54 - ru.sfedu.projectmanager.exceptions.TitleNotUniqueException
+12.24:18.54.54 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:57 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:18.54.55 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1514130895276' for key 'PRIMARY'
+12.24:18.54.55 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1514130895276' for key 'PRIMARY'
+12.24:18.54.55  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:222 - UPDATE Projects SET title = 'projectTitle_1514130895296', description = 'update_desc', state = 'update_state' WHERE id = 1514130895276;
+12.24:18.54.55 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1514130895329' for key 'PRIMARY'
+12.24:18.54.55  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:213 - UPDATE Tasks SET title = 'taskTitle_1514130895332', description = 'update_desc', projectId = null, state = 'update_state', type = 'update_type', userId = null WHERE id = 1514130895329;
+12.24:18.54.55 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1514130895360' for key 'PRIMARY'
+12.24:18.54.55 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1514130895360' for key 'PRIMARY'
+12.24:18.54.55  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:201 - UPDATE Users SET login = 'login_1514130895363', email = 'update_mail@mail.com', password = 'update_password', projectId = null WHERE id = 1514130895360;
+12.24:18.54.55 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:47 - ru.sfedu.projectmanager.exceptions.TitleNotUniqueException
+12.24:18.54.56 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:50 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:18.58.33 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:54 - ru.sfedu.projectmanager.exceptions.TitleNotUniqueException
+12.24:18.58.34 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:57 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:18.58.34  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:222 - UPDATE Projects SET title = 'projectTitle_1514131114417', description = 'update_desc', state = 'update_state' WHERE id = 1514131114408;
+12.24:18.58.34  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:213 - UPDATE Tasks SET title = 'taskTitle_1514131114427', description = 'update_desc', projectId = null, state = 'update_state', type = 'update_type', userId = null WHERE id = 1514131114421;
+12.24:18.58.34  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:201 - UPDATE Users SET login = 'login_1514131114440', email = 'update_mail@mail.com', password = 'update_password', projectId = null WHERE id = 1514131114436;
+12.24:18.58.34 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:47 - ru.sfedu.projectmanager.exceptions.TitleNotUniqueException
+12.24:18.58.35 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:50 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:18.59.21 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:54 - ru.sfedu.projectmanager.exceptions.TitleNotUniqueException
+12.24:18.59.21 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderCSV:57 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException
+12.24:18.59.22 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1514131162337' for key 'PRIMARY'
+12.24:18.59.22 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1514131162337' for key 'PRIMARY'
+12.24:18.59.22  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:222 - UPDATE Projects SET title = 'projectTitle_1514131162359', description = 'update_desc', state = 'update_state' WHERE id = 1514131162337;
+12.24:18.59.22 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1514131162395' for key 'PRIMARY'
+12.24:18.59.22  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:213 - UPDATE Tasks SET title = 'taskTitle_1514131162398', description = 'update_desc', projectId = null, state = 'update_state', type = 'update_type', userId = null WHERE id = 1514131162395;
+12.24:18.59.22 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1514131162427' for key 'PRIMARY'
+12.24:18.59.22 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1514131162427' for key 'PRIMARY'
+12.24:18.59.22  INFO	ru.sfedu.projectmanager.model.providers.DataProviderJDBC:201 - UPDATE Users SET login = 'login_1514131162430', email = 'update_mail@mail.com', password = 'update_password', projectId = null WHERE id = 1514131162427;
+12.24:18.59.22 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:47 - ru.sfedu.projectmanager.exceptions.TitleNotUniqueException
+12.24:18.59.23 ERROR	ru.sfedu.projectmanager.model.providers.DataProviderXML:50 - ru.sfedu.projectmanager.exceptions.LoginNotUniqueException

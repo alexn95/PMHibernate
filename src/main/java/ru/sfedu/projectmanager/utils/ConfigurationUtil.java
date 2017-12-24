@@ -12,7 +12,7 @@ import java.util.Properties;
  */
 public class ConfigurationUtil {
 
-    private static final String DEFAULT_CONFIG_PATH = "/config.properties";
+    private static  String DEFAULT_CONFIG_PATH = "/config.properties";
     private static final Properties configuration = new Properties();
 
     /**
@@ -52,5 +52,9 @@ public class ConfigurationUtil {
     public static String getConfigurationEntry(String key) throws IOException{
         return getConfiguration().getProperty(key);
     }
-    
+
+    public static void setConfigPath (String config_path){
+        DEFAULT_CONFIG_PATH = config_path;
+    }
+
 }

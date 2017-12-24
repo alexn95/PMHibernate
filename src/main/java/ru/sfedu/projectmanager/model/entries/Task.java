@@ -253,8 +253,8 @@ public class Task implements WithId, Serializable {
 
     @Override
     public String toInsert(){
-        return "'" + title + "', '" + description + "', " + projectId + ", '" + state + "', '"
-                + type + "', '" + createDate + "', " + userId;
+        return id + ", '" + title + "', '" + description + "', '" + type + "', '" + state + "', "
+                + userId + ", " + projectId + ", " + createDate;
     }
 
     @Override

@@ -12,7 +12,6 @@ import ru.sfedu.projectmanager.model.enums.ResultType;
 import ru.sfedu.projectmanager.utils.ConfigurationUtil;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.List;
 import java.util.Objects;
@@ -53,9 +52,6 @@ public class DataProviderXML<T extends WithId> implements IDataProvider<T> {
         } catch (IntegrityConstrainException e) {
             logger.error(e);
             return new MethodsResult(ResultType.SQL_INTEGRITY_CONSTRAIN_EXCEPTION);
-        } catch (WrongEntryTypeException e){
-            logger.error(e);
-            return new MethodsResult<>(ResultType.WRONG_ENTRY_TYPE_EXCEPTION);
         } catch (Exception e){
             logger.error(e);
             return new MethodsResult<>(ResultType.EXCEPTION);
@@ -72,13 +68,11 @@ public class DataProviderXML<T extends WithId> implements IDataProvider<T> {
             if (deletedBean != null){
                 beans.remove(deletedBean);
                 serializer.write(new XMLBeanList<>(beans), file);
+                updateRelatedEntry(id, type);
                 return new MethodsResult<>(ResultType.SUCCESSFUL);
             } else {
                 return new MethodsResult<>(ResultType.ID_NOT_EXIST);
             }
-        } catch (WrongEntryTypeException e){
-            logger.error(e);
-            return new MethodsResult<>(ResultType.WRONG_ENTRY_TYPE_EXCEPTION);
         } catch (Exception e){
             logger.error(e);
             return new MethodsResult<>(ResultType.EXCEPTION);
@@ -96,9 +90,6 @@ public class DataProviderXML<T extends WithId> implements IDataProvider<T> {
             } else {
                 return new MethodsResult<>(ResultType.ID_NOT_EXIST);
             }
-        } catch (WrongEntryTypeException e){
-            logger.error(e);
-            return new MethodsResult<>(ResultType.WRONG_ENTRY_TYPE_EXCEPTION);
         } catch (Exception e) {
             logger.error(e);
             return new MethodsResult<>(ResultType.EXCEPTION);
@@ -116,9 +107,6 @@ public class DataProviderXML<T extends WithId> implements IDataProvider<T> {
             } else {
                 return new MethodsResult<>(ResultType.LOGIN_NOT_EXIST);
             }
-        } catch (WrongEntryTypeException e){
-            logger.error(e);
-            return new MethodsResult<>(ResultType.WRONG_ENTRY_TYPE_EXCEPTION);
         } catch (Exception e) {
             logger.error(e);
             return new MethodsResult<>(ResultType.EXCEPTION);
@@ -132,9 +120,6 @@ public class DataProviderXML<T extends WithId> implements IDataProvider<T> {
             List<Task> beans = serializer.read(XMLBeanList.class, file).getBeans();
             return new MethodsResult( ResultType.SUCCESSFUL,
                     beans.stream().filter(bean -> Objects.equals(title, bean.getTitle())).collect(Collectors.toList()));
-        } catch (WrongEntryTypeException e){
-            logger.error(e);
-            return new MethodsResult<>(ResultType.WRONG_ENTRY_TYPE_EXCEPTION);
         } catch (Exception e) {
             logger.error(e);
             return new MethodsResult<>(ResultType.EXCEPTION);
@@ -153,9 +138,6 @@ public class DataProviderXML<T extends WithId> implements IDataProvider<T> {
             } else {
                 return new MethodsResult<>(ResultType.TITLE_NOT_EXIST);
             }
-        } catch (WrongEntryTypeException e){
-            logger.error(e);
-            return new MethodsResult<>(ResultType.WRONG_ENTRY_TYPE_EXCEPTION);
         } catch (Exception e) {
             logger.error(e);
             return new MethodsResult<>(ResultType.EXCEPTION);
@@ -189,9 +171,6 @@ public class DataProviderXML<T extends WithId> implements IDataProvider<T> {
         } catch (IntegrityConstrainException e) {
             logger.error(e);
             return new MethodsResult(ResultType.SQL_INTEGRITY_CONSTRAIN_EXCEPTION);
-        } catch (WrongEntryTypeException e){
-            logger.error(e);
-            return new MethodsResult<>(ResultType.WRONG_ENTRY_TYPE_EXCEPTION);
         } catch (Exception e){
             logger.error(e);
             return new MethodsResult<>(ResultType.EXCEPTION);
@@ -204,9 +183,6 @@ public class DataProviderXML<T extends WithId> implements IDataProvider<T> {
             initFile(type);
             List<T> beans = serializer.read(XMLBeanList.class, file).getBeans();
             return new MethodsResult<>(ResultType.SUCCESSFUL, beans);
-        } catch (WrongEntryTypeException e){
-            logger.error(e);
-            return new MethodsResult<>(ResultType.WRONG_ENTRY_TYPE_EXCEPTION);
         } catch (Exception e) {
             logger.error(e);
             return new MethodsResult<>(ResultType.EXCEPTION);
@@ -217,9 +193,12 @@ public class DataProviderXML<T extends WithId> implements IDataProvider<T> {
     public MethodsResult initDataSource() {
         serializer = new Persister();
         try {
-            users_path = ConfigurationUtil.getConfigurationEntry(Constants.XML_PATH_USERS);
-            projects_path = ConfigurationUtil.getConfigurationEntry(Constants.XML_PATH_PROJECTS);
-            tasks_path = ConfigurationUtil.getConfigurationEntry(Constants.XML_PATH_TASKS);
+            users_path = ConfigurationUtil.getConfigurationEntry(Constants.SYSTEM_PATH)
+                    + ConfigurationUtil.getConfigurationEntry(Constants.XML_PATH_USERS);
+            projects_path = ConfigurationUtil.getConfigurationEntry(Constants.SYSTEM_PATH)
+                    + ConfigurationUtil.getConfigurationEntry(Constants.XML_PATH_PROJECTS);
+            tasks_path = ConfigurationUtil.getConfigurationEntry(Constants.SYSTEM_PATH)
+                    + ConfigurationUtil.getConfigurationEntry(Constants.XML_PATH_TASKS);
             return new MethodsResult<>(ResultType.SUCCESSFUL);
         } catch (IOException e){
             logger.error(e);
@@ -228,7 +207,7 @@ public class DataProviderXML<T extends WithId> implements IDataProvider<T> {
     }
 
 
-    protected void initFile(EntryType type) throws WrongEntryTypeException{
+    protected void initFile(EntryType type) {
             switch (type) {
                 case TASK:
                     file = new File(tasks_path);
@@ -241,11 +220,10 @@ public class DataProviderXML<T extends WithId> implements IDataProvider<T> {
                     break;
                 default:
                     logger.info("Wrong entity type");
-                    throw new WrongEntryTypeException();
             }
     }
 
-    protected void entryConstrainVerification(List<T> beans, T bean, EntryType type) throws Exception {
+    private void entryConstrainVerification(List<T> beans, T bean, EntryType type) throws Exception {
         List<Project> projects;
         List<User> users;
         switch (type){
@@ -288,6 +266,31 @@ public class DataProviderXML<T extends WithId> implements IDataProvider<T> {
             default:
                 break;
         }
+    }
+
+    private void updateRelatedEntry(long id, EntryType type) throws Exception {
+        List<Task> tasks;
+        switch (type){
+            case PROJECT:
+                initFile(EntryType.USER);
+                List<User> users = serializer.read(XMLBeanList.class, file).getBeans();
+                users.forEach(user -> { if(user.getProjectId() == id) user.setProjectId(null); });
+                serializer.write(new XMLBeanList<>(users), file);
+
+                initFile(EntryType.TASK);
+                tasks = serializer.read(XMLBeanList.class, file).getBeans();
+                List<Task> newTasks = tasks.stream().filter(task -> task.getProjectId() != id).collect(Collectors.toList());
+                serializer.write(new XMLBeanList<>(newTasks), file);
+                break;
+
+            case USER:
+                initFile(EntryType.TASK);
+                tasks = serializer.read(XMLBeanList.class, file).getBeans();
+                tasks.forEach(task -> { if(task.getUserId() == id) task.setUserId(null); });
+                serializer.write(new XMLBeanList<>(tasks), file);
+                break;
+        }
+
     }
 
 }

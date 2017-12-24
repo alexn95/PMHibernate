@@ -23,5 +23,7 @@ public class Constants {
     public static final String JDBC_URL = "db.jdbc_url";
     public static final String JDBC_USER = "db.jdbc_user";
     public static final String JDBC_PASSWORD = "db.jdbc_password";
+
+    public static final String SYSTEM_PATH = "system_path";
     
 }
