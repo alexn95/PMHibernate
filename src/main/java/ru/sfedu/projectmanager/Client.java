@@ -23,8 +23,9 @@ public class Client {
 
     public static void main(String[] args) {
         dataProvider = null;
-        System.out.println(args[0]);
-        ConfigurationUtil.setConfigPath(args[0]);
+        if (args.length > 0){
+            ConfigurationUtil.setConfigPath(args[0].replace("-", ""));
+        }
 
         Scanner scan = new Scanner(System.in);
         while (true){
