@@ -7,13 +7,13 @@ import ru.sfedu.projectmanager.model.enums.MethodsResult;
 
 public abstract interface IDataProvider<T> {
 
-    public MethodsResult saveRecord(T bean, EntryType type);
+    public MethodsResult saveRecord(T bean);
 
-    public MethodsResult deleteRecord(long id, EntryType type);
+    public MethodsResult deleteRecord(T bean);
 
-    public MethodsResult getRecordById(long id, EntryType type);
+    public MethodsResult getRecordById(T bean);
 
-    public MethodsResult updateRecord(T bean, EntryType type);
+    public MethodsResult updateRecord(T bean);
 
     public MethodsResult getAllRecords(EntryType type);
 
@@ -24,4 +24,6 @@ public abstract interface IDataProvider<T> {
     public MethodsResult getTasksByTitle(String title);
 
     public MethodsResult getProjectByTitle(String title);
+
+    public MethodsResult integrityCheck();
 }

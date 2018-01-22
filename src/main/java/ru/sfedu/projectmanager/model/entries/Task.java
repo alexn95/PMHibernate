@@ -1,81 +1,71 @@
 package ru.sfedu.projectmanager.model.entries;
 
 
+import com.opencsv.bean.CsvBindByName;
 import com.opencsv.bean.CsvBindByPosition;
 import org.simpleframework.xml.Attribute;
 import org.simpleframework.xml.Element;
+import org.simpleframework.xml.Root;
+import ru.sfedu.projectmanager.model.enums.EntryType;
 
 import java.io.Serializable;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.Calendar;
 import java.util.Objects;
 import java.util.Random;
 
 /**
  * Class Task
  */
-public class Task implements WithId, Serializable {
+public class Task extends WithId {
 
-
-    @Attribute
-    @CsvBindByPosition(position = 0)
-    private Long id;
-
-    @CsvBindByPosition(position = 1)
+    @CsvBindByName
+//    @CsvBindByPosition(position = 1)
     private String title;
 
-    @CsvBindByPosition(position = 2)
+    @CsvBindByName
+//    @CsvBindByPosition(position = 2)
     private String description;
 
-    @CsvBindByPosition(position = 3)
+    @CsvBindByName
+//    @CsvBindByPosition(position = 3)
     private Long projectId;
 
-    @CsvBindByPosition(position = 4)
+    @CsvBindByName
+//    @CsvBindByPosition(position = 4)
     private String state;
 
-    @CsvBindByPosition(position = 5)
+    @CsvBindByName
+//    @CsvBindByPosition(position = 5)
     private String type;
 
-    @CsvBindByPosition(position = 6)
+    @CsvBindByName
+//    @CsvBindByPosition(position = 6)
     private long createDate;
 
-    @CsvBindByPosition(position = 7)
+    @CsvBindByName
+//    @CsvBindByPosition(position = 7)
     private Long userId;
-
-    private Random random = new Random();
   
   //
   // Constructors
   //
-      public Task () {
-          this.id = random.nextLong();
-          this.createDate =  new Date().getTime();;
-      }
+    public Task (Long id) {
+        super(id, EntryType.TASK);
+        this.createDate =  new Date().getTime();;
+        this.userId = null;
+        this.projectId = null;
+    }
 
-      public Task(Long id, String title, String description, Long projectId, String state, String type, long createDate, Long userId) {
-        this.id = id;
-        this.title = title;
-        this.description = description;
-        this.projectId = projectId;
-        this.state = state;
-        this.type = type;
-        this.createDate = createDate;
-        this.userId = userId;
-      }
-
-      public Task(Long id, String title, String description, Long projectId, String state, String type, long createDate) {
-        this.id = id;
-        this.title = title;
-        this.description = description;
-        this.projectId = projectId;
-        this.state = state;
-        this.type = type;
-        this.createDate = createDate;
-      }
+    public Task () {
+        super(EntryType.TASK);
+        this.createDate =  new Date().getTime();;
+        this.userId = null;
+        this.projectId = null;
+    }
 
     public Task(String title, String description, Long projectId, String state, String type, long createDate) {
-        this.id = random.nextLong();
+        super(EntryType.TASK);
         this.title = title;
         this.description = description;
         this.projectId = projectId;
@@ -85,7 +75,7 @@ public class Task implements WithId, Serializable {
     }
 
     public Task(String title, String description, String state, String type, Long projectId) {
-        this.id = random.nextLong();
+        super(EntryType.TASK);
         this.title = title;
         this.description = description;
         this.projectId = projectId;
@@ -102,22 +92,6 @@ public class Task implements WithId, Serializable {
   //
   // Accessor methods
   //
-
-  /**
-   * Set the value of id
-   * @param newVar the new value of id
-   */
-    public void setId (Long newVar) {
-    id = newVar;
-  }
-
-  /**
-   * Get the value of id
-   * @return the value of id
-   */
-    public Long getId () {
-    return id;
-  }
 
   /**
    * Set the value of title
@@ -240,21 +214,8 @@ public class Task implements WithId, Serializable {
     @Override
     public String toString(){
         SimpleDateFormat format = new SimpleDateFormat();
-        return title + ", " + state + ", " + type + ", " + description + ", "
+        return id + ", " + title + ", " + state + ", " + type + ", " + description + ", "
                 + userId + ", " + projectId + ", " + format.format(new Date(createDate));
-    }
-
-    @Override
-    public String toCLI(){
-        SimpleDateFormat format = new SimpleDateFormat();
-        return id + ", " + title + ", " + description + ", " + projectId + ", " + state + ", "
-                + type + ", " + format.format(new Date(createDate)) + ", " + userId;
-    }
-
-    @Override
-    public String toInsert(){
-        return id + ", '" + title + "', '" + description + "', '" + type + "', '" + state + "', "
-                + userId + ", " + projectId + ", " + createDate;
     }
 
     @Override
@@ -265,5 +226,12 @@ public class Task implements WithId, Serializable {
             isEquals = Objects.equals(this.toString(), object.toString());
         }
         return isEquals;
+    }
+
+    @Override
+    public String toInsert(){
+        SimpleDateFormat format = new SimpleDateFormat();
+        return id + ", '" + title + "', '" + description + "', '" + type + "', '" + state + "', "
+                + userId + ", " + projectId + ", " + createDate;
     }
 }

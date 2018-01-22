@@ -9,16 +9,15 @@ import ru.sfedu.projectmanager.model.enums.EntryType;
 import ru.sfedu.projectmanager.model.enums.MethodsResult;
 import ru.sfedu.projectmanager.model.enums.ResultType;
 import ru.sfedu.projectmanager.model.providers.DataGenerator;
-import ru.sfedu.projectmanager.model.providers.DataProviderCSV;
 import ru.sfedu.projectmanager.model.providers.DataProviderXML;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-public class UserTests {
+public class XMLUserTests {
 
-    private static Logger logger = Logger.getLogger(UserTests.class);
+    private static Logger logger = Logger.getLogger(XMLUserTests.class);
     private static DataProviderXML dataProvider;
     private static User user;
 
@@ -29,11 +28,11 @@ public class UserTests {
         Thread.sleep(1);
         User fakeUser = DataGenerator.createUser();
         fakeUser.setLogin(user.getLogin());
-        Assert.assertEquals(ResultType.SUCCESSFUL, dataProvider.saveRecord(user, EntryType.USER).getResult());
-        Assert.assertEquals(ResultType.ID_ALREADY_EXIST, dataProvider.saveRecord(user, EntryType.USER).getResult());
-        Assert.assertEquals(ResultType.LOGIN_ALREADY_EXIST, dataProvider.saveRecord(fakeUser, EntryType.USER).getResult());
+        Assert.assertEquals(ResultType.SUCCESSFUL, dataProvider.saveRecord(user).getResult());
+        Assert.assertEquals(ResultType.ID_ALREADY_EXIST, dataProvider.saveRecord(user).getResult());
+        Assert.assertEquals(ResultType.LOGIN_ALREADY_EXIST, dataProvider.saveRecord(fakeUser).getResult());
 
-        MethodsResult trueResult = dataProvider.getRecordById(user.getId(), EntryType.USER);
+        MethodsResult trueResult = dataProvider.getRecordById(user);
         Assert.assertEquals(trueResult.getResult(), ResultType.SUCCESSFUL);
         Assert.assertEquals(trueResult.getBean(), user);
     }
@@ -54,8 +53,8 @@ public class UserTests {
     public void testC(){
         User updateUser = DataGenerator.createUpdatedUser();
         updateUser.setId(user.getId());
-        Assert.assertEquals(ResultType.SUCCESSFUL, dataProvider.updateRecord(updateUser, EntryType.USER).getResult());
-        MethodsResult trueResult = dataProvider.getRecordById(updateUser.getId(), EntryType.USER);
+        Assert.assertEquals(ResultType.SUCCESSFUL, dataProvider.updateRecord(updateUser).getResult());
+        MethodsResult trueResult = dataProvider.getRecordById(updateUser);
         Assert.assertEquals(ResultType.SUCCESSFUL, trueResult.getResult());
         Assert.assertEquals(updateUser.getEmail(), ((User)trueResult.getBean()).getEmail());
     }
@@ -65,13 +64,13 @@ public class UserTests {
     public void testD(){
         Task updatedTestTask = DataGenerator.createTask();
         updatedTestTask.setUserId(user.getId());
-        Assert.assertEquals(ResultType.SUCCESSFUL, dataProvider.saveRecord(updatedTestTask, EntryType.TASK).getResult());
+        Assert.assertEquals(ResultType.SUCCESSFUL, dataProvider.saveRecord(updatedTestTask).getResult());
 
-        Assert.assertEquals(dataProvider.deleteRecord(user.getId(), EntryType.USER).getResult(), ResultType.SUCCESSFUL);
-        Assert.assertEquals(dataProvider.getRecordById(user.getId(), EntryType.USER).getResult(), ResultType.ID_NOT_EXIST);
+        Assert.assertEquals(dataProvider.deleteRecord(user).getResult(), ResultType.SUCCESSFUL);
+        Assert.assertEquals(dataProvider.getRecordById(user).getResult(), ResultType.ID_NOT_EXIST);
 
-        Assert.assertEquals(null, ((Task)dataProvider.getRecordById(updatedTestTask.getId(), EntryType.TASK).getBean()).getUserId());
-        Assert.assertEquals(ResultType.SUCCESSFUL, dataProvider.deleteRecord(updatedTestTask.getId(), EntryType.TASK).getResult());
+        Assert.assertEquals(null, ((Task)dataProvider.getRecordById(updatedTestTask).getBean()).getUserId());
+        Assert.assertEquals(ResultType.SUCCESSFUL, dataProvider.deleteRecord(updatedTestTask).getResult());
     }
 
 //    get all users test
@@ -81,13 +80,13 @@ public class UserTests {
         for (int i = 0; i < 10; i++){
             user = DataGenerator.createUser();
             users.add(user);
-            Assert.assertEquals(dataProvider.saveRecord(user, EntryType.USER).getResult(), ResultType.SUCCESSFUL);
+            Assert.assertEquals(dataProvider.saveRecord(user).getResult(), ResultType.SUCCESSFUL);
         }
         MethodsResult result = dataProvider.getAllRecords(EntryType.USER);
         Assert.assertEquals(result.getResult(), ResultType.SUCCESSFUL);
         List allUsers = result.getBeans();
         Assert.assertTrue(users.stream().allMatch(allUsers::contains));
-        users.forEach(deletedRecord -> dataProvider.deleteRecord(deletedRecord.getId(), EntryType.USER));
+        users.forEach(deletedRecord -> dataProvider.deleteRecord(deletedRecord));
     }
 
 

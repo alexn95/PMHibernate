@@ -29,7 +29,8 @@ public class DataProviderXML<T extends WithId> implements IDataProvider<T> {
 
 
     @Override
-    public MethodsResult saveRecord(T insertedBean, EntryType type) {
+    public MethodsResult saveRecord(T insertedBean) {
+        EntryType type = insertedBean.getEntryType();
         try {
             initFile(type);
             XMLBeanList list = serializer.read(XMLBeanList.class, file);
@@ -51,7 +52,7 @@ public class DataProviderXML<T extends WithId> implements IDataProvider<T> {
             return new MethodsResult(ResultType.LOGIN_ALREADY_EXIST);
         } catch (IntegrityConstrainException e) {
             logger.error(e);
-            return new MethodsResult(ResultType.SQL_INTEGRITY_CONSTRAIN_EXCEPTION);
+            return new MethodsResult(ResultType.INTEGRITY_CONSTRAIN_EXCEPTION);
         } catch (Exception e){
             logger.error(e);
             return new MethodsResult<>(ResultType.EXCEPTION);
@@ -59,7 +60,9 @@ public class DataProviderXML<T extends WithId> implements IDataProvider<T> {
     }
 
     @Override
-    public MethodsResult deleteRecord(long id, EntryType type){
+    public MethodsResult deleteRecord(T neededBean){
+        EntryType type = neededBean.getEntryType();
+        Long id = neededBean.getId();
         try {
             initFile(type);
             XMLBeanList list = serializer.read(XMLBeanList.class, file);
@@ -80,11 +83,13 @@ public class DataProviderXML<T extends WithId> implements IDataProvider<T> {
     }
 
     @Override
-    public MethodsResult getRecordById(long id, EntryType type){
+    public MethodsResult getRecordById(T neededBean){
+        EntryType type = neededBean.getEntryType();
+        Long id = neededBean.getId();
         try {
             initFile(type);
             List<T> beans = serializer.read(XMLBeanList.class, file).getBeans();
-            T searchedBean = beans.stream().filter(bean -> id == bean.getId()).findFirst().orElse(null);
+            T searchedBean = beans.stream().filter(bean -> Objects.equals(id, bean.getId())).findFirst().orElse(null);
             if (searchedBean != null){
                 return new MethodsResult<T>(ResultType.SUCCESSFUL, searchedBean);
             } else {
@@ -145,7 +150,8 @@ public class DataProviderXML<T extends WithId> implements IDataProvider<T> {
     }
 
     @Override
-    public MethodsResult updateRecord(T bean, EntryType type){
+    public MethodsResult updateRecord(T bean){
+        EntryType type = bean.getEntryType();
         try {
             initFile(type);
             XMLBeanList list = serializer.read(XMLBeanList.class, file);
@@ -170,7 +176,7 @@ public class DataProviderXML<T extends WithId> implements IDataProvider<T> {
             return new MethodsResult(ResultType.LOGIN_ALREADY_EXIST);
         } catch (IntegrityConstrainException e) {
             logger.error(e);
-            return new MethodsResult(ResultType.SQL_INTEGRITY_CONSTRAIN_EXCEPTION);
+            return new MethodsResult(ResultType.INTEGRITY_CONSTRAIN_EXCEPTION);
         } catch (Exception e){
             logger.error(e);
             return new MethodsResult<>(ResultType.EXCEPTION);
@@ -274,23 +280,69 @@ public class DataProviderXML<T extends WithId> implements IDataProvider<T> {
             case PROJECT:
                 initFile(EntryType.USER);
                 List<User> users = serializer.read(XMLBeanList.class, file).getBeans();
-                users.forEach(user -> { if(user.getProjectId() == id) user.setProjectId(null); });
+                users.forEach(user -> {
+                    if (user.getProjectId() != null && user.getProjectId() == id)
+                        user.setProjectId(null);
+                });
                 serializer.write(new XMLBeanList<>(users), file);
 
                 initFile(EntryType.TASK);
                 tasks = serializer.read(XMLBeanList.class, file).getBeans();
-                List<Task> newTasks = tasks.stream().filter(task -> task.getProjectId() != id).collect(Collectors.toList());
+                List<Task> newTasks = tasks.stream().filter(task ->
+                        task.getProjectId() == null ||
+                        task.getProjectId() != id
+                ).collect(Collectors.toList());
                 serializer.write(new XMLBeanList<>(newTasks), file);
                 break;
 
             case USER:
                 initFile(EntryType.TASK);
                 tasks = serializer.read(XMLBeanList.class, file).getBeans();
-                tasks.forEach(task -> { if(task.getUserId() == id) task.setUserId(null); });
+                tasks.forEach(task -> {
+                    if (task.getUserId() != null && task.getUserId() == id)
+                        task.setUserId(null);
+                });
                 serializer.write(new XMLBeanList<>(tasks), file);
                 break;
         }
 
+    }
+
+    public MethodsResult integrityCheck(){
+        List<User> users = getAllRecords(EntryType.USER).getBeans();
+        users.stream().filter(curUser -> curUser.getProjectId() != null).forEach(user -> {
+            Project project = new Project();
+            project.setId(user.getProjectId());
+            if (getRecordById((T)project).getResult() == ResultType.ID_NOT_EXIST){
+                logger.info("[USER]Project with id " + user.getProjectId() + " not exist. Project id was set to null.");
+                User updateRecord = user;
+                updateRecord.setProjectId(null);
+                updateRecord((T)updateRecord);
+            }
+        });
+
+        List<Task> tasks = getAllRecords(EntryType.TASK).getBeans();
+        tasks.stream().filter(curTask -> curTask.getProjectId() != null).forEach(task -> {
+            Project project = new Project();
+            project.setId(task.getProjectId());
+            if (getRecordById((T)project).getResult() == ResultType.ID_NOT_EXIST){
+                deleteRecord((T)task);
+                logger.info("[TASK]Project with id " + task.getProjectId() + " not exist. Task with id " + task.getId() + " was deleted.");
+            }
+        });
+
+        tasks.stream().filter(curTask -> curTask.getUserId() != null).forEach(task -> {
+            User user = new User();
+            user.setId(task.getUserId());
+            if (getRecordById((T)user).getResult() == ResultType.ID_NOT_EXIST){
+                logger.info("[TASK]User with id " + task.getUserId() + " not exist. User id was set to null.");
+                Task updateRecord = task;
+                updateRecord.setUserId(null);
+                updateRecord((T)updateRecord);
+            }
+        });
+
+        return new MethodsResult(ResultType.SUCCESSFUL);
     }
 
 }

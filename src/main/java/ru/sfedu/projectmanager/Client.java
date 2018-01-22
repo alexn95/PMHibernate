@@ -6,11 +6,15 @@
 package ru.sfedu.projectmanager;
 
 import org.apache.log4j.Logger;
+import ru.sfedu.projectmanager.model.providers.DataProviderCSV;
+import ru.sfedu.projectmanager.model.providers.DataProviderJDBC;
+import ru.sfedu.projectmanager.model.providers.DataProviderXML;
 import ru.sfedu.projectmanager.model.providers.IDataProvider;
 import ru.sfedu.projectmanager.services.CLIServices;
 import ru.sfedu.projectmanager.utils.ConfigurationUtil;
 
 import java.util.Scanner;
+import java.util.regex.Pattern;
 
 
 /**
@@ -23,12 +27,21 @@ public class Client {
 
     public static void main(String[] args) {
         dataProvider = null;
-        if (args.length > 0){
-            ConfigurationUtil.setConfigPath(args[0].replace("-", ""));
-        }
+        ConfigurationUtil.setConfigPath(System.getProperty("path"));
 
         Scanner scan = new Scanner(System.in);
+
         while (true){
+            if ( dataProvider == null){
+                System.out.print("Main menu: ");
+            } else if (dataProvider instanceof DataProviderJDBC){
+                System.out.print("jdbc: ");
+            } else if (dataProvider instanceof DataProviderXML){
+                System.out.print("xml: ");
+            } else if (dataProvider instanceof DataProviderCSV){
+                System.out.print("csv: ");
+            }
+
             String temp = scan.nextLine();
             if (temp.equals("q") || temp.equals("quit")){
                 break;

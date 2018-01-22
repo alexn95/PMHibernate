@@ -9,15 +9,14 @@ import ru.sfedu.projectmanager.model.enums.MethodsResult;
 import ru.sfedu.projectmanager.model.enums.ResultType;
 import ru.sfedu.projectmanager.model.providers.DataGenerator;
 import ru.sfedu.projectmanager.model.providers.DataProviderJDBC;
-import ru.sfedu.projectmanager.model.providers.DataProviderXML;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-public class TaskTests {
+public class JDBCTaskTests {
 
-    private static Logger logger = Logger.getLogger(TaskTests.class);
+    private static Logger logger = Logger.getLogger(JDBCTaskTests.class);
     private static DataProviderJDBC dataProvider;
     private static Task task;
 
@@ -25,9 +24,9 @@ public class TaskTests {
 //    create task test
     @Test
     public void testA() {
-        Assert.assertEquals(ResultType.SUCCESSFUL, dataProvider.saveRecord(task, EntryType.TASK).getResult());
-        Assert.assertEquals(ResultType.SQL_INTEGRITY_CONSTRAIN_EXCEPTION, dataProvider.saveRecord(task, EntryType.TASK).getResult());
-        MethodsResult trueResult = dataProvider.getRecordById(task.getId(), EntryType.TASK);
+        Assert.assertEquals(ResultType.SUCCESSFUL, dataProvider.saveRecord(task).getResult());
+        Assert.assertEquals(ResultType.INTEGRITY_CONSTRAIN_EXCEPTION, dataProvider.saveRecord(task).getResult());
+        MethodsResult trueResult = dataProvider.getRecordById(task);
         Assert.assertEquals(trueResult.getResult(), ResultType.SUCCESSFUL);
         Assert.assertEquals(trueResult.getBean(), task);
     }
@@ -48,8 +47,8 @@ public class TaskTests {
     public void testC(){
         Task updateTask = DataGenerator.createUpdatedTask();
         updateTask.setId(task.getId());
-        Assert.assertEquals(ResultType.SUCCESSFUL, dataProvider.updateRecord(updateTask, EntryType.TASK).getResult());
-        MethodsResult trueResult = dataProvider.getRecordById(updateTask.getId(), EntryType.TASK);
+        Assert.assertEquals(ResultType.SUCCESSFUL, dataProvider.updateRecord(updateTask).getResult());
+        MethodsResult trueResult = dataProvider.getRecordById(updateTask);
         Assert.assertEquals(ResultType.SUCCESSFUL, trueResult.getResult());
         Assert.assertEquals(updateTask.getDescription(), ((Task)trueResult.getBean()).getDescription());
     }
@@ -57,8 +56,8 @@ public class TaskTests {
 //    delete task test
     @Test
     public void testD(){
-        Assert.assertEquals(dataProvider.deleteRecord(task.getId(), EntryType.TASK).getResult(), ResultType.SUCCESSFUL);
-        Assert.assertEquals(dataProvider.getRecordById(task.getId(), EntryType.TASK).getResult(), ResultType.ID_NOT_EXIST);
+        Assert.assertEquals(dataProvider.deleteRecord(task).getResult(), ResultType.SUCCESSFUL);
+        Assert.assertEquals(dataProvider.getRecordById(task).getResult(), ResultType.ID_NOT_EXIST);
     }
 
 //    get all task test
@@ -69,13 +68,13 @@ public class TaskTests {
             Thread.sleep(1);
             task = DataGenerator.createTask();
             tasks.add(task);
-            Assert.assertEquals(dataProvider.saveRecord(task, EntryType.TASK).getResult(), ResultType.SUCCESSFUL);
+            Assert.assertEquals(dataProvider.saveRecord(task).getResult(), ResultType.SUCCESSFUL);
         }
         MethodsResult result = dataProvider.getAllRecords(EntryType.TASK);
         Assert.assertEquals(result.getResult(), ResultType.SUCCESSFUL);
         List allTasks = result.getBeans();
         Assert.assertTrue(tasks.stream().allMatch(allTasks::contains));
-        tasks.forEach(deletedRecord -> dataProvider.deleteRecord(deletedRecord.getId(), EntryType.TASK));
+        tasks.forEach(deletedRecord -> dataProvider.deleteRecord(deletedRecord));
     }
 
     @BeforeClass
@@ -87,6 +86,7 @@ public class TaskTests {
 
     @AfterClass
     public static void tearDown() throws Exception {
+        dataProvider.closeConnection();
     }
 
 }

@@ -1,12 +1,14 @@
 package ru.sfedu.projectmanager.model.providers;
 
 import com.opencsv.exceptions.CsvException;
+import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils;
 import ru.sfedu.projectmanager.exceptions.*;
 import ru.sfedu.projectmanager.model.entries.Project;
 import ru.sfedu.projectmanager.model.entries.Task;
 import ru.sfedu.projectmanager.model.entries.User;
 import ru.sfedu.projectmanager.model.entries.WithId;
 import java.io.*;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
@@ -37,17 +39,20 @@ public class DataProviderCSV<T extends WithId> implements IDataProvider<T> {
 
 
     @Override
-    public MethodsResult saveRecord(T insertedBean, EntryType type) {
+    public MethodsResult saveRecord(T insertedBean) {
         try {
+            EntryType type = insertedBean.getEntryType();
             initCsvToBean(type);
-            initBeanToScv(type, true);
             List<T> beans = csvToBean.parse();
             if (beans.stream().filter(tempBean -> Objects.equals(tempBean.getId(), insertedBean.getId()))
                     .findFirst().orElse(null) != null) {
+                writer.close();
                 return new MethodsResult(ResultType.ID_ALREADY_EXIST);
             }
             entryConstrainVerification(beans, insertedBean, type);
-            beanToCsv.write(insertedBean);
+            initBeanToScv(type, false);
+            beans.add(insertedBean);
+            beanToCsv.write(beans);
             writer.close();
             return new MethodsResult<>(ResultType.SUCCESSFUL);
         } catch (TitleNotUniqueException e) {
@@ -58,7 +63,7 @@ public class DataProviderCSV<T extends WithId> implements IDataProvider<T> {
             return new MethodsResult(ResultType.LOGIN_ALREADY_EXIST);
         } catch (IntegrityConstrainException e) {
             logger.error(e);
-            return new MethodsResult(ResultType.SQL_INTEGRITY_CONSTRAIN_EXCEPTION);
+            return new MethodsResult(ResultType.INTEGRITY_CONSTRAIN_EXCEPTION);
         } catch (IOException e){
             logger.error(e);
             return new MethodsResult<>(ResultType.IO_EXCEPTION);
@@ -66,10 +71,13 @@ public class DataProviderCSV<T extends WithId> implements IDataProvider<T> {
             logger.error(e);
             return new MethodsResult<>(ResultType.EXCEPTION);
         }
+
     }
 
     @Override
-    public MethodsResult deleteRecord(long id, EntryType type){
+    public MethodsResult deleteRecord(T bean){
+        EntryType type = bean.getEntryType();
+        Long id = bean.getId();
         try {
             initCsvToBean(type);
             List<T> beans = csvToBean.parse();
@@ -95,11 +103,13 @@ public class DataProviderCSV<T extends WithId> implements IDataProvider<T> {
     }
 
     @Override
-    public MethodsResult getRecordById(long id, EntryType type){
+    public MethodsResult getRecordById(T neededBean){
+        EntryType type = neededBean.getEntryType();
+        Long id = neededBean.getId();
         try {
             initCsvToBean(type);
             List<T> beans = csvToBean.parse();
-            T searchedBean = beans.stream().filter(bean -> id == bean.getId()).findFirst().orElse(null);
+            T searchedBean = beans.stream().filter(bean -> Objects.equals(id, bean.getId())).findFirst().orElse(null);
             if (searchedBean != null){
                 return new MethodsResult<T>(ResultType.SUCCESSFUL, searchedBean);
             } else {
@@ -112,7 +122,8 @@ public class DataProviderCSV<T extends WithId> implements IDataProvider<T> {
     }
 
     @Override
-    public MethodsResult updateRecord(T bean, EntryType type){
+    public MethodsResult updateRecord(T bean){
+        EntryType type = bean.getEntryType();
         try {
             initCsvToBean(type);
             List<T> beans = csvToBean.parse();
@@ -137,7 +148,7 @@ public class DataProviderCSV<T extends WithId> implements IDataProvider<T> {
             return new MethodsResult(ResultType.LOGIN_ALREADY_EXIST);
         } catch (IntegrityConstrainException e) {
             logger.error(e);
-            return new MethodsResult(ResultType.SQL_INTEGRITY_CONSTRAIN_EXCEPTION);
+            return new MethodsResult(ResultType.INTEGRITY_CONSTRAIN_EXCEPTION);
         } catch (IdNotUniqueException e){
             logger.error(e);
             return new MethodsResult(ResultType.ID_ALREADY_EXIST);
@@ -339,5 +350,42 @@ public class DataProviderCSV<T extends WithId> implements IDataProvider<T> {
                 break;
         }
 
+    }
+
+    public MethodsResult integrityCheck(){
+        List<User> users = getAllRecords(EntryType.USER).getBeans();
+        users.stream().filter(curUser -> curUser.getProjectId() != null).forEach(user -> {
+            Project project = new Project();
+            project.setId(user.getProjectId());
+            if (getRecordById((T)project).getResult() == ResultType.ID_NOT_EXIST){
+                logger.info("[USER]Project with id " + user.getProjectId() + " not exist. Project id was set to null.");
+                User updateRecord = user;
+                updateRecord.setProjectId(null);
+                updateRecord((T)updateRecord);
+            }
+        });
+
+        List<Task> tasks = getAllRecords(EntryType.TASK).getBeans();
+        tasks.stream().filter(curTask -> curTask.getProjectId() != null).forEach(task -> {
+            Project project = new Project();
+            project.setId(task.getProjectId());
+            if (getRecordById((T)project).getResult() == ResultType.ID_NOT_EXIST){
+                deleteRecord((T)task);
+                logger.info("[TASK]Project with id " + task.getProjectId() + " not exist. Task with id " + task.getId() + " was deleted.");
+            }
+        });
+
+        tasks.stream().filter(curTask -> curTask.getUserId() != null).forEach(task -> {
+            User user = new User();
+            user.setId(task.getUserId());
+            if (getRecordById((T)user).getResult() == ResultType.ID_NOT_EXIST){
+                logger.info("[TASK]User with id " + task.getUserId() + " not exist. User id was set to null.");
+                Task updateRecord = task;
+                updateRecord.setUserId(null);
+                updateRecord((T)updateRecord);
+            }
+        });
+
+        return new MethodsResult(ResultType.SUCCESSFUL);
     }
 }

@@ -1,9 +1,9 @@
 <XMLBeanList>
    <beans class="java.util.ArrayList">
-      <object class="ru.sfedu.projectmanager.model.entries.User" id="5531811583342879842">
+      <object class="ru.sfedu.projectmanager.model.entries.User" id="1516598760479">
          <login>leha</login>
-         <password>pass</password>
          <email>mail</email>
+         <password>pass</password>
       </object>
    </beans>
 </XMLBeanList>

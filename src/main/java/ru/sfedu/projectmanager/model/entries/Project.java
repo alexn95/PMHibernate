@@ -1,9 +1,13 @@
 package ru.sfedu.projectmanager.model.entries;
 
 
+import com.opencsv.bean.CsvBindByName;
 import com.opencsv.bean.CsvBindByPosition;
+import com.opencsv.bean.CsvCustomBindByPosition;
 import org.simpleframework.xml.Attribute;
 import org.simpleframework.xml.Element;
+import org.simpleframework.xml.Root;
+import ru.sfedu.projectmanager.model.enums.EntryType;
 
 import java.io.Serializable;
 import java.text.SimpleDateFormat;
@@ -15,73 +19,52 @@ import java.util.Random;
 /**
  * Class Project
  */
-public class Project implements WithId, Serializable {
+public class Project extends WithId {
 
-    @Attribute
-    @CsvBindByPosition(position = 0)
-    private Long id;
-
-    @CsvBindByPosition(position = 1)
+    @CsvBindByName
+//    @CsvBindByPosition(position = 1)
     private String title;
 
-    @CsvBindByPosition(position = 2)
+    @CsvBindByName
+//    @CsvBindByPosition(position = 2)
     private String description;
 
-    @CsvBindByPosition(position = 3)
+    @CsvBindByName
+//    @CsvBindByPosition(position = 3)
     private String state;
 
-    @CsvBindByPosition(position = 4)
+    @CsvBindByName
+//    @CsvBindByPosition(position = 4)
     private long createDate;
-
-    private Random random = new Random();
   
   //
   // Constructors
   //
-    public Project () {
-      this.id = random.nextLong();
-      this.createDate = new Date().getTime();
+    public Project() {
+        super(EntryType.PROJECT);
+        this.createDate = new Date().getTime();
     }
 
-    public Project(Long id, String title, String description, String state, long createDate) {
-    this.id = id;
-    this.title = title;
-    this.description = description;
-    this.state = state;
-    this.createDate = createDate;
-    }
-
-    public Project(String title, String description, String state, long createDate) {
-    this.id = random.nextLong();
-    this.title = title;
-    this.description = description;
-    this.state = state;
-    this.createDate = createDate;
-    }
-
-    public Project(String title, String description, String state) {
-        this.id = random.nextLong();
-        this.title = title;
-        this.description = description;
-        this.state = state;
+    public Project(Long id) {
+        super(id, EntryType.PROJECT);
         this.createDate = new Date().getTime();
     }
 
 
-    /**
-    * Set the value of id
-    * @param newVar the new value of id
-    */
-    public void setId (Long newVar) {
-    id = newVar;
+    public Project(String title, String description, String state, long createDate, EntryType entryType) {
+        super(EntryType.PROJECT);
+        this.title = title;
+        this.description = description;
+        this.state = state;
+        this.createDate = createDate;
     }
 
-    /**
-    * Get the value of id
-    * @return the value of id
-    */
-    public Long getId () {
-    return id;
+    public Project(String title, String description, String state, EntryType entryType) {
+        super(EntryType.PROJECT);
+        this.title = title;
+        this.description = description;
+        this.state = state;
+        this.createDate = new Date().getTime();
     }
 
     /**
@@ -153,22 +136,10 @@ public class Project implements WithId, Serializable {
     return createDate;
     }
 
-
     @Override
     public String toString(){
-      SimpleDateFormat format = new SimpleDateFormat();
-      return title + ", " + state + ", " + description + ", " + format.format(new Date(createDate));
-    }
-
-    @Override
-    public String toCLI(){
         SimpleDateFormat format = new SimpleDateFormat();
-        return id + ", " + title + ", " + description + ", " + state + ", " + format.format(new Date(createDate));
-    }
-
-    @Override
-    public String toInsert(){
-        return id + ", '" + title + "', '" + description + "', '" + state + "', " + createDate;
+        return id + ", " + title + ", " + state + ", " + description + ", " + format.format(new Date(createDate));
     }
 
     @Override
@@ -181,5 +152,10 @@ public class Project implements WithId, Serializable {
         return isEquals;
     }
 
+    @Override
+    public String toInsert(){
+        SimpleDateFormat format = new SimpleDateFormat();
+        return id + ", '" + title + "', '" + description + "', '" + state + "', " + createDate;
+    }
 
 }

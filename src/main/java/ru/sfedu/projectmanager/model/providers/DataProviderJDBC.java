@@ -22,9 +22,10 @@ public class DataProviderJDBC<T extends WithId> implements IDataProvider<T>  {
     private static Statement statement;
 
     @Override
-    public MethodsResult saveRecord(T bean, EntryType type){
+    public MethodsResult saveRecord(T bean){
+
         String query = "";
-        switch (type){
+        switch (bean.getEntryType()){
             case USER:
                 query = "INSERT INTO  Users(id, login, email, password, projectId) " +
                         " VALUES (" + bean.toInsert() + ");";
@@ -42,7 +43,7 @@ public class DataProviderJDBC<T extends WithId> implements IDataProvider<T>  {
             statement.executeUpdate(query);
         } catch (SQLIntegrityConstraintViolationException e) {
             logger.error(e);
-            return new MethodsResult<>(ResultType.SQL_INTEGRITY_CONSTRAIN_EXCEPTION);
+            return new MethodsResult<>(ResultType.INTEGRITY_CONSTRAIN_EXCEPTION);
         } catch (CommunicationsException e){
             logger.error(e);
             initDataSource();
@@ -55,11 +56,12 @@ public class DataProviderJDBC<T extends WithId> implements IDataProvider<T>  {
     }
 
     @Override
-    public MethodsResult deleteRecord(long id, EntryType type){
+    public MethodsResult deleteRecord(T bean){
+        Long id = bean.getId();
         String query = "";
         ResultSet resultSet;
         try {
-            switch (type) {
+            switch (bean.getEntryType()) {
                 case USER:
                     query = "SELECT * FROM Users WHERE id = " + id;
                     resultSet = statement.executeQuery(query);
@@ -92,11 +94,12 @@ public class DataProviderJDBC<T extends WithId> implements IDataProvider<T>  {
     }
 
     @Override
-    public MethodsResult getRecordById(long id, EntryType type){
+    public MethodsResult getRecordById(T bean){
+        Long id = bean.getId();
         String query;
         ResultSet resultSet;
         try {
-            switch (type){
+            switch (bean.getEntryType()){
                 case USER:
                     query = "SELECT * FROM Users WHERE id = " + id;
                     resultSet = statement.executeQuery(query);
@@ -116,7 +119,8 @@ public class DataProviderJDBC<T extends WithId> implements IDataProvider<T>  {
                     Project project = selectProject(resultSet);
                     return new MethodsResult<>(ResultType.SUCCESSFUL, project);
                 default:
-                    return new MethodsResult(ResultType.WRONG_ENTRY_TYPE_EXCEPTION);
+                    logger.info("Wrong entry type");
+                    return new MethodsResult(ResultType.EXCEPTION);
             }
         } catch (CommunicationsException e){
             logger.error(e);
@@ -187,9 +191,9 @@ public class DataProviderJDBC<T extends WithId> implements IDataProvider<T>  {
     }
 
     @Override
-    public MethodsResult updateRecord(T bean, EntryType type){
+    public MethodsResult updateRecord(T bean){
         String query = "";
-        switch (type){
+        switch (bean.getEntryType()){
             case USER:
                 User user = (User)bean;
                 query = "UPDATE Users SET " +
@@ -231,7 +235,7 @@ public class DataProviderJDBC<T extends WithId> implements IDataProvider<T>  {
             return new MethodsResult(ResultType.COMMUNICATIONS_EXCEPTION);
         } catch (SQLIntegrityConstraintViolationException e) {
             logger.error(e);
-            return new MethodsResult<>(ResultType.SQL_INTEGRITY_CONSTRAIN_EXCEPTION);
+            return new MethodsResult<>(ResultType.INTEGRITY_CONSTRAIN_EXCEPTION);
         } catch (SQLException e){
             logger.error(e);
             return new MethodsResult<>(ResultType.SQL_EXCEPTION);
@@ -269,7 +273,8 @@ public class DataProviderJDBC<T extends WithId> implements IDataProvider<T>  {
                     }
                     return new MethodsResult<>(ResultType.SUCCESSFUL, projects);
                 default:
-                    return new MethodsResult(ResultType.WRONG_ENTRY_TYPE_EXCEPTION);
+                    logger.info("Wrong entry type");
+                    return new MethodsResult(ResultType.EXCEPTION);
             }
         } catch (CommunicationsException e){
             logger.error(e);
@@ -351,5 +356,9 @@ public class DataProviderJDBC<T extends WithId> implements IDataProvider<T>  {
         project.setState(resultSet.getString("state"));
         project.setCreateDate(resultSet.getLong("createDate"));
         return project;
+    }
+
+    public MethodsResult integrityCheck(){
+        return new MethodsResult(ResultType.SUCCESSFUL);
     }
 }

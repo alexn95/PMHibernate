@@ -1,11 +1,10 @@
 package ru.sfedu.projectmanager.utils;
 
 import org.apache.log4j.Logger;
-import ru.sfedu.projectmanager.Client;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.io.InputStream;
 import java.util.Properties;
 
 /**
@@ -16,7 +15,7 @@ import java.util.Properties;
  */
 public class ConfigurationUtil {
     private static Logger logger = Logger.getLogger(ConfigurationUtil.class);
-    private static  String CONFIG_PATH = "E:\\ProjectManager\\src\\main\\resources\\config.properties";
+    private static  String configPath = "E:\\ProjectManager\\src\\main\\resources\\config.properties";
     private static final Properties configuration = new Properties();
 
     /**
@@ -37,13 +36,10 @@ public class ConfigurationUtil {
      * @throws IOException In case of the configuration file read failure
      */
     private static void loadConfiguration() throws IOException{
-        FileInputStream in = new FileInputStream(CONFIG_PATH);
-        try {
+        try (FileInputStream in = new FileInputStream(configPath)) {
             configuration.load(in);
         } catch (IOException ex) {
             throw new IOException(ex);
-        } finally{
-            in.close();
         }
     }
     /**
@@ -53,12 +49,23 @@ public class ConfigurationUtil {
      * @throws IOException In case of the configuration file read failure
      */
     public static String getConfigurationEntry(String key) throws IOException{
-        logger.info(getConfiguration().getProperty(key));
+//        logger.info(getConfiguration().getProperty(key));
         return getConfiguration().getProperty(key);
     }
 
     public static void setConfigPath (String config_path){
-         CONFIG_PATH = config_path;
+        if (config_path != null){
+                File file = new File(config_path);
+                if (file.exists() && file.isFile()){
+                    configPath = config_path;
+                } else {
+                    System.out.println("Config file not exist. Default settings have been set");
+                }
+        }
     }
+
+//    public static String getConfigPath (){
+//        return configPath
+//    }
 
 }

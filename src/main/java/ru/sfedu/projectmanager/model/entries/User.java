@@ -1,32 +1,36 @@
 package ru.sfedu.projectmanager.model.entries;
 import java.io.Serializable;
+import java.text.SimpleDateFormat;
 import java.util.Objects;
 import java.util.Random;
+import java.util.Date;
 
 import com.opencsv.bean.*;
 import org.simpleframework.xml.Attribute;
 import org.simpleframework.xml.Element;
+import org.simpleframework.xml.Root;
+import ru.sfedu.projectmanager.model.enums.EntryType;
 
 
 /**
  * Class User
  */
-public class User implements WithId, Serializable {
+public class User extends WithId {
 
-    @Attribute
-    @CsvBindByPosition(position = 0)
-    private Long id;
-
-    @CsvBindByPosition(position = 1)
+    @CsvBindByName
+//    @CsvBindByPosition(position = 1)
     private String login;
 
-    @CsvBindByPosition(position = 2)
+    @CsvBindByName
+//    @CsvBindByPosition(position = 2)
     private String email;
 
-    @CsvBindByPosition(position = 3)
+    @CsvBindByName
+//    @CsvBindByPosition(position = 3)
     private String password;
 
-    @CsvBindByPosition(position = 4)
+    @CsvBindByName
+//    @CsvBindByPosition(position = 4)
     private Long projectId;
 
     private Random random = new Random();
@@ -34,27 +38,18 @@ public class User implements WithId, Serializable {
   //
   // Constructors
   //
+    public User(Long id) {
+        super(id, EntryType.USER);
+        this.projectId = null;
+    }
+
     public User() {
-        this.id = random.nextLong();
+        super(EntryType.USER);
+        this.projectId = null;
     }
 
-    public User(Long id, String login, String email, String password) {
-        this.id = id;
-        this.login = login;
-        this.email = email;
-        this.password = password;
-    }
-
-    public User(Long id, String login, String email, String password, Long projectId) {
-        this.id = id;
-        this.login = login;
-        this.email = email;
-        this.password = password;
-        this.projectId = projectId;
-    }
-
-    public User( String login, String email, String password, Long projectId) {
-        this.id = random.nextLong();
+    public User(String login, String email, String password, Long projectId) {
+        super(EntryType.USER);
         this.login = login;
         this.email = email;
         this.password = password;
@@ -69,22 +64,6 @@ public class User implements WithId, Serializable {
     //
     // Accessor methods
     //
-
-    /**
-    * Set the value of id
-    * @param newVar the new value of id
-    */
-    public void setId (Long newVar) {
-    id = newVar;
-    }
-
-    /**
-    * Get the value of id
-    * @return the value of id
-    */
-    public Long getId () {
-    return id;
-    }
 
     /**
     * Set the value of login
@@ -156,18 +135,9 @@ public class User implements WithId, Serializable {
 
     @Override
     public String toString() {
-        return login + ", " +  email + ", " + password+ ", " + projectId;
-    }
-
-    @Override
-    public String toCLI() {
         return id + ", " + login + ", " +  email + ", " + password+ ", " + projectId;
     }
 
-    @Override
-    public String toInsert() {
-    return id + ", '" + login + "', '" +  email + "', '" + password + "', " + projectId;
-    }
 
     @Override
     public boolean equals(Object object){
@@ -177,5 +147,11 @@ public class User implements WithId, Serializable {
           isEquals = Objects.equals(this.toString(), object.toString());
         }
         return isEquals;
+    }
+
+    @Override
+    public String toInsert(){
+        SimpleDateFormat format = new SimpleDateFormat();
+        return id + ", '" + login + "', '" +  email + "', '" + password + "', " + projectId;
     }
 }

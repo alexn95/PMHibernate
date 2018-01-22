@@ -34,11 +34,13 @@ public class CLIServices {
             case "xml":
                 dataProvider = new DataProviderXML();
                 dataProvider.initDataSource();
+                dataProvider.integrityCheck();
                 System.out.println("Data source - xml");
                 break;
             case "csv":
                 dataProvider = new DataProviderCSV();
                 dataProvider.initDataSource();
+                dataProvider.integrityCheck();
                 System.out.println("Data source - csv");
                 break;
             default:
@@ -55,14 +57,18 @@ public class CLIServices {
         System.out.print("User: ");
         String temp = scan.nextLine();
         String[] userData = temp.split(",[ ]*");
-        if (userData.length < 3 ) {
+        if (userData.length != 3 ) {
             System.out.println("Input data is invalid");
+            return;
+        }
+        if (userData[0].contains(" ")){
+            System.out.println("User login can not contain space symbol");
             return;
         }
         user.setLogin(userData[0]);
         user.setEmail(userData[1]);
         user.setPassword(userData[2]);
-        System.out.println(dataProvider.saveRecord(user, EntryType.USER).getResult());
+        System.out.println(dataProvider.saveRecord(user).getResult());
     }
 
     public static void updateUser(IDataProvider dataProvider){
@@ -78,7 +84,7 @@ public class CLIServices {
             System.out.println("Invalid id");
             return;
         }
-        MethodsResult result = dataProvider.getRecordById(id,EntryType.USER);
+        MethodsResult result = dataProvider.getRecordById(new User(id));
         if (!result.getResult().equals(ResultType.SUCCESSFUL)){
             System.out.println(result.getResult());
             return;
@@ -88,7 +94,7 @@ public class CLIServices {
         System.out.print("User: ");
         temp = scan.nextLine();
         String[] userData = temp.split(",[ ]*");
-        if (userData.length < 4 ) {
+        if (userData.length != 4 ) {
             System.out.println("Input data is invalid");
             return;
         }
@@ -105,12 +111,12 @@ public class CLIServices {
             }
             user.setProjectId(projectResult.getBean().getId());
         }
-        System.out.println(dataProvider.updateRecord(user, EntryType.USER).getResult());
+        System.out.println(dataProvider.updateRecord(user).getResult());
     }
 
     public static void saveTask(String[] commands, IDataProvider dataProvider){
         Scanner scan = new Scanner(System.in);
-        if (commands.length < 4 || !commands[2].equals("into")) {
+        if (commands.length != 4 || !commands[2].equals("into")) {
             System.out.println("To create Task enter: create task into [Project_title]");
             return;
         }
@@ -123,8 +129,12 @@ public class CLIServices {
             System.out.print("Task: ");
             String temp = scan.nextLine();
             String[] taskData = temp.split(",[ ]*");
-            if (taskData.length < 3 ) {
+            if (taskData.length != 3 ) {
                 System.out.println("Input data is invalid");
+                return;
+            }
+            if (taskData[0].contains(" ")){
+                System.out.println("Task title can not contain space symbol");
                 return;
             }
             task.setTitle(taskData[0]);
@@ -134,7 +144,7 @@ public class CLIServices {
             System.out.print("Task description: ");
             temp = scan.nextLine();
             task.setDescription(temp);
-            MethodsResult result = dataProvider.saveRecord(task, EntryType.TASK);
+            MethodsResult result = dataProvider.saveRecord(task);
             System.out.println(result.getResult());
         }
     }
@@ -152,7 +162,7 @@ public class CLIServices {
             System.out.println("Invalid id");
             return;
         }
-        MethodsResult result = dataProvider.getRecordById(id,EntryType.TASK);
+        MethodsResult result = dataProvider.getRecordById(id);
         if (!result.getResult().equals(ResultType.SUCCESSFUL)){
             System.out.println(result.getResult());
             return;
@@ -162,7 +172,7 @@ public class CLIServices {
         System.out.print("Task: ");
         temp = scan.nextLine();
         String[] taskData = temp.split(",[ ]*");
-        if (taskData.length < 6 ) {
+        if (taskData.length != 6 ) {
             System.out.println("Input data is invalid");
             return;
         }
@@ -190,7 +200,7 @@ public class CLIServices {
             }
             task.setProjectId(projectResult.getBean().getId());
         }
-        System.out.println(dataProvider.updateRecord(task, EntryType.TASK).getResult());
+        System.out.println(dataProvider.updateRecord(task).getResult());
     }
 
 
@@ -205,12 +215,16 @@ public class CLIServices {
             System.out.println("Input data is invalid");
             return;
         }
+        if (projectData[0].contains(" ")){
+            System.out.println("Project title can not contain space symbol");
+            return;
+        }
         project.setTitle(projectData[0]);
         project.setState(projectData[1]);
         System.out.print("Project description: ");
         temp = scan.nextLine();
         project.setDescription(temp);
-        MethodsResult result = dataProvider.saveRecord(project, EntryType.PROJECT);
+        MethodsResult result = dataProvider.saveRecord(project);
         System.out.println(result.getResult());
     }
 
@@ -227,7 +241,7 @@ public class CLIServices {
             System.out.println("Invalid id");
             return;
         }
-        MethodsResult result = dataProvider.getRecordById(id,EntryType.PROJECT);
+        MethodsResult result = dataProvider.getRecordById(new Project(id));
         if (!result.getResult().equals(ResultType.SUCCESSFUL)){
             System.out.println(result.getResult());
             return;
@@ -237,7 +251,7 @@ public class CLIServices {
         System.out.print("Project: ");
         temp = scan.nextLine();
         String[] userData = temp.split(",[ ]*");
-        if (userData.length < 3 ) {
+        if (userData.length != 3 ) {
             System.out.println("Input data is invalid");
             return;
         }
@@ -245,7 +259,7 @@ public class CLIServices {
         project.setState(userData[1]);
         project.setDescription(userData[2]);
 
-        System.out.println(dataProvider.updateRecord(project, EntryType.PROJECT).getResult());
+        System.out.println(dataProvider.updateRecord(project).getResult());
     }
 
 
@@ -253,7 +267,7 @@ public class CLIServices {
         MethodsResult result;
         switch (commands[1]) {
             case "user":
-                if (commands.length < 3){
+                if (commands.length != 3){
                     System.out.println("No such user");
                     return;
                 }
@@ -265,19 +279,19 @@ public class CLIServices {
                 }
                 break;
             case "task":
-                if (commands.length < 3){
+                if (commands.length != 3){
                     System.out.println("No such task");
                     return;
                 }
                 result = dataProvider.getTasksByTitle(commands[2]);
                 if (result.getResult().equals(ResultType.SUCCESSFUL)){
-                    System.out.println(result.getBean());
+                    result.getBeans().forEach(System.out::println);
                 } else {
                     System.out.println(result.getResult());
                 }
                 break;
             case "project":
-                if (commands.length < 3){
+                if (commands.length != 3){
                     System.out.println("No such project");
                     return;
                 }
@@ -320,8 +334,9 @@ public class CLIServices {
     }
 
     public static void setUserProject(String[] commands, IDataProvider dataProvider){
-        if (commands.length < 4 || !commands[2].equals("to")){
+        if (commands.length != 4 || !commands[2].equals("to")){
             System.out.println("To add users to project enter: add [user login] to [project title]");
+            return;
         }
         MethodsResult userResult = dataProvider.getUserByLogin(commands[1]);
         if (!userResult.getResult().equals(ResultType.SUCCESSFUL)) {
@@ -335,13 +350,14 @@ public class CLIServices {
         }
         User user = (User)userResult.getBean();
         user.setProjectId(projectResult.getBean().getId());
-        System.out.println(dataProvider.updateRecord(user, EntryType.USER).getResult());
+        System.out.println(dataProvider.updateRecord(user).getResult());
     }
 
     public static void takeTask(String[] commands, IDataProvider dataProvider){
         Scanner scan = new Scanner(System.in);
-        if (commands.length < 4 || !commands[2].equals("by")){
+        if (commands.length != 4 || !commands[2].equals("by")){
             System.out.println("To take task by user enter: take [task title] by [user login]");
+            return;
         }
         MethodsResult userResult = dataProvider.getUserByLogin(commands[3]);
         if (!userResult.getResult().equals(ResultType.SUCCESSFUL)) {
@@ -361,7 +377,7 @@ public class CLIServices {
         Task task;
         List<Task> tasks = tasksResult.getBeans();
         tasks = tasks.stream().filter(bean -> bean.getProjectId().equals(user.getProjectId())).collect(Collectors.toList());
-        if (tasks.size() < 0){
+        if (tasks.size() == 0){
             System.out.println("Task not exist in user project");
             return;
         } else if (tasks.size() > 1){
@@ -387,7 +403,7 @@ public class CLIServices {
             task = tasks.get(0);
         }
         task.setUserId(user.getId());
-        System.out.println(dataProvider.updateRecord(task, EntryType.TASK).getResult());
+        System.out.println(dataProvider.updateRecord(task).getResult());
     }
 
     public static void help(){
@@ -398,7 +414,7 @@ public class CLIServices {
         System.out.println("To select entry by title enter:     select user/task/project [login/title]");
         System.out.println("To update entry enter:              update users/tasks/projects");
         System.out.println("To take task by user enter:         take [task title] by [user login]");
-        System.out.println("To add user to project enter:       add [user login] by [project title]");
+        System.out.println("To add user to project enter:       add [user login] to [project title]");
     }
 
     private static void selectEntry(IDataProvider dataProvider, EntryType type, boolean withId){
@@ -430,7 +446,7 @@ public class CLIServices {
             System.out.println("Invalid id");
             return;
         }
-        System.out.println(dataProvider.deleteRecord(id, type).getResult());
+        System.out.println(dataProvider.deleteRecord(new WithId(id, type)).getResult());
     }
 
 
